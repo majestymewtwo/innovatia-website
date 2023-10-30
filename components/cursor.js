@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 const CustomCursor = () => {
-  const trailCount = 10;
+  const trailCount = 40;
   const [trails, setTrails] = useState([]);
 
   useEffect(() => {
