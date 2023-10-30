@@ -44,8 +44,11 @@ body {
   pointer-events: none;
 }
 
-@media (max-width: 900px)  {
+@media (max-width: 900px) {
   .custom-cursor {
     display: none;
+  }
+  body {
+    background-position: center;
   }
 }
