@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -147,24 +146,12 @@ body {
 }
 
 .custom-cursor {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 10ms ease-in-out;
-  z-index: 9999;
-}
-
-/* .cursor-trail {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #E9B824;
+  background-color: #111;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 0;
+  left: 0;
   pointer-events: none;
-  z-index: 9998;
-  opacity: 0.5;
-  transition: opacity 0.5s linear;
-} */
+}
