@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,145 +25,27 @@ body {
     )
     rgb(var(--background-start-rgb));
   cursor: none;
+  background-image: url("https://learn.liveu.tv/pluginfile.php/1/local_mb2slides/attachment/6/Space-Animation%20Draft.gif");
+  background-size: contain;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-.btn-custom {
-  align-items: center;
-  appearance: none;
-  background-clip: padding-box;
-  background-color: initial;
-  background-image: none;
-  border-style: none;
-  box-sizing: border-box;
-  color: #fff;
-  display: inline-block;
-  flex-direction: row;
-  flex-shrink: 0;
-  font-family: Eina01, sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  justify-content: center;
-  line-height: 24px;
-  margin: 0;
-  min-height: 64px;
-  outline: none;
-  overflow: visible;
-  padding: 19px 26px;
-  pointer-events: auto;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  width: auto;
-  word-break: keep-all;
-  z-index: 0;
+.custom-cursor {
+  background-color: #e01dc9;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
 
-@media (min-width: 768px) {
-  .btn-custom {
-    padding: 19px 32px;
+@media (max-width: 900px)  {
+  .custom-cursor {
+    display: none;
   }
 }
-
-.btn-custom:before,
-.btn-custom:after {
-  border-radius: 80px;
-}
-
-.btn-custom:before {
-  background-image: linear-gradient(92.83deg, #9400ff 0, #430272 100%);
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -2;
-}
-
-.btn-custom:after {
-  background-color: initial;
-  background-image: linear-gradient(#090909 0, #151f2c 100%);
-  bottom: 4px;
-  content: "";
-  display: block;
-  left: 4px;
-  overflow: hidden;
-  position: absolute;
-  right: 4px;
-  top: 4px;
-  transition: all 100ms ease-out;
-  z-index: -1;
-}
-
-.btn-custom:hover:not(:disabled):before {
-  background: linear-gradient(92.83deg, #9400ff 0%, #430272 100%);
-}
-
-.btn-custom:hover:not(:disabled):after {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  transition-timing-function: ease-in;
-  opacity: 0;
-}
-
-.btn-custom:active:not(:disabled) {
-  color: #ccc;
-}
-
-.btn-custom:active:not(:disabled):before {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    linear-gradient(92.83deg, #9400ff 0%, #430272 100%);
-}
-
-.btn-custom:active:not(:disabled):after {
-  background-image: linear-gradient(#090909 0, #151f2c 100%);
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  top: 4px;
-}
-
-.btn-custom:disabled {
-  cursor: default;
-  opacity: 0.24;
-}
-
-.custom-cursor {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 10ms ease-in-out;
-  z-index: 9999;
-}
-
-/* .cursor-trail {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #E9B824;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 9998;
-  opacity: 0.5;
-  transition: opacity 0.5s linear;
-} */

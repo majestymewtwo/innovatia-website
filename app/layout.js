@@ -1,6 +1,5 @@
 import { Inter, Luckiest_Guy, Quicksand } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/cursor";
 
 const inter = Inter({ subsets: ["latin"] });
 const lucky = Luckiest_Guy({ subsets: ["latin"], weight: "400" });
@@ -23,12 +22,8 @@ export default function RootLayout({ children }) {
           type='image/x-icon'
         />
       </head>
-      <body
-        className={`${lucky.className} bg-[url("/retro-bg-future.webp")] bg-fixed bg-cover bg-no-repeat`}>
+      <body className={`${lucky.className} bg-fixed bg-cover bg-no-repeat`}>
         {children}
-        <span className="hidden lg:block">
-          <CustomCursor />
-        </span>
       </body>
     </html>
   );
