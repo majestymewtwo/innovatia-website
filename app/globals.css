@@ -26,6 +26,8 @@ body {
     )
     rgb(var(--background-start-rgb));
   cursor: none;
+  background-image: url("https://learn.liveu.tv/pluginfile.php/1/local_mb2slides/attachment/6/Space-Animation%20Draft.gif");
+  background-size: contain;
 }
 
 ::-webkit-scrollbar {
