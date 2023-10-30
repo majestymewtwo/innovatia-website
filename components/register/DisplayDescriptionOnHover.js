@@ -6,13 +6,14 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
 
+
 export function DisplayDescriptionOnHover({event}) {
   return (
     <HoverCard>
-      <HoverCardTrigger asChild className="hover:no-underline">
+      <HoverCardTrigger asChild className="m-2 hover:no-underline">
         <Button variant="link" className="flex items-center gap-2 text-lg text-white">
-          <h1 className="text-2xl font-semibold">{event.name}</h1>
-          <Info className="mt-2"/>
+          <h1 className="inline-block p-1 text-4xl font-bold text-transparent animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text">{event.name}</h1>
+          <Info className="mt-2 "/>
         </Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-80">

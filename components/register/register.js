@@ -34,12 +34,16 @@ const register = ({ event }) => {
 
   const [members, setMembers] = useState([]);
 
+  const [teamSize, setTeamSize] = useState(1);
+
   return (
-    <div className="flex flex-col items-center justify-center rounded bg-[#504099] p-4 font-sans overflow-scroll h-full w-full">
-      <h1>Register</h1>
-      <Team />
+    <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 overflow-scroll font-sans rounded">
       <DisplayDescriptionOnHover event={event} />
-      <Member id={1} />
+      <Team maxSize={maxMembers} minSize={minMembers}/>
+      {
+        teamSize > 1 &&
+          Array.from({ length: teamSize }, (_, i) => <Member key={i} id={i} />)
+      }
       <div className="flex w-full justify-evenly">
         <Button className="text-black bg-white hover:text-black hover:bg-white">
           Go Back
