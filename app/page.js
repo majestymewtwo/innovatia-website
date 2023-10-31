@@ -47,9 +47,7 @@ export default function Home() {
   if (suspense) return <Loading />;
 
   return (
-    <main
-      id='app'
-      className='flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden'>
+    <div className='flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden'>
       <div className='flex flex-col lg:flex-row lg:w-[80%]'>
         <div className='w-1/2 lg:h-[80vh] flex flex-col items-center justify-center '>
           <div
@@ -74,6 +72,6 @@ export default function Home() {
         variants={variants}
         animate={cursorVariant}
       />
-    </main>
+    </div>
   );
 }
