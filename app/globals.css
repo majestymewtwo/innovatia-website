@@ -54,6 +54,9 @@ body {
   .custom-cursor {
     display: none;
   }
+  body {
+    background-position: center;
+  }
 }
 
 .bar {
