@@ -48,59 +48,55 @@ export default function Home() {
   return (
     <>
       {/* Desktop VIEW */}
-      <div className="md:block hidden">
+      <div className='md:block hidden'>
         <main
-          id="app"
-          className="flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden"
-        >
-          <div className="flex flex-col md:flex-row w-[80%]">
-            <div className="w-3/4 md:h-[80vh] flex flex-col items-center justify-center ">
+          id='app'
+          className='flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden'>
+          <div className='flex flex-col md:flex-row w-[80%]'>
+            <div className='w-3/4 md:h-[80vh] flex flex-col items-center justify-center '>
               <div
-                className="flex items-center"
+                className='flex items-center'
                 onMouseEnter={textEnter}
-                onMouseLeave={textLeave}
-              >
-                <h1 className="text-2xl md:text-6xl font-black tracking-wider">
+                onMouseLeave={textLeave}>
+                <h1 className='text-2xl md:text-6xl font-black tracking-wider'>
                   Innovatia 2.0
                 </h1>
-                <Lottie animationData={space2} className="w-[150px]" />
+                <Lottie animationData={space2} className='w-[150px]' />
               </div>
             </div>
-            <div className="w-1/4 relative">
+            <div className='w-1/4 relative'>
               <Lottie
                 animationData={space1}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[500px]"
+                className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[500px]'
               />
             </div>
           </div>
           <motion.div
-            className="custom-cursor"
+            className='custom-cursor'
             variants={variants}
             animate={cursorVariant}
           />
         </main>
       </div>
       {/* MOBILE VIEW */}
-      <div className="block md:hidden">
+      <div className='block md:hidden'>
         <main
-          id="app"
-          className="flex min-h-screen flex-col items-center justify-between"
-        >
+          id='app'
+          className='flex min-h-screen flex-col items-center justify-between'>
           <div
-            className="flex items-center flex-col-reverse justify-end w-full p-3"
+            className='flex items-center flex-col-reverse justify-end w-full p-3'
             // className="flex items-center justify-end w-full"
             onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-          >
-            <h1 className="text-5xl font-black tracking-wider">
+            onMouseLeave={textLeave}>
+            <h1 className='text-5xl font-black tracking-wider'>
               Innovatia 2.0
             </h1>
-            <Lottie className="w-1/2" animationData={space2} />
+            <Lottie className='w-1/2' animationData={space2} />
           </div>
-          <div className="w-1/2">
+          <div className='w-1/2'>
             <Lottie
               animationData={space1}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
             />
           </div>
         </main>

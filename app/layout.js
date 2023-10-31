@@ -1,5 +1,6 @@
 import { Inter, Luckiest_Guy, Quicksand } from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 const lucky = Luckiest_Guy({ subsets: ["latin"], weight: "400" });
@@ -22,8 +23,11 @@ export default function RootLayout({ children }) {
           type='image/x-icon'
         />
       </head>
-      <body className={`${lucky.className} bg-fixed bg-cover bg-no-repeat`}>
-        {children}
+      <body className={`${lucky.className}`}>
+        <Sidebar />
+        <main id='app' className='main-body bg-fixed bg-cover bg-no-repeat z-0'>
+          {children}
+        </main>
       </body>
     </html>
   );
