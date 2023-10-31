@@ -13,13 +13,13 @@ export function DisplayDescriptionOnHover({event}) {
       <HoverCardTrigger asChild className="m-2 hover:no-underline">
         <Button variant="link" className="flex items-center gap-2 text-lg text-white">
           <h1 className="inline-block p-1 text-4xl font-bold text-transparent animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text">{event.name}</h1>
-          <Info className="mt-2 "/>
+          <Info className="mt-2 text-gray-300" />
         </Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-80">
         <div className="flex justify-between space-x-4">
           <div className="space-y-1">
-            <h4 className="mb-2 text-sm font-semibold">{event.name}</h4>
+            <h4 className="mb-2 text-sm font-semibold ">{event.name}</h4>
             <p className="text-sm">
               {event.description}
             </p>
