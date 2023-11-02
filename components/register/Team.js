@@ -39,7 +39,7 @@ function Team({ minSize, maxSize, setTeamSize, setTeam }) {
     >
       <CardHeader className="text-center">
         <CardTitle>Team Details</CardTitle>
-        <CardDescription className="font-medium text-[#7dd8c9]">Please fill all the details carefully. Will be used for verification and certificates </CardDescription>
+        <CardDescription className="font-medium text-[#7dd8c9]">Please fill all the details carefully, it will be used for verification purposes. </CardDescription>
       </CardHeader>
       <CardContent className="pb-14">
         <div className="grid items-center w-full gap-4">
