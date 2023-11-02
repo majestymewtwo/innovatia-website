@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import { Button } from "../ui/button";
-import { DisplayDescriptionOnHover } from "./DisplayDescriptionOnHover";
+import DisplayDescriptionOnHover from "./DisplayDescriptionOnHover";
 import { useToast } from "../ui/use-toast";
 import {
   validateTeamName,
@@ -12,27 +13,6 @@ import {
 import Member from "./Member";
 import Team from "./Team";
 import { XOctagon } from "lucide-react";
-// Interface event {
-//   name: string;
-//   description: string;
-//   date: string;
-//   time: string;
-//   maxMembers: number;
-//   minMembers: number;
-//   venue: string;
-//   image: string;
-//   link: string;
-// }
-
-// Interface member = {
-//   name: string;
-//   email: string;
-//   phone: string;
-//   college: string;
-//   dept: string;
-//   year: string;
-//   gender: string;
-// }
 
 const Register = ({ event }) => {
   const { maxMembers, minMembers } = event;
@@ -179,6 +159,10 @@ const Register = ({ event }) => {
       </div>
     </form>
   );
+};
+
+Register.propTypes = {
+  event: PropTypes.object.isRequired,
 };
 
 export default Register;
