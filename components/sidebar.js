@@ -16,11 +16,11 @@ function Sidebar({ handleCallback }) {
 
   return (
     <>
-      <div class={`fixed right-0 p-4 z-10`} onClick={toggleMenu}>
-        <div class={`button${active ? " active" : ""}`} id='btn'>
-          <div class='bar top'></div>
-          <div class='bar middle'></div>
-          <div class='bar bottom'></div>
+      <div className={`fixed right-0 p-4 z-10`} onClick={toggleMenu}>
+        <div className={`button${active ? " active" : ""}`} id='btn'>
+          <div className='bar top'></div>
+          <div className='bar middle'></div>
+          <div className='bar bottom'></div>
         </div>
       </div>
       <div className={`sidebar ${active && "active"}`}>

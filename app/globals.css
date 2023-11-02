@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);     
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -26,18 +26,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  }
-  main {
-    background-image: url("https://learn.liveu.tv/pluginfile.php/1/local_mb2slides/attachment/6/Space-Animation%20Draft.gif");
-    background-size: cover;
-    background-position: center;
-    transition: all 0.7s ease;
-    cursor: none;
+}
+main {
+  background-image: url("https://learn.liveu.tv/pluginfile.php/1/local_mb2slides/attachment/6/Space-Animation%20Draft.gif");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s ease;  
+  /* cursor: none; */
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .custom-cursor {
   background-color: #ef8354;
@@ -80,10 +80,10 @@ body {
   top: 0;
   z-index: -1;
   right: 0;
-  background-color: #0E1E33;
+  background-color: #0e1e33;
 }
 
-.sidebar.active{
+.sidebar.active {
   z-index: 1;
 }
 
@@ -132,7 +132,7 @@ body {
   position: relative;
   margin-top: 150px;
   text-align: center;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 .sidebar-item {
