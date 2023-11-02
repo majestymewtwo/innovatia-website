@@ -13,8 +13,11 @@ import {
 import Member from "./Member";
 import Team from "./Team";
 import { XOctagon } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const Register = ({ event }) => {
+  const router = useRouter();
+
   const { maxMembers, minMembers } = event;
 
   const [teamSize, setTeamSize] = useState(1);
@@ -55,16 +58,6 @@ const Register = ({ event }) => {
         "bg-[#D84646] backdrop-blur-md text-white border-red-600 rounded font-sans w-[15rem] md:w-[22rem] font-medium",
     });
   };
-  //   setState(2)
-  //   setState(()=>{})
-  //   setState(value | ()=>{})
-  //   {
-  //      if(typeof value !== "function")
-  //        state = value
-  //      else
-  //        state = value(state)
-  //   }
-  //  ...{name: vkj } name: vkj
 
   useEffect(() => {
     const newTeamMembers = [];
@@ -123,7 +116,11 @@ const Register = ({ event }) => {
 
   return (
     <form
-      className="flex flex-col items-center justify-center w-full min-h-screen p-2 overflow-x-hidden overflow-y-scroll font-sans rounded sm:p-4"
+      className="flex flex-col items-center justify-center w-full min-h-screen p-2 overflow-x-hidden overflow-y-scroll font-sans rounded sm:p-4 register"
+      style={{
+        msOverflowStyle: "none",
+        scrollbarWidth: "none",
+      }}
       onSubmit={handleRegister}
     >
       <DisplayDescriptionOnHover event={event} />
@@ -147,6 +144,7 @@ const Register = ({ event }) => {
         <Button
           type="button"
           className="text-black bg-white hover:text-black hover:bg-white"
+          onClick={() => router.back()}
         >
           Go Back
         </Button>
