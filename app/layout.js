@@ -1,6 +1,7 @@
 import { Inter, Luckiest_Guy, Quicksand } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/sidebar";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 const lucky = Luckiest_Guy({ subsets: ["latin"], weight: "400" });
@@ -25,9 +26,10 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${lucky.className}`}>
         <Sidebar />
-        <main id='app' className='main-body bg-fixed bg-cover bg-no-repeat z-0'>
+        <main id='app' className='z-0 bg-fixed bg-no-repeat bg-cover main-body'>
           {children}
         </main>
+        <Toaster />
       </body>
     </html>
   );
