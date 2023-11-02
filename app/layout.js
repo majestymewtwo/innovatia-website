@@ -1,6 +1,6 @@
 import { Inter, Luckiest_Guy, Quicksand } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/sidebar";
+// import Sidebar from "@/components/sidebar";
 import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         ></link>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
       </head>
-      <body className={`${quick.className}`}>
+      <body className={`${lucky.className}`}>
         <Sidebar />
         <main id='app' className='z-0 bg-fixed bg-no-repeat bg-cover main-body'>
           {children}
