@@ -13,8 +13,11 @@ import {
 import Member from "./Member";
 import Team from "./Team";
 import { XOctagon } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const Register = ({ event }) => {
+  const router = useRouter();
+
   const { maxMembers, minMembers } = event;
 
   const [teamSize, setTeamSize] = useState(1);
@@ -113,7 +116,11 @@ const Register = ({ event }) => {
 
   return (
     <form
-      className="flex flex-col items-center justify-center w-full min-h-screen p-2 overflow-x-hidden overflow-y-scroll font-sans rounded sm:p-4"
+      className="flex flex-col items-center justify-center w-full min-h-screen p-2 overflow-x-hidden overflow-y-scroll font-sans rounded sm:p-4 register"
+      style={{
+        msOverflowStyle: "none",
+        scrollbarWidth: "none",
+      }}
       onSubmit={handleRegister}
     >
       <DisplayDescriptionOnHover event={event} />
@@ -137,6 +144,7 @@ const Register = ({ event }) => {
         <Button
           type="button"
           className="text-black bg-white hover:text-black hover:bg-white"
+          onClick={() => router.back()}
         >
           Go Back
         </Button>
