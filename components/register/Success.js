@@ -8,7 +8,7 @@ export default function Confetti() {
   useEffect(() => {
     const interval = setInterval(() => {
       setStart((prev) => !prev);
-    }, 3000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
   const getInstance = useCallback((instance) => {
@@ -16,7 +16,7 @@ export default function Confetti() {
   }, []);
 
   const makeShot = useCallback((particleRatio, opts) => {
-    refAnimationInstance.current &&
+    refAnimationInstance.current ??
       refAnimationInstance.current({
         ...opts,
         origin: { y: 0.7, x: 1 },
@@ -25,7 +25,7 @@ export default function Confetti() {
   }, []);
 
   const makeShot1 = useCallback((particleRatio, opts) => {
-    refAnimationInstance.current &&
+    refAnimationInstance.current ??
       refAnimationInstance.current({
         ...opts,
         origin: { y: 0.7, x: 0 },
@@ -33,7 +33,7 @@ export default function Confetti() {
       });
   }, []);
   const makeShot2 = useCallback((particleRatio, opts) => {
-    refAnimationInstance.current &&
+    refAnimationInstance.current ??
       refAnimationInstance.current({
         ...opts,
         origin: { y: 0.1 },
@@ -42,13 +42,13 @@ export default function Confetti() {
   }, []);
 
   useEffect(() => {
-    rightfire();
-    leftfire();
-    topfire();
+    rightFire();
+    leftFire();
+    topFire();
   }, [start]);
 
   //right confetti
-  const rightfire = useCallback(() => {
+  const rightFire = useCallback(() => {
     makeShot(0.25, {
       spread: 100,
       startVelocity: 55,
@@ -78,7 +78,7 @@ export default function Confetti() {
   }, [makeShot]);
 
   // left confetti
-  const leftfire = useCallback(() => {
+  const leftFire = useCallback(() => {
     makeShot1(0.25, {
       spread: 100,
       startVelocity: 55,
@@ -108,7 +108,7 @@ export default function Confetti() {
   }, [makeShot1]);
 
   //top confetti
-  const topfire = useCallback(() => {
+  const topFire = useCallback(() => {
     makeShot2(0.25, {
       spread: 180,
       startVelocity: 55,

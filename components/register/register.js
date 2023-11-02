@@ -55,16 +55,6 @@ const Register = ({ event }) => {
         "bg-[#D84646] backdrop-blur-md text-white border-red-600 rounded font-sans w-[15rem] md:w-[22rem] font-medium",
     });
   };
-  //   setState(2)
-  //   setState(()=>{})
-  //   setState(value | ()=>{})
-  //   {
-  //      if(typeof value !== "function")
-  //        state = value
-  //      else
-  //        state = value(state)
-  //   }
-  //  ...{name: vkj } name: vkj
 
   useEffect(() => {
     const newTeamMembers = [];
