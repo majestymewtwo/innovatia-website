@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
@@ -10,7 +11,7 @@ import {
   SelectValue,
 } from "../ui/select";
 
-export default function Team({ minSize, maxSize, setTeamSize, setTeam }) {
+function Team({ minSize, maxSize, setTeamSize, setTeam }) {
   const inputStyle = "bg-transparent placeholder:text-slate-300 text-white";
 
   const itemStyle = "flex flex-col space-y-1.5 md:w-1/2 w-full";
@@ -195,3 +196,12 @@ export default function Team({ minSize, maxSize, setTeamSize, setTeam }) {
     </Card>
   );
 }
+
+Team.propTypes = {
+  minSize: PropTypes.number.isRequired,
+  maxSize: PropTypes.number.isRequired,
+  setTeamSize: PropTypes.func.isRequired,
+  setTeam: PropTypes.func.isRequired,
+};
+
+export default Team;

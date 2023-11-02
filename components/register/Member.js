@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
@@ -10,7 +11,7 @@ import {
   SelectValue,
 } from "../ui/select";
 
-export default function Member({ id, handleMemberDetails }) {
+function Member({ id, handleMemberDetails }) {
   const inputStyle = "bg-transparent placeholder:text-slate-300 text-white ";
 
   const itemStyle = "flex flex-col space-y-1.5 w-full";
@@ -163,3 +164,10 @@ export default function Member({ id, handleMemberDetails }) {
     </Card>
   );
 }
+
+Member.propTypes = {
+  id: PropTypes.number.isRequired,
+  handleMemberDetails: PropTypes.func.isRequired,
+};
+
+export default Member;
