@@ -16,8 +16,7 @@ export default function Confetti() {
   }, []);
 
   const makeShot = useCallback((particleRatio, opts) => {
-    refAnimationInstance.current ??
-      refAnimationInstance.current({
+    refAnimationInstance?.current?.({
         ...opts,
         origin: { y: 0.7, x: 1 },
         particleCount: Math.floor(200 * particleRatio),
@@ -25,20 +24,18 @@ export default function Confetti() {
   }, []);
 
   const makeShot1 = useCallback((particleRatio, opts) => {
-    refAnimationInstance.current ??
-      refAnimationInstance.current({
+    refAnimationInstance?.current?.({
         ...opts,
         origin: { y: 0.7, x: 0 },
         particleCount: Math.floor(200 * particleRatio),
       });
   }, []);
   const makeShot2 = useCallback((particleRatio, opts) => {
-    refAnimationInstance.current ??
-      refAnimationInstance.current({
-        ...opts,
-        origin: { y: 0.1 },
-        particleCount: Math.floor(200 * particleRatio),
-      });
+    refAnimationInstance?.current?.({
+      ...opts,
+      origin: { y: 0.1 },
+      particleCount: Math.floor(200 * particleRatio),
+    });
   }, []);
 
   useEffect(() => {

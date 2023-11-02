@@ -235,3 +235,8 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+
+.register::-webkit-scrollbar {
+  display: none;
+}
