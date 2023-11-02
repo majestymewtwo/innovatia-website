@@ -27,12 +27,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
 main {
   background-image: url("https://learn.liveu.tv/pluginfile.php/1/local_mb2slides/attachment/6/Space-Animation%20Draft.gif");
   background-size: cover;
   background-position: center;
-  transition: all 0.7s ease;  
-  /* cursor: none; */
+  transition: all 0.7s ease;
+  cursor: none;
 }
 
 /* ::-webkit-scrollbar {
@@ -220,4 +221,17 @@ main {
 
 .sidebar-anchor:hover:before {
   width: 100%;
+}
+
+/* Hide arrow bar in input type=number */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

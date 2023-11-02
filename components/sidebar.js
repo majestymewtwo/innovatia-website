@@ -24,7 +24,7 @@ function Sidebar({ handleCallback }) {
         </div>
       </div>
       <div className={`sidebar ${active && "active"}`}>
-        <ul className='sidebar-list space-y-6'>
+        <ul className='space-y-6 sidebar-list'>
           <li className={`sidebar-item ${active && "active"}`}>
             <a href='#' className='sidebar-anchor'>
               Home
