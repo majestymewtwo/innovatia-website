@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);     
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -36,9 +36,9 @@ main {
   cursor: none;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .custom-cursor {
   background-color: #ef8354;
