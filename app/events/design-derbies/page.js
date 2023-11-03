@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import "../eventdetail.css";
+import { usePathname, useRouter } from "next/navigation";
 
 const EventDetailDB = () => {
   const onDownload = () => {
@@ -12,6 +13,10 @@ const EventDetailDB = () => {
     link.href = ".";
     link.click();
   };
+
+  const router = useRouter();
+
+  const pathName = usePathname();
 
   return (
     <section className="h-[100vh] w-[100vw] flex justify-center items-center">
@@ -32,7 +37,7 @@ const EventDetailDB = () => {
             <div className="hidden font-oswald text-2xl text-left text-[#EF8354] lg:text-4xl lg:block">
               <p>Design Derbies</p>
             </div>
-            <div className="overflow-y-scroll space-y-2 scrollbar pr-2 lg:text-sm">
+            <div className="pr-2 space-y-2 overflow-y-scroll scrollbar lg:text-sm">
               <p className="font-semibold">
                 Unique, United and Unyielding. Compose your designs with bags of
                 characters to make the trophy your winning glory.
@@ -97,10 +102,11 @@ const EventDetailDB = () => {
             <p className="text-sm">+91 87545 12892 - Yogesh M</p>
             <p className="text-sm">+91 97890 27587 - Muthu Aanand S U</p>
           </div>
-          <div className="w-full  flex flex-row lg:w-auto lg:absolute lg:bottom-10 lg:left-1/2 space-x-5 justify-center">
+          <div className="flex flex-row justify-center w-full space-x-5 lg:w-auto lg:absolute lg:bottom-10 lg:left-1/2">
             <Button
               variant="contained"
               className="border w-1/2 border-gray-300 hover:bg-[#E97451] text-sm "
+              onClick={() => router.push(`${pathName}/register`)}
             >
               Register Now
             </Button>
