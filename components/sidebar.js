@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 function Sidebar({ handleCallback }) {
@@ -26,29 +27,24 @@ function Sidebar({ handleCallback }) {
       <div className={`sidebar ${active && "active"}`}>
         <ul className='space-y-6 sidebar-list'>
           <li className={`sidebar-item ${active && "active"}`}>
-            <a href='#' className='sidebar-anchor'>
+            <Link href='/' className='sidebar-anchor'>
               Home
-            </a>
+            </Link>
           </li>
           <li className={`sidebar-item ${active && "active"}`}>
-            <a href='#' className='sidebar-anchor'>
+            <Link href='/about' className='sidebar-anchor'>
               About
-            </a>
+            </Link>
           </li>
           <li className={`sidebar-item ${active && "active"}`}>
-            <a href='#' className='sidebar-anchor'>
+            <Link href='/team' className='sidebar-anchor'>
               Our Team
-            </a>
+            </Link>
           </li>
           <li className={`sidebar-item ${active && "active"}`}>
-            <a href='#' className='sidebar-anchor'>
+            <Link href='/events' className='sidebar-anchor'>
               Events
-            </a>
-          </li>
-          <li className={`sidebar-item ${active && "active"}`}>
-            <a href='#' className='sidebar-anchor'>
-              Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
