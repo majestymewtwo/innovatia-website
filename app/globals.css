@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);     
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,6 +16,20 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+@font-face {
+  font-family: "Blanka Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./Blanka-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ruthi Rockstar";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./Space\ Silhouette\ Font.woff2") format("woff2");
 }
 
 body {
@@ -36,9 +50,13 @@ main {
   /* cursor: none; */
 }
 
-/* ::-webkit-scrollbar {
+#desktop-home {
+  cursor: none;
+}
+
+body::-webkit-scrollbar {
   display: none;
-} */
+}
 
 .custom-cursor {
   background-color: #ef8354;
@@ -88,6 +106,10 @@ main {
   z-index: 1;
 }
 
+#home-logo{
+  font-family: 'Ruthi Rockstar', sans-serif;
+}
+
 .button {
   cursor: pointer;
   display: inline-block;
@@ -133,7 +155,6 @@ main {
   position: relative;
   margin-top: 150px;
   text-align: center;
-  font-family: "Arimo", sans-serif;
 }
 
 .sidebar-item {
@@ -235,7 +256,6 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-
 
 .register::-webkit-scrollbar {
   display: none;

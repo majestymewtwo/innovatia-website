@@ -1,4 +1,4 @@
-import Register from "../../../../components/register/Register";
+import RegisterComponent from "@/components/register/register";
 
 const page = () => {
   const event = {
@@ -16,8 +16,8 @@ const page = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-full">
-      <Register event={event} />
+    <div className='flex items-center justify-center h-full'>
+      <RegisterComponent event={event} />
     </div>
   );
 };

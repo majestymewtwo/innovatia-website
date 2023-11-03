@@ -5,6 +5,8 @@ import space2 from "../public/space-2.json";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
 import { motion } from "framer-motion";
+import { unHideHamButton } from "./utils/utils";
+import CountdownTimer from "@/components/countdown";
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -23,7 +25,8 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setSuspense(false);
-    }, 3500);
+      unHideHamButton();
+    }, 3000);
   }, []);
 
   const variants = {
@@ -32,8 +35,8 @@ export default function Home() {
       y: mousePosition.y - 16,
     },
     text: {
-      height: 80,
-      width: 80,
+      height: 130,
+      width: 130,
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
       backgroundColor: "#FFF",
@@ -48,56 +51,103 @@ export default function Home() {
   return (
     <>
       {/* Desktop VIEW */}
-      <div className='md:block hidden'>
+      <div className="md:block hidden" id="desktop-home">
         <main
-          id='app'
-          className='flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden'>
-          <div className='flex flex-col md:flex-row w-[80%]'>
-            <div className='w-3/4 md:h-[80vh] flex flex-col items-center justify-center '>
+          id="app"
+          className="flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden"
+        >
+          <div className="flex flex-col md:flex-row w-[80%]">
+            <div className="w-3/4 md:h-[80vh] flex flex-col items-center justify-center ">
               <div
-                className='flex items-center'
+                className="flex flex-col items-center space-y-4"
                 onMouseEnter={textEnter}
-                onMouseLeave={textLeave}>
-                <h1 className='text-2xl md:text-6xl font-black tracking-wider'>
-                  Innovatia 2.0
-                </h1>
-                <Lottie animationData={space2} className='w-[150px]' />
+                onMouseLeave={textLeave}
+              >
+                <h3 className="text-white text-xl font-blanka font-black tracking-widest">
+                  Department Of M.Tech Computer Science & Engineering
+                </h3>
+                <h3 className="text-white text-xl font-inconsolata">
+                  Proudly Presents
+                </h3>
+                <h3 className="text-4xl md:text-9xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text font-space py-4">
+                  INNOVATIA
+                </h3>
+                <h3 className="text-white text-2xl font-inconsolata">
+                  Starts In
+                </h3>
+                <CountdownTimer targetDate="2023-11-22T23:59:59" />
               </div>
             </div>
-            <div className='w-1/4 relative'>
+            <div className="w-1/4 relative">
               <Lottie
                 animationData={space1}
-                className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[500px]'
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[500px]"
               />
             </div>
           </div>
           <motion.div
-            className='custom-cursor'
+            className="custom-cursor"
             variants={variants}
             animate={cursorVariant}
           />
         </main>
       </div>
       {/* MOBILE VIEW */}
-      <div className='block md:hidden'>
+      {/* <div className="block md:hidden">
         <main
-          id='app'
-          className='flex min-h-screen flex-col items-center justify-between'>
+          id="app"
+          className="flex min-h-screen flex-col items-center justify-between"
+        >
           <div
-            className='flex items-center flex-col-reverse justify-end w-full p-3'
+            className="flex items-center flex-col-reverse justify-end w-full p-3"
             // className="flex items-center justify-end w-full"
             onMouseEnter={textEnter}
-            onMouseLeave={textLeave}>
-            <h1 className='text-5xl font-black tracking-wider'>
+            onMouseLeave={textLeave}
+          >
+            <h1 className="text-5xl font-black tracking-wider">
               Innovatia 2.0
             </h1>
-            <Lottie className='w-1/2' animationData={space2} />
+            <Lottie className="w-1/2" animationData={space2} />
           </div>
-          <div className='w-1/2'>
+          <div className="w-1/2">
             <Lottie
               animationData={space1}
-              className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             />
+          </div>
+        </main>
+      </div> */}
+      <div className="block md:hidden">
+        <main
+          id="app"
+          className="flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden pt-20"
+        >
+          <div className="flex">
+            <div className="flex items-center justify-center">
+              <div className="flex flex-col items-center justify-center space-y-2">
+                <span className="flex flex-col justify-center items-center">
+                  <h3 className="text-white text-xl font-blanka font-black tracking-wider">
+                    Department Of M.Tech
+                  </h3>
+                  <h3 className="text-white text-xl font-blanka font-black tracking-wider">
+                    Computer Science & Engineering
+                  </h3>
+                </span>
+                <h3 className="text-white text-xl font-inconsolata">
+                  Proudly Presents
+                </h3>
+                <h3 className="text-4xl md:text-9xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text font-space py-4">
+                  INNOVATIA
+                </h3>
+                <h3 className="text-white text-2xl font-inconsolata">
+                  Starts In
+                </h3>
+                <CountdownTimer targetDate="2023-11-22T23:59:59" />
+                <div className="w-1/2">
+                  <Lottie animationData={space1} />
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>
