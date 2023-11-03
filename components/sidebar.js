@@ -10,14 +10,25 @@ function Sidebar({ handleCallback }) {
     main.classList.toggle("move-to-left");
   };
 
+  const hideCustomCursor = () => {
+    const customCursor = document.querySelector(".custom-cursor");
+    if (customCursor) {
+      customCursor.classList.toggle("hidden");
+    }
+  };
+
   const toggleMenu = () => {
     setActive((prev) => !prev);
+    hideCustomCursor();
     moveMenuLeft();
   };
 
   return (
     <>
-      <div className={`fixed right-0 p-4 z-10`} onClick={toggleMenu}>
+      <div
+        className={`fixed right-0 p-4 z-10`}
+        onClick={toggleMenu}
+        id='ham-btn'>
         <div className={`button${active ? " active" : ""}`} id='btn'>
           <div className='bar top'></div>
           <div className='bar middle'></div>
@@ -27,21 +38,27 @@ function Sidebar({ handleCallback }) {
       <div className={`sidebar ${active && "active"}`}>
         <ul className='space-y-6 sidebar-list'>
           <li className={`sidebar-item ${active && "active"}`}>
-            <Link href='/' className='sidebar-anchor'>
+            <Link href='/' className='sidebar-anchor' onClick={toggleMenu}>
               Home
             </Link>
           </li>
-          <li className={`sidebar-item ${active && "active"}`}>
+          <li
+            className={`sidebar-item ${active && "active"}`}
+            onClick={toggleMenu}>
             <Link href='/about' className='sidebar-anchor'>
               About
             </Link>
           </li>
-          <li className={`sidebar-item ${active && "active"}`}>
+          <li
+            className={`sidebar-item ${active && "active"}`}
+            onClick={toggleMenu}>
             <Link href='/team' className='sidebar-anchor'>
               Our Team
             </Link>
           </li>
-          <li className={`sidebar-item ${active && "active"}`}>
+          <li
+            className={`sidebar-item ${active && "active"}`}
+            onClick={toggleMenu}>
             <Link href='/events' className='sidebar-anchor'>
               Events
             </Link>

@@ -5,6 +5,7 @@ import space2 from "../public/space-2.json";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
 import { motion } from "framer-motion";
+import { unHideHamButton } from "./utils/utils";
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -23,7 +24,8 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setSuspense(false);
-    }, 3500);
+      unHideHamButton();
+    }, 3000);
   }, []);
 
   const variants = {
@@ -48,7 +50,7 @@ export default function Home() {
   return (
     <>
       {/* Desktop VIEW */}
-      <div className='md:block hidden'>
+      <div className='md:block hidden' id='desktop-home'>
         <main
           id='app'
           className='flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden'>

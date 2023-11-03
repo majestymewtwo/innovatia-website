@@ -36,9 +36,9 @@ main {
 
 }
 
-/* ::-webkit-scrollbar {
-  display: none;
-} */
+#desktop-home{
+  cursor: none;
+}
 
 .custom-cursor {
   background-color: #ef8354;
