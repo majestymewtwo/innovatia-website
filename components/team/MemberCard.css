@@ -4,6 +4,20 @@
     box-sizing: border-box;
     font-family: Poppins;
 }
+::-webkit-scrollbar{
+    display: none;
+}
+@media (min-width:768px){
+
+    html{
+        scroll-snap-type: y mandatory;
+    }
+    
+    .section{
+        scroll-behavior: smooth;
+        scroll-snap-align: start;
+    }
+}
 .homeContainer{
     height: 100vh;
     display: flex;

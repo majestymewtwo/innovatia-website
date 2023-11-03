@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import "../eventdetail.css";
 import { usePathname, useRouter } from "next/navigation";
 
-const EventDetail = () => {
+const EventDetailDB = () => {
   const onDownload = () => {
     const link = document.createElement("a");
     link.download = `space-bg-1.jpg`;
@@ -20,11 +20,11 @@ const EventDetail = () => {
 
   return (
     <section className="h-[100vh] w-[100vw] flex justify-center items-center">
-      <div className="flex h-[75%] w-[90%] md:h-[83%] lg:h-[70%]">
-        <Card className="relative flex flex-col items-center w-full h-full p-4 space-y-4 text-white bg-white/5 backdrop-blur-sm md:h-full lg:flex-row lg:items-start lg:pt-16 lg:space-y-0 overflow-clip">
-          <div className="flex flex-row-reverse items-center justify-between w-full h-fit md:w-1/2 lg:w-1/2 lg:h-4/5 lg:pr-6 ">
+      <div className="flex h-[75%] w-[90%] md:h-[83%] lg:h-[80%] lg:justify-center">
+        <Card className="relative w-[95%] bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full lg:flex-row lg:items-start lg:pt-16 text-white space-y-4 lg:space-y-0 overflow-clip">
+          <div className="flex w-full items-center justify-between flex-row-reverse h-fit md:w-1/2 lg:w-1/2 lg:h-4/5 lg:pr-6 lg:justify-center">
             <img
-              src="../retro-bg.jpg"
+              src="/retro-bg.jpg"
               alt="retro-bg"
               className="rounded-md w-[150px] h-full md:w-[200px] md:h-[200px] lg:w-auto lg:h-full lg:rounded-md"
             />
@@ -33,10 +33,9 @@ const EventDetail = () => {
               <p>Derbies</p>
             </div>
           </div>
-          <div className="flex flex-col space-y-3 h-3/5 lg:w-1/2 lg:h-4/5 lg:items-left overflow-y-clip">
-            <div className="hidden font-oswald text-2xl text-center text-[#EF8354]">
-              <p>Design</p>
-              <p>Derbies</p>
+          <div className="flex flex-col space-y-3 h-3/5 lg:w-1/2 lg:h-4/5  lg:items-left overflow-y-clip">
+            <div className="hidden font-oswald text-2xl text-left text-[#EF8354] lg:text-4xl lg:block">
+              <p>Design Derbies</p>
             </div>
             <div className="pr-2 space-y-2 overflow-y-scroll scrollbar lg:text-sm">
               <p className="font-semibold">
@@ -98,7 +97,7 @@ const EventDetail = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col justify-start w-full lg:w-auto lg:absolute lg:bottom-6 lg:left-12">
+          <div className="flex flex-col w-full justify-start lg:w-auto lg:absolute lg:bottom-10 lg:left-5">
             <p className="text-sm font-semibold">Contact</p>
             <p className="text-sm">+91 87545 12892 - Yogesh M</p>
             <p className="text-sm">+91 97890 27587 - Muthu Aanand S U</p>
@@ -125,4 +124,4 @@ const EventDetail = () => {
   );
 };
 
-export default EventDetail;
+export default EventDetailDB;

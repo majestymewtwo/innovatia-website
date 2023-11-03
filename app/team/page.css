@@ -1,0 +1,11 @@
+@media (min-width:768px){
+
+    html{
+        scroll-snap-type: y mandatory;
+    }
+    
+    #section{
+        scroll-behavior: smooth;
+        scroll-snap-align: start;
+    }
+}

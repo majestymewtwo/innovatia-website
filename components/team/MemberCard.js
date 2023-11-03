@@ -7,7 +7,7 @@ function MemberCard(props) {
   const { name, role, animationData } = props;
 
   return (
-    <div className='homeContainer md:col-span-1'>
+    <div className='homeContainer md:col'>
       <div className='profile-card'>    
         <div className='img'>
           <Lottie animationData={animationData} className='' />
