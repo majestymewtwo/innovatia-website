@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    
     /* background: transparent; */
 }
 .profile-card{
@@ -34,6 +34,7 @@
 .profile-card:hover{
     border-radius: 10px;
     height: 260px;
+    cursor: pointer;
 }
 .profile-card .img{
     position: relative;

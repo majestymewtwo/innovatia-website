@@ -18,13 +18,13 @@ function MemberCard(props) {
           <p className="text-white">{role}</p>
           <div className="social-links flex flex-row gap-2 justify-center">
           <a href={github} target="_blank">
-            <Github/>
+            <Github color="#FFD099"/>
           </a>
-          <a href={linkedin} target="_blank">            
-            <Linkedin />
+          <a href={linkedin}  target="_blank">            
+            <Linkedin color="#FFD099" />
           </a>
-          <a href={instagram} target="_blank">
-            <Instagram />
+          <a href={instagram}  target="_blank">
+            <Instagram color="#FFD099" />
           </a>
           </div>
         </div>
