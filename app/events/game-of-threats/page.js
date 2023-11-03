@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import "../eventdetail.css";
+import { usePathname, useRouter } from "next/navigation";
 
 const EventDetail = () => {
   const onDownload = () => {
@@ -13,11 +14,15 @@ const EventDetail = () => {
     link.click();
   };
 
+  const router = useRouter();
+
+  const pathName = usePathname();
+
   return (
     <section className="h-[100vh] w-[100vw] flex justify-center items-center">
       <div className="flex h-[75%] w-[90%] md:h-[83%] lg:h-[70%]">
-        <Card className="relative w-full bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full lg:flex-row lg:items-start lg:pt-16 text-white space-y-4 lg:space-y-0 overflow-clip">
-          <div className="flex w-full items-center justify-between flex-row-reverse h-fit md:w-1/2 lg:w-1/2 lg:h-4/5 lg:pr-6 ">
+        <Card className="relative flex flex-col items-center w-full h-full p-4 space-y-4 text-white bg-white/5 backdrop-blur-sm md:h-full lg:flex-row lg:items-start lg:pt-16 lg:space-y-0 overflow-clip">
+          <div className="flex flex-row-reverse items-center justify-between w-full h-fit md:w-1/2 lg:w-1/2 lg:h-4/5 lg:pr-6 ">
             <img
               src="../retro-bg.jpg"
               alt="retro-bg"
@@ -28,12 +33,12 @@ const EventDetail = () => {
               <p>Threats</p>
             </div>
           </div>
-          <div className="flex flex-col space-y-3 h-3/5 lg:w-1/2 lg:h-4/5  lg:items-left overflow-y-clip">
+          <div className="flex flex-col space-y-3 h-3/5 lg:w-1/2 lg:h-4/5 lg:items-left overflow-y-clip">
             <div className="hidden font-oswald text-2xl text-center text-[#EF8354]">
               <p>Game Of</p>
               <p>Threats</p>
             </div>
-            <div className="overflow-y-scroll space-y-2 scrollbar pr-2 lg:text-sm">
+            <div className="pr-2 space-y-2 overflow-y-scroll scrollbar lg:text-sm">
               <p className="font-semibold">
                 Unique, United and Unyielding. Compose your designs with bags of
                 characters to make the trophy your winning glory.
@@ -93,15 +98,16 @@ const EventDetail = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col  w-full justify-start lg:w-auto lg:absolute lg:bottom-6 lg:left-12">
+          <div className="flex flex-col justify-start w-full lg:w-auto lg:absolute lg:bottom-6 lg:left-12">
             <p className="text-sm font-semibold">Contact</p>
             <p className="text-sm">+91 87545 12892 - Yogesh M</p>
             <p className="text-sm">+91 97890 27587 - Muthu Aanand S U</p>
           </div>
-          <div className="w-full  flex flex-row lg:w-auto lg:absolute lg:bottom-10 lg:left-1/2 space-x-5 justify-center">
+          <div className="flex flex-row justify-center w-full space-x-5 lg:w-auto lg:absolute lg:bottom-10 lg:left-1/2">
             <Button
               variant="contained"
               className="border w-1/2 border-gray-300 hover:bg-[#E97451] text-sm "
+              onClick={() => router.push(`${pathName}/register`)}
             >
               Register Now
             </Button>
