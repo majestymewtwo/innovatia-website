@@ -19,7 +19,7 @@ function Sidebar({ handleCallback }) {
 
   const toggleMenu = () => {
     setActive((prev) => !prev);
-    // hideCustomCursor();
+    hideCustomCursor();
     moveMenuLeft();
   };
 
