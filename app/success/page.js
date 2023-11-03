@@ -1,11 +1,16 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Confetti from "@/components/register/Confetti";
+import { unHideHamButton } from "../utils/utils";
 
 const Success = (props) => {
   const [visible, setVisible] = useState(true);
   const serializedUser = props.searchParams.user;
   const user = JSON.parse(serializedUser);
+
+  useEffect(() => {
+    unHideHamButton();
+  }, []);
 
   return (
     <>

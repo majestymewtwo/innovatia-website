@@ -7,7 +7,7 @@ export default function Loading() {
   const hideHamButton = () => {
     const ham = document.querySelector("#ham-btn");
     if (ham) {
-      ham.classList.add("hidden");
+      ham.classList.add("opacity-0");
     }
   };
 

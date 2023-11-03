@@ -14,6 +14,7 @@ import Member from "./Member";
 import Team from "./Team";
 import { XOctagon } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { unHideHamButton } from "@/app/utils/utils";
 
 const RegisterComponent = ({ event }) => {
   const router = useRouter();
@@ -68,6 +69,7 @@ const RegisterComponent = ({ event }) => {
       ...prevTeam,
       teamMembers: newTeamMembers,
     }));
+    unHideHamButton();
   }, [memberDetails]);
 
   useEffect(() => {

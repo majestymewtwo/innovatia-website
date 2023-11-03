@@ -23,6 +23,10 @@ function Page() {
     // Add more team members as needed
   ];
 
+  useEffect(() => {
+    unHideHamButton();
+  }, []);
+
   return (
     <>
       <div className='lg:flex lg:w-[100vw] lg:min-h-[100vw] lg:justify-center font-sans'>
