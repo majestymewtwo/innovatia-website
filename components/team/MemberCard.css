@@ -1,4 +1,4 @@
-@media (min-width:768px){
+@media (max-width:768px){
 
     html{
         scroll-snap-type: y mandatory;
@@ -65,8 +65,7 @@
 .caption h3{
     font-size: 25px;
     font-weight: 700;
-    padding-top: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
     
 }
 .caption p{
