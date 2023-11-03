@@ -1,4 +1,4 @@
-import Register from "../../components/register/Register";
+import Register from "../../../../components/register/Register";
 
 const page = () => {
   const event = {
