@@ -73,14 +73,14 @@
 .caption h3{
     font-size: 21px;
     font-weight: 600;
-    padding-top: 30px;
-    margin-top: 20px;
+    /* padding-top: 30px;
+    margin-top: 20px; */
     
 }
 .caption p{
     font-size: 15px;
     font-weight: 500;
-    margin: 2px 2px 12px 0;
+    margin: 2px 0 12px 0;
     
 }
 .caption .social-links i{
@@ -114,6 +114,7 @@
   
     .caption h3 {
       font-size: 18px;
+      margin-top: 25px;
     }
   
     .caption p {

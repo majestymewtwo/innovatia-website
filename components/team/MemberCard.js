@@ -1,21 +1,32 @@
-'use client'
-import React from 'react';
-import Lottie from 'lottie-react';
-import './MemberCard.css';
+"use client";
+import React from "react";
+
+import "./MemberCard.css";
+import { Github, Instagram, Linkedin } from "lucide-react";
 
 function MemberCard(props) {
-  const { name, role, animationData } = props;
+  const { name, role, image, github, linkedin, instagram } = props;
 
   return (
-    <div className='homeContainer md:col'>
-      <div className='profile-card'>    
-        <div className='img'>
-          <Lottie animationData={animationData} className='' />
+    <div className="homeContainer md:col">
+      <div className="profile-card">
+        <div className="img">
+          <img src={image} />
         </div>
-        <div className='caption'>
-          <h3 className='text-white'>{name}</h3>
-          <p className='text-white'>{role}</p>
-          <div className='social-links'></div>
+        <div className="caption">
+          <h3 className="text-white">{name}</h3>
+          <p className="text-white">{role}</p>
+          <div className="social-links flex flex-row gap-2 justify-center">
+          <a href={github} target="_blank">
+            <Github/>
+          </a>
+          <a href={linkedin} target="_blank">            
+            <Linkedin />
+          </a>
+          <a href={instagram} target="_blank">
+            <Instagram />
+          </a>
+          </div>
         </div>
       </div>
     </div>
