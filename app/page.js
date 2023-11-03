@@ -7,6 +7,7 @@ import Loading from "./loading";
 import { motion } from "framer-motion";
 import { unHideHamButton } from "./utils/utils";
 import CountdownTimer from "@/components/countdown";
+import SpaceButton from "@/components/SpaceButton";
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -72,6 +73,7 @@ export default function Home() {
                 <h3 className="text-4xl md:text-9xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text font-space py-4">
                   INNOVATIA
                 </h3>
+                <SpaceButton/>
                 <h3 className="text-white text-2xl font-inconsolata">
                   Starts In
                 </h3>
