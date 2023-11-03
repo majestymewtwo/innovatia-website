@@ -36,7 +36,7 @@ function Sidebar({ handleCallback }) {
         </div>
       </div>
       <div className={`sidebar ${active && "active"}`}>
-        <ul className='space-y-6 sidebar-list'>
+        <ul className='space-y-14 sidebar-list font-space text-xl'>
           <li className={`sidebar-item ${active && "active"}`}>
             <Link href='/' className='sidebar-anchor' onClick={toggleMenu}>
               Home

@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
         <link
           href='https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap'
           rel='stylesheet'></link>
+        <link href='https://fonts.cdnfonts.com/css/blanka' rel='stylesheet' />
       </head>
       <body>
         <Sidebar />
