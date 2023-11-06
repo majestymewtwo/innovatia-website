@@ -32,7 +32,9 @@ module.exports = {
     fontFamily: {
       oswald: ['Oswald', 'sans-serif'],
       sourcesan: ['Source Serif 4', 'serif'],
-      inconsolata:['Inconsolata', 'monospace']
+      inconsolata:['Inconsolata', 'monospace'],
+      // lora:['Lora','serif']
+      // bitter:['Bitter', 'serif']
     },
     extend: {
       keyframes: {

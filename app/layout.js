@@ -42,6 +42,8 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         ></link>
+        {/* <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"></link> */}
+        
       </head>
       <body>
         <Sidebar />
