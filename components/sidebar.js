@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 function Sidebar({ handleCallback }) {
@@ -9,14 +10,25 @@ function Sidebar({ handleCallback }) {
     main.classList.toggle("move-to-left");
   };
 
+  const hideCustomCursor = () => {
+    const customCursor = document.querySelector(".custom-cursor");
+    if (customCursor) {
+      customCursor.classList.toggle("hidden");
+    }
+  };
+
   const toggleMenu = () => {
     setActive((prev) => !prev);
+    hideCustomCursor();
     moveMenuLeft();
   };
 
   return (
     <>
-      <div className={`fixed right-0 p-4 z-10`} onClick={toggleMenu}>
+      <div
+        className={`fixed right-0 p-4 z-10`}
+        onClick={toggleMenu}
+        id='ham-btn'>
         <div className={`button${active ? " active" : ""}`} id='btn'>
           <div className='bar top'></div>
           <div className='bar middle'></div>
@@ -24,31 +36,32 @@ function Sidebar({ handleCallback }) {
         </div>
       </div>
       <div className={`sidebar ${active && "active"}`}>
-        <ul className='space-y-6 sidebar-list'>
+        <ul className='space-y-14 sidebar-list font-space text-xl'>
           <li className={`sidebar-item ${active && "active"}`}>
-            <a href='#' className='sidebar-anchor'>
+            <Link href='/' className='sidebar-anchor' onClick={toggleMenu}>
               Home
-            </a>
+            </Link>
           </li>
-          <li className={`sidebar-item ${active && "active"}`}>
-            <a href='#' className='sidebar-anchor'>
+          <li
+            className={`sidebar-item ${active && "active"}`}
+            onClick={toggleMenu}>
+            <Link href='/about' className='sidebar-anchor'>
               About
-            </a>
+            </Link>
           </li>
-          <li className={`sidebar-item ${active && "active"}`}>
-            <a href='#' className='sidebar-anchor'>
+          <li
+            className={`sidebar-item ${active && "active"}`}
+            onClick={toggleMenu}>
+            <Link href='/team' className='sidebar-anchor'>
               Our Team
-            </a>
+            </Link>
           </li>
-          <li className={`sidebar-item ${active && "active"}`}>
-            <a href='#' className='sidebar-anchor'>
+          <li
+            className={`sidebar-item ${active && "active"}`}
+            onClick={toggleMenu}>
+            <Link href='/events' className='sidebar-anchor'>
               Events
-            </a>
-          </li>
-          <li className={`sidebar-item ${active && "active"}`}>
-            <a href='#' className='sidebar-anchor'>
-              Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

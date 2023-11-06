@@ -10,17 +10,17 @@ module.exports = {
   ],
   theme: {
     screens: {
-      xs: '475px',
-      
-      sm: '640px',
+      xs: "475px",
 
-      md: '768px',
+      sm: "640px",
 
-      lg: '1024px',
+      md: "768px",
 
-      xl: '1280px',
+      lg: "1024px",
 
-      '2xl': '1536px'
+      xl: "1280px",
+
+      "2xl": "1536px",
     },
     container: {
       center: true,
@@ -30,11 +30,11 @@ module.exports = {
       },
     },
     fontFamily: {
-      oswald: ['Oswald', 'sans-serif'],
-      sourcesan: ['Source Serif 4', 'serif'],
-      inconsolata:['Inconsolata', 'monospace'],
-      // lora:['Lora','serif']
-      // bitter:['Bitter', 'serif']
+      oswald: ["Oswald", "sans-serif"],
+      sourcesan: ["Source Serif 4", "serif"],
+      inconsolata: ["Inconsolata", "monospace"],
+      blanka: ["Blanka Regular", "sans-serif"],
+      space: ["Ruthi Rockstar", "sans-serif"],
     },
     extend: {
       keyframes: {
@@ -69,18 +69,18 @@ module.exports = {
         },
         ".scrollbar::-webkit-scrollbar-track": {
           "border-radius": "100vh",
-          "background": "#f7f4ed",
+          background: "#f7f4ed",
         },
         ".scrollbar::-webkit-scrollbar-thumb": {
-          "background": "#e0cbcb",
+          background: "#e0cbcb",
           "border-radius": "100vh",
-          "border": "3px solid #f6f7ed",
+          border: "3px solid #f6f7ed",
         },
         ".scrollbar::-webkit-scrollbar-thumb:hover": {
-          "background": "#c0a0b9",
+          background: "#c0a0b9",
         },
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require('tailwind-scrollbar'),],
+  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar")],
 };

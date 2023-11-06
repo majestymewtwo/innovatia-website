@@ -1,20 +1,26 @@
-*{  
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Poppins;
+@media (max-width:768px){
+
+    html{
+        scroll-snap-type: y mandatory;
+    }
+    
+    .section{
+        scroll-behavior: smooth;
+        scroll-snap-align: start;
+    }
 }
 .homeContainer{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     /* background: transparent; */
 }
 .profile-card{
     position: relative;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-style: solid;
     border-color: orange;
     padding: 30px;
@@ -28,6 +34,7 @@
 .profile-card:hover{
     border-radius: 10px;
     height: 260px;
+    cursor: pointer;
 }
 .profile-card .img{
     position: relative;
@@ -57,15 +64,14 @@
     pointer-events: all;
 }
 .caption h3{
-    font-size: 21px;
-    font-weight: 600;
-    padding-top: 30px;
-    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
     
 }
 .caption p{
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 400;
     margin: 2px 2px 12px 0;
     
 }
@@ -100,6 +106,7 @@
   
     .caption h3 {
       font-size: 18px;
+      margin-top: 25px;
     }
   
     .caption p {
