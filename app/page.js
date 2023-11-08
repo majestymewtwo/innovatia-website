@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { unHideHamButton } from "./utils/utils";
 import CountdownTimer from "@/components/countdown";
 import SpaceButton from "@/components/SpaceButton";
+
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -55,10 +56,10 @@ export default function Home() {
       <div className="md:block hidden" id="desktop-home">
         <main
           id="app"
-          className="flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden"
+          className="flex py-12 h-screen flex-col items-center justify-between relative overflow-x-hidden"
         >
           <div className="flex flex-col md:flex-row w-[80%]">
-            <div className="w-3/4 md:h-[80vh] flex flex-col items-center justify-center ">
+            <div className="w-3/4 flex flex-col items-center justify-center ">
               <div
                 className="flex flex-col items-center space-y-4"
                 onMouseEnter={textEnter}
@@ -66,6 +67,12 @@ export default function Home() {
               >
                 <h3 className="text-white text-xl font-blanka font-black tracking-widest">
                   Department Of M.Tech Computer Science & Engineering
+                </h3>
+                <h3 className="text-white text-xl font-inconsolata">
+                  in association with
+                </h3>
+                <h3 className="text-white text-2xl font-blanka font-black tracking-widest">
+                  Sai InfoBlitz
                 </h3>
                 <h3 className="text-white text-xl font-inconsolata">
                   Proudly Presents
@@ -95,30 +102,6 @@ export default function Home() {
         </main>
       </div>
       {/* MOBILE VIEW */}
-      {/* <div className="block md:hidden">
-        <main
-          id="app"
-          className="flex min-h-screen flex-col items-center justify-between"
-        >
-          <div
-            className="flex items-center flex-col-reverse justify-end w-full p-3"
-            // className="flex items-center justify-end w-full"
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-          >
-            <h1 className="text-5xl font-black tracking-wider">
-              Innovatia 2.0
-            </h1>
-            <Lottie className="w-1/2" animationData={space2} />
-          </div>
-          <div className="w-1/2">
-            <Lottie
-              animationData={space1}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            />
-          </div>
-        </main>
-      </div> */}
       <div className="block md:hidden">
         <main
           id="app"
