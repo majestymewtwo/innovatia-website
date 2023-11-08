@@ -43,11 +43,11 @@ body {
   background-image: url("https://learn.liveu.tv/pluginfile.php/1/local_mb2slides/attachment/6/Space-Animation%20Draft.gif");
   background-size: cover;
   background-position: center;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease;
   /* cursor: none; */
 }
 main {
-  transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease;
 }
 
 #desktop-home {
