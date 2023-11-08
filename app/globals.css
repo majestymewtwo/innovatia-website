@@ -54,7 +54,7 @@ main {
   cursor: none;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -82,7 +82,7 @@ body::-webkit-scrollbar {
   display: block;
   height: 5px;
   width: 50px;
-  background-color: #ef8354;
+  background-color: #FFB100;
   margin: 10px auto;
   border-radius: 30px;
   -webkit-transition: all 0.7s ease;
@@ -93,7 +93,8 @@ body::-webkit-scrollbar {
 }
 
 .sidebar {
-  height: 100%;
+  position: fixed;
+  height: 100vh;
   width: 400px;
   position: absolute;
   top: 0;

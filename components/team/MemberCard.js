@@ -8,7 +8,7 @@ function MemberCard(props) {
   const { name, role, image, github, linkedin, instagram } = props;
 
   return (
-    <div className="homeContainer md:col">
+    <div className="flex justify-center items-center h-fit w-fit">
       <div className="profile-card">
         <div className="img">
           <img src={image} />

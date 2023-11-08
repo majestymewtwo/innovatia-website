@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Sidebar />
-        <main id='app' className='z-0 bg-fixed bg-no-repeat bg-cover main-body'>
+        <main id='app' className='z-0 bg-fixed bg-no-repeat bg-cover main-body h-screen overflow-y-scroll'>
           {children}
         </main>
         <Toaster />

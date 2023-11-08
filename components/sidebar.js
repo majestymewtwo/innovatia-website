@@ -22,7 +22,7 @@ function Sidebar({ handleCallback }) {
     hideCustomCursor();
     moveMenuLeft();
   };
-
+  
   return (
     <>
       <div

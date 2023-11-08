@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { unHideHamButton } from "./utils/utils";
 import CountdownTimer from "@/components/countdown";
 import SpaceButton from "@/components/SpaceButton";
+
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState("default");

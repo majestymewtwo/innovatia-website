@@ -1,22 +1,3 @@
-@media (max-width:768px){
-
-    html{
-        scroll-snap-type: y mandatory;
-    }
-    
-    .section{
-        scroll-behavior: smooth;
-        scroll-snap-align: start;
-    }
-}
-.homeContainer{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    /* background: transparent; */
-}
 .profile-card{
     position: relative;
     width: 250px;
