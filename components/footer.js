@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div
       id="footer"
-      className="sticky flex justify-between items-center bottom-0 w-full text-white px-10 py-2"
+      className="flex justify-between items-center bottom-0 w-full text-white px-10 py-2"
     >
       <div className="flex items-center gap-6">
         <img src="./sec-logo-white.png" alt="sec-white-logo" className="h-16" />

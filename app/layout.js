@@ -47,13 +47,10 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Sidebar />
-        <main
-          id="app"
-          className="h-[90vh] relative overflow-y-scroll"
-        >
+        <main id="app" className="h-[100vh] relative overflow-y-scroll">
           {children}
+          <Footer />
         </main>
-        <Footer />
         <Toaster />
       </body>
     </html>
