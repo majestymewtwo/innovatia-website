@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
         <Sidebar />
         <main
           id="app"
-          className="z-0 bg-fixed bg-no-repeat bg-cover main-body h-[90vh] overflow-y-scroll relative"
+          className="h-[90vh] relative overflow-y-scroll"
         >
           {children}
         </main>
