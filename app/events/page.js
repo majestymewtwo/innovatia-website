@@ -2,7 +2,6 @@
 import EventTiles from "@/components/events/EventTiles";
 import { useEffect } from "react";
 import { unHideHamButton } from "../utils/utils";
-import SocialEvent from "@/components/events/SocialEvent";
 export default function Events() {
   useEffect(() => {
     unHideHamButton();
@@ -16,8 +15,7 @@ export default function Events() {
         </h1>
       </div>
       <div className="md:h-5/6 flex md:flex-row flex-col justify-around md:p-3 w-full">
-        <EventTiles className="w-5/6" />
-        <SocialEvent className="w-1/6" />
+        <EventTiles />
       </div>
     </main>
   );

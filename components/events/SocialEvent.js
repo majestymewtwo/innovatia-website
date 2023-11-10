@@ -20,5 +20,6 @@ const SocialEvent = () => {
     </div>
   );
 };
+// To be decided later
 
 export default SocialEvent;
