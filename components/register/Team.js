@@ -1,6 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../ui/card";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import {
@@ -19,6 +25,8 @@ function Team({ minSize, maxSize, setTeamSize, setTeam }) {
   const selectItemStyle =
     "focus:bg-sky-600 focus:text-white hover:cursor-pointer";
 
+  const fixedSize = minSize === maxSize;
+
   const handleInputChange = (event) => {
     setTeam((prev) => {
       const newTeam = { ...prev, [event.target.id]: event.target.value };
@@ -33,13 +41,40 @@ function Team({ minSize, maxSize, setTeamSize, setTeam }) {
     });
   };
 
+  const renderSelectItems = () => {
+    if (fixedSize)
+      return (
+        <SelectItem className={selectItemStyle} value={minSize}>
+          {minSize}
+        </SelectItem>
+      );
+
+    return Array.from(
+      {
+        length: maxSize - minSize + 1,
+      },
+      (_, i) => (
+        <SelectItem
+          key={i}
+          className={selectItemStyle}
+          value={String(minSize + i)}
+        >
+          {minSize + i}
+        </SelectItem>
+      )
+    );
+  };
+
   return (
     <Card
       className={`w-full xs:w-4/5 sm:w-full md:w-4/5 lg:w-2/3 m-4 bg-white/5 backdrop-blur-sm text-white `}
     >
       <CardHeader className="text-center">
         <CardTitle>Team Details</CardTitle>
-        <CardDescription className="font-medium text-[#7dd8c9]">Please fill all the details carefully, it will be used for verification purposes. </CardDescription>
+        <CardDescription className="font-medium text-[#7dd8c9]">
+          Please fill all the details carefully, it will be used for
+          verification purposes.{" "}
+        </CardDescription>
       </CardHeader>
       <CardContent className="pb-14">
         <div className="grid items-center w-full gap-4">
@@ -64,15 +99,7 @@ function Team({ minSize, maxSize, setTeamSize, setTeam }) {
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent position="popper" className="font-sans">
-                  {Array.from({ length: maxSize - minSize }, (_, i) => (
-                    <SelectItem
-                      key={i}
-                      className={selectItemStyle}
-                      value={String(minSize + i)}
-                    >
-                      {minSize + i}
-                    </SelectItem>
-                  ))}
+                  {renderSelectItems()}
                 </SelectContent>
               </Select>
             </div>
@@ -84,7 +111,7 @@ function Team({ minSize, maxSize, setTeamSize, setTeam }) {
               <Input
                 className={inputStyle}
                 id="captainName"
-                placeholder="John Doe"
+                placeholder="Innovator"
                 onChange={handleInputChange}
               />
             </div>

@@ -56,7 +56,7 @@ function Member({ id, handleMemberDetails }) {
               onChange={handleInputChange}
               className={inputStyle}
               id="name"
-              placeholder="John Doe"
+              placeholder="Innovator"
             />
           </div>
           <div className={itemStyle}>
