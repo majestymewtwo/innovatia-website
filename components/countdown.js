@@ -41,9 +41,9 @@ export default CountdownTimer;
 
 const TimeCard = ({ timeLeft, timeName }) => {
   return (
-    <div className="flex flex-col justify-center items-center space-y-2 font-blanka border border-slate-400 w-[80px]  md:w-[130px] h-[130px] p-3 rounded-lg bg-white/5">
-      <h2 className="md:text-5xl text-3xl">{timeLeft}</h2>
-      <h2 className="md:text-lg text-sm font-space tracking-wide">
+    <div className='flex flex-col justify-center items-center space-y-2 font-blanka border border-slate-400 w-[80px]  md:w-[130px] md:h-[130px] p-3 rounded-lg bg-white/5'>
+      <h2 className='md:text-5xl text-3xl'>{timeLeft}</h2>
+      <h2 className='md:text-lg text-sm font-space tracking-wide'>
         {timeName}
       </h2>
     </div>
