@@ -2,7 +2,7 @@ import RegisterComponent from "@/components/register/register";
 
 const page = () => {
   const event = {
-    name: "Design Thinking",
+    name: "Pixel Perfect",
     description:
       "Design Thinking is a process for creative problem solving. You can use it to inform your own teaching practice, or you can teach it to your students as a framework for real-world projects.",
     date: "2021-10-10",
