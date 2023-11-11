@@ -16,7 +16,7 @@ export default function Loading() {
   }, []);
 
   return (
-    <div className='flex flex-col min-h-screen items-center justify-center bg-[#000B26]'>
+    <div className='flex flex-col min-h-screen items-center justify-center'>
       <Lottie animationData={space5} />
       <h1 className='text-2xl font-black animate-pulse tracking-widest'>
         Loading...
