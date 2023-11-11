@@ -75,7 +75,7 @@ export default function Home() {
                 <h3 className='text-white text-xl font-inconsolata'>
                   Proudly Presents
                 </h3>
-                <h3 className='text-4xl md:text-9xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text font-space py-4'>
+                <h3 className='text-4xl md:text-9xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-[#0231DD] via-[#6681db] to-[#08A8A7] bg-clip-text font-space py-4'>
                   INNOVATIA
                 </h3>
                 <SpaceButton />
@@ -106,8 +106,8 @@ export default function Home() {
           className='flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden pt-20'>
           <div className='flex'>
             <div className='flex items-center justify-center'>
-              <div className='flex flex-col items-center justify-center space-y-4'>
-                <span className='flex flex-col justify-center items-center space-y-4'>
+              <div className='flex flex-col items-center justify-center space-y-2'>
+                <span className='flex flex-col justify-center items-center space-y-3'>
                   <span className='text-center'>
                     <h3 className='text-white text-xl font-blanka font-black tracking-wider'>
                       Department Of M.Tech
@@ -126,7 +126,7 @@ export default function Home() {
                 <h3 className='text-white text-lg font-inconsolata'>
                   Proudly Presents
                 </h3>
-                <h3 className='text-6xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text font-space py-4'>
+                <h3 className='text-6xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-[#0231DD] via-[#6681db] to-[#08A8A7] bg-clip-text font-space py-4'>
                   INNOVATIA
                 </h3>
                 <h3 className='text-white text-2xl font-inconsolata'>
