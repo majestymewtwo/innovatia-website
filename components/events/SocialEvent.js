@@ -3,12 +3,12 @@ const SocialEvent = () => {
   return (
     <div className="h-full flex justify-center items-center">
       <div>
-        <div class="col-12 mt-5 d-flex justify-content-center">
-          <div class="box">
-            <div class="box-body">
-              <img class="img" src="/pixelperfect.png" width="200px" />
-              <div class="box-lid">
-                <div class="box-bowtie"></div>
+        <div className="col-12 mt-5 d-flex justify-content-center">
+          <div className="box">
+            <div className="box-body">
+              <img className="img" src="/pixelperfect.png" width="200px" />
+              <div className="box-lid">
+                <div className="box-bowtie"></div>
               </div>
             </div>
           </div>

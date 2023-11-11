@@ -6,7 +6,7 @@ import Link from "next/link";
 const EventTiles = () => {
   return (
     <Card
-      className={`md:w-2/3 m-4 bg-white/5 text-white font-sans font-semibold p-0 w-full backdrop-blur-sm`}
+      className={`md:w-2/3 m-4 bg-white/5 text-white font-sans font-semibold p-0  backdrop-blur-sm`}
     >
       <Tabs defaultValue="Technical" className="md:h-full">
         <TabsList className="grid grid-cols-2 bg-inherit border rounded-b-none">
