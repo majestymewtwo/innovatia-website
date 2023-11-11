@@ -13,6 +13,7 @@ const page = () => {
     image:
       "https://images.unsplash.com/photo-1593642532450-9d8a9a7e9c9d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzaWduJTIwdGhpbmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
     link: "https://www.google.com",
+    path: "/ink-and-insight",
   };
 
   return (

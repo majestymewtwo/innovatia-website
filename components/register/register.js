@@ -13,13 +13,15 @@ import {
 import Member from "./Member";
 import Team from "./Team";
 import { XOctagon } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { unHideHamButton } from "@/app/utils/utils";
+import { sendRequest } from "@/request";
 
 const RegisterComponent = ({ event }) => {
   const router = useRouter();
+  const pathname = usePathname();
 
-  const { maxMembers, minMembers } = event;
+  const { maxMembers, minMembers, path } = event;
 
   const [teamSize, setTeamSize] = useState(1);
 
@@ -85,7 +87,7 @@ const RegisterComponent = ({ event }) => {
     }));
   };
 
-  const handleRegister = (event) => {
+  const handleRegister = async (event) => {
     event.preventDefault();
 
     // validate team details
@@ -107,24 +109,14 @@ const RegisterComponent = ({ event }) => {
       minMembers,
       handleErrorToast
     );
-    console.log(isValidTeamMembers);
-    if (!isValidTeamMembers) return;
 
-    console.log(team);
-
-    // register team
-    // registerTeam(team);
-  };
-
-  const registerUser = () => {
-    const user = {
-      name: "John Doe",
-      email: "john.doe@example.com",
-    };
-    const query = new URLSearchParams({
-      user: JSON.stringify(user),
-    });
-    router.push("/success?" + query);
+    if (isValidTeamMembers) {
+      const data = await sendRequest(team, path);
+      const query = new URLSearchParams({
+        data: JSON.stringify(data),
+      });
+      router.push("/success?" + query);
+    }
   };
 
   return (
@@ -161,8 +153,7 @@ const RegisterComponent = ({ event }) => {
         </Button>
         <Button
           type='submit'
-          className='text-black bg-white hover:text-black hover:bg-white'
-          onClick={registerUser}>
+          className='text-black bg-white hover:text-black hover:bg-white'>
           Register
         </Button>
       </div>
