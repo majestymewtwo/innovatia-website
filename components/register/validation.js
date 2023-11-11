@@ -54,7 +54,6 @@ const validateMemberDetails = (member, handleErrorToast, memberId) => {
 
   for (const field of fields) {
     const value = member[field.name].trim();
-    console.log(memberId);
     if (!value) {
       handleErrorToast(`Co - Astronaut - ${memberId}`, field.message);
       return false;
