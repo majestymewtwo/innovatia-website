@@ -34,8 +34,8 @@ const EventDetailDB = () => {
               className="rounded-md w-[150px] h-full md:w-[200px] md:h-[200px] lg:w-auto lg:h-full lg:rounded-md"
             />
             <div className="font-oswald text-4xl items-center text-[#EF8354] md:text-4xl lg:hidden">
-              <p>Design</p>
-              <p>Derbies</p>
+              <p>Pop</p>
+              <p>Topia</p>
             </div>
           </div>
           <div className="flex flex-col space-y-3 h-3/5 lg:w-1/2 lg:h-4/5  lg:items-left overflow-y-clip">
