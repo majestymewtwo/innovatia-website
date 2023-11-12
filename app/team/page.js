@@ -9,7 +9,7 @@ function Page() {
   // Data for team members
   const teamMembers = [
     {
-      name: "Muthu Aanand",
+      name: "Muthu Aanand S U",
       role: "Developer",
       image: "/muthu.jpg",
       github: "https://github.com/majestymewtwo",
@@ -17,7 +17,7 @@ function Page() {
       linkedin: "https://www.linkedin.com/in/muthu-aanand-su-b36188218/",
     },
     {
-      name: "Ruthi Shankari",
+      name: "Ruthi Shankari S",
       role: "Designer and Developer",
       image: "/ru.jpeg",
       github: "https://github.com/Ex-rockstar",
@@ -25,7 +25,7 @@ function Page() {
       instagram: "https://www.instagram.com/thenameisruthi/",
     },
     {
-      name: "Guru Sanjay",
+      name: "Guru Sanjay R K",
       role: "Developer",
       image: "/gs.jpg",
       github: "https://github.com/gurusanjay2322",
@@ -33,7 +33,7 @@ function Page() {
       instagram: "https://www.instagram.com/__.gs.__22/",
     },
     {
-      name: "Yogesh",
+      name: "Yogesh M ",
       role: "Developer",
       image: "/Yogesh.jpeg",
       github: "https://github.com/Yogesh251103",
@@ -77,7 +77,7 @@ function Page() {
       linkedin: "https://www.linkedin.com/in/koushik-babu-8aa71a280/",
     },
     {
-      name: "Kushi",
+      name: "Kushi Mili Mishra",
       role: "Developer",
       image: "/kushi.jpeg",
       role: "Developer",
@@ -86,12 +86,12 @@ function Page() {
       linkedin: "https://www.linkedin.com/in/khushi-mili-mishra-98b558257",
     },
     {
-      name: "Aldous",
+      name: "Aldous Roy",
       role: "Developer",
       image: "/aldous.jpeg",
       role: "Developer",
       github: "https://github.com/",
-      instagram: "",
+      instagram: "https://www.instagram.com/aldous.roy",
       linkedin: "",
     },
     {
