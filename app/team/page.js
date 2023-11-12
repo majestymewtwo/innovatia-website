@@ -90,9 +90,9 @@ function Page() {
       role: "Developer",
       image: "/aldous.jpeg",
       role: "Developer",
-      github: "https://github.com/",
+      github: "https://github.com/Aldous-Roy",
       instagram: "https://www.instagram.com/aldous.roy",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/aldous-rayappan-5150b7252/",
     },
     {
       name: "Sai Charan",
