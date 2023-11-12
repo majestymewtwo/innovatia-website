@@ -166,14 +166,17 @@ const EventDetailDB = () => {
                 Last Date for Registration: 18.11.2023(11:00 AM)
               </p>
               <p>
-              <span className="font-bold">Whatsapp Group Link : </span> <a href="" target="_blank">Join Poptopia!</a>
+                <span className="font-bold">Whatsapp Group Link : </span>{" "}
+                <a href="" target="_blank">
+                  Join Poptopia!
+                </a>
               </p>
             </div>
           </div>
           <div className="flex flex-col w-full justify-start lg:w-auto lg:absolute lg:bottom-5 lg:left-5">
             <p className="text-sm font-semibold">Student Coordinator</p>
             <p className="text-sm">+91 80729 24347 - PRAVEEN KUMAR K</p>
-            <p className="text-sm">+91 88703 31628 - SHAHANA DEVI V</p>
+            <p className="text-sm">+91 80151 35548- SHAHANA DEVI V</p>
             <p className="text-sm font-semibold">Staff Coordinator</p>
             <p className="text-sm">+91 80988 57554 - Mr. G YUVARAJ</p>
           </div>
