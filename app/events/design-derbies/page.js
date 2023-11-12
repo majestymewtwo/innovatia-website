@@ -71,6 +71,24 @@ const EventDetailDB = () => {
                   </li>
                 </ul>
               </p>
+              <p>
+                <span className="font-bold">Team : </span>
+                <ul>
+                  <li>Group Of 2  </li>
+                </ul>
+              </p>
+              <p>
+                <span className="font-bold">Reporting Time: </span>
+                <ul>
+                  <li>9:15 AM</li>
+                </ul>
+              </p>
+              <p>
+                <span className="font-bold">Event Time : </span>
+                <ul>
+                  <li>11:15 AM</li>
+                </ul>
+              </p>
               <span className="font-bold">Instructions: </span>
               <ul className="list-disc list-inside">
                 <li>Allowed tools: Figma, Adobe XD.</li>
@@ -143,34 +161,9 @@ const EventDetailDB = () => {
               <p className="font-bold">
               Last Date for Registration: 18.11.2023(11:00 AM)
               </p>
-              <ul className="list-disc list-inside">
-                <li>
-                  Participants will be given distinct problem statements to
-                  design Three pages of a web applications.
-                </li>
-                <li>
-                  The registered teams will further be grouped together, top 3
-                  teams from each group will be selected to Round 2.
-                </li>
-              </ul>
-              <p className="font-bold">
-              For queries, contact:
+              <p>
+              <span className="font-bold">Whatsapp Group Link : </span> <a href="" target="_blank">Join Design Derbies!</a>
               </p>
-              <ul className="list-disc list-inside">
-                <li>
-              <span className="font-bold">Student Coordinators:</span>
-                <div className="ml-5">
-                  1. KAMALESH KUMAR SARAVANAN - +91 70014 00312 <br />
-                  2. SRI DURGADEVI S - +91 96775 30744
-                </div>
-                </li>
-                <li>
-                <span className="font-bold">Staff Coordinator:</span>
-                  <div className="ml-5">
-                   1.  Mrs. S NANDHINI DEVI - +91 88703 31628
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
           <div className="flex flex-col w-full justify-start lg:w-auto lg:absolute lg:bottom-5 lg:left-5">
