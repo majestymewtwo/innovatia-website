@@ -35,20 +35,18 @@ function Page() {
     {
       name: "Yogesh",
       role: "Developer",
-      image: "/yogesh.jpg",
+      image: "/Yogesh.jpeg",
       github: "https://github.com/Yogesh251103",
       instagram: "https://www.instagram.com/yogesh._10._/",
       linkedin: "https://www.linkedin.com/in/yogesh-m-16ab20216/",
     },
-    { name: "Karthikeyan", role: "Developer" },
-    { name: "Kamalesh Kumar", role: "Developer" },
-    { name: "Aadithya S", role: "Designer and Developer", image: "" },
-    { name: "Koushik Babu", role: "Developer" },
-    { name: "Kushi", role: "Developer" },
-    { name: "Aldous", role: "Developer" },
-    { name: "Sai Charan", role: "Developer" },
-    { name: "Harish", role: "Developer" },
-    // Add more team members as needed
+    { name: "Karthikeyan", role: "Developer", image: "/karthi.jpeg", role: "Developer", github: "hhtps://github.com/",instagram: "", linkedin: "" },
+    { name: "Kamalesh Kumar", role: "Developer", image: "", role: "Developer", github: "hhtps://github.com/",instagram: "", linkedin: "" },
+    { name: "Aadithya S", role: "Developer", image: "/aadithya.jpeg", role: "Developer", github: "hhtps://github.com/",instagram: "", linkedin: "" },
+    { name: "Koushik Babu", role: "Developer", image: "/koushik.jpeg", role: "Developer", github: "hhtps://github.com/",instagram: "", linkedin: "" },
+    { name: "Kushi", role: "Developer", image: "/kushi.jpeg", role: "Developer", github: "hhtps://github.com/",instagram: "", linkedin: "" },
+    { name: "Aldous", role: "Developer", image: "/aldous.jpeg", role: "Developer", github: "hhtps://github.com/",instagram: "", linkedin: "" },
+    { name: "Sai Charan", role: "Developer", image: "/saicharan.jpeg", role: "Developer", github: "hhtps://github.com/",instagram: "", linkedin: "" },
   ];
 
   useEffect(() => {
