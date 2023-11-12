@@ -67,34 +67,36 @@
     color: #0c52a1;
 }
 @media (max-width: 768px) {
-    .profile-card {
-      width: 180px;
-      height: 180px;
-      padding: 20px;
-      margin: 0 10px;
-    }
-  
-    .caption {
-      transform: translateY(0);
-      opacity: 1;
-      pointer-events: all;
-    }
-  
-    .profile-card:hover {
-      border-radius: 50%; /* Disable hover effect */
-      height: 180px; /* Disable hover effect */
-    }
-  
-    .caption h3 {
-      font-size: 18px;
-      margin-top: 25px;
-    }
-  
-    .caption p {
-      font-size: 13px;
-    }
-  
-    .caption .social-links i {
-      font-size: 18px;
-    }
+  .profile-card {
+    width: 180px;
+    height: 180px;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 50%; /* Add this line to maintain the circular shape */
   }
+
+  .caption {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* Disable hover effect for smaller screens */
+  .profile-card:hover {
+    border-radius: 50%;
+    height: 180px;
+  }
+
+  .caption h3 {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+
+  .caption p {
+    font-size: 13px;
+  }
+
+  .caption .social-links i {
+    font-size: 18px;
+  }
+}

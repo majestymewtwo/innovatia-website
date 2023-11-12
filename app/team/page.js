@@ -18,7 +18,7 @@ function Page() {
     },
     {
       name: "Ruthi Shankari S",
-      role: "Designer and Developer",
+      role: "Developer",
       image: "/ru.jpeg",
       github: "https://github.com/Ex-rockstar",
       linkedin: "https://www.linkedin.com/in/ruthi-shankari/",
