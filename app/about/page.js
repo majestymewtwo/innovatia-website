@@ -2,6 +2,7 @@
 import AboutSection from "@/components/about/AboutSection";
 import React, { useEffect } from "react";
 import { unHideHamButton } from "../utils/utils";
+import QueryForm from "@/components/about/QueryForm";
 
 const page = () => {
   useEffect(() => {
@@ -10,6 +11,7 @@ const page = () => {
   return (
     <div>
       <AboutSection />
+      <QueryForm />
     </div>
   );
 };
