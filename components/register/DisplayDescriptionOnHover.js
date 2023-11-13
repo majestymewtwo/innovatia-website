@@ -13,7 +13,7 @@ function DisplayDescriptionOnHover({event}) {
     <HoverCard>
       <HoverCardTrigger asChild className="m-2 hover:no-underline">
         <Button variant="link" className="flex items-center gap-2 text-lg text-white" type="button">
-          <h1 className="inline-block p-1 pb-2 text-5xl font-bold text-transparent animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text">{event.name}</h1>
+          <h1 className="text-3xl md:inline-block md:p-1 md:pb-2 md:text-5xl font-bold text-transparent animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text">{event.name}</h1>
           <Info className="mt-2 text-gray-300" />
         </Button>
       </HoverCardTrigger>
