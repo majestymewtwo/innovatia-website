@@ -5,7 +5,7 @@ import about from "../../public/space-9.json";
 
 const AboutSection = () => {
   return (
-    <div className='flex flex-col md:flex-row items-center min-h-screen font-lora'>
+    <div className='flex flex-col md:flex-row items-center min-h-[85vh] font-lora'>
       <Lottie className=' md:w-[900px]' animationData={about} />
       <div className='px-3 space-y-5'>
         <div className='p-5 space-y-5'>
