@@ -97,7 +97,7 @@ const EventTiles = () => {
           value="NonTechnical"
           className="flex md:flex-row flex-col md:m-3 md:gap-3 justify-center items-center"
         >
-          <div class="grid grid-cols-1 gap-3 md:gap-14 md:grid-cols-3 w-4/5 md:w-11/12 -m-3">
+          <div class="grid grid-cols-1 gap-3 md:gap-14 md:grid-cols-3 w-4/5 md:w-11/12 md:-m-3 mb-2 -mt-2">
             <div class="group border rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
               <div class="w-full">
                 <img
