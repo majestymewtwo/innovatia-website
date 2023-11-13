@@ -35,7 +35,7 @@ const Success = ({ searchParams }) => {
           Registration Successful
         </h2>
 
-        <Card className='grid grid-cols-2 gap-3 bg-white/5 text-white w-[80%] p-3'>
+        <Card className='grid col-span-1 md:grid-cols-2 gap-3 bg-white/5 text-white w-[80%] p-3'>
           {renderMemberDetails("Team Name", data.teamName)}
 
           {/* Member 1 */}
