@@ -11,7 +11,7 @@ export default function Footer() {
         <Socials />
       </div>
       <h3 className='hidden md:block'>|</h3>
-      <h3 className='font-light tracking-wide'>
+      <h3 className='font-light tracking-wide mr-4 md:mr-0'>
         © 2023-2024 Department Of M.Tech CSE
       </h3>
       <h3 className='hidden md:block'>|</h3>

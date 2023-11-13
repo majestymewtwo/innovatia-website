@@ -11,10 +11,10 @@ import {
 function DisplayDescriptionOnHover({event}) {
   return (
     <HoverCard>
-      <HoverCardTrigger asChild className="m-2 hover:no-underline">
+      <HoverCardTrigger asChild className="m-2 ml-0 hover:no-underline self-start md:self-center">
         <Button variant="link" className="flex items-center gap-2 text-lg text-white" type="button">
-          <h1 className="text-3xl md:inline-block md:p-1 md:pb-2 md:text-5xl font-bold text-transparent animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text">{event.name}</h1>
-          <Info className="mt-2 text-gray-300" />
+          <h1 className="text-2xl md:inline-block md:p-1 md:pb-2 md:text-5xl font-bold text-transparent animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text ">{event.name}</h1>
+          <Info className="mt-1 text-gray-300" />
         </Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-80">
