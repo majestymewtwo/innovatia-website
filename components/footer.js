@@ -38,16 +38,22 @@ function Socials() {
     "hover:scale-125 hover:text-[#FFB100] transition-all ease-in-out duration-200 cursor-pointer";
   return (
     <div className='flex items-center gap-8 text-white'>
-      <a href='' target='_blank'>
+      <a href='https://www.instagram.com/mtechcsesairam/' target='_blank'>
         <Instagram className={hoverClass} />
       </a>
-      <a href='' target='_blank'>
+      <a
+        href='https://www.linkedin.com/in/sairam-m-tech-cse-794733229/'
+        target='_blank'>
         <Linkedin className={hoverClass} />
       </a>
-      <a href='' target='_blank'>
+      <a
+        href='https://www.facebook.com/profile.php?id=100076604003632'
+        target='_blank'>
         <Facebook className={hoverClass} />
       </a>
-      <a href='' target='_blank'>
+      <a
+        href='https://www.youtube.com/@sairam-m.tech-cse5yearinte455'
+        target='_blank'>
         <Youtube className={hoverClass} />
       </a>
     </div>
