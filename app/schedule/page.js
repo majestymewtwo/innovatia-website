@@ -6,7 +6,6 @@ function page() {
   useEffect(() => {
     unHideHamButton();
   }, []);
-
   return (
     <div className="flex justify-center items-center text-center min-h-[85vh]">
       <Schedule />
