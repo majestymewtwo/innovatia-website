@@ -10,7 +10,7 @@ const quick = Quicksand({ subsets: ["latin"] });
 
 export const metadata = {
   title:
-    "Innovatia 2.0 | Department Of M.Tech Computer Science And Engineering",
+    "Innovatia 2.0 | Department Of M.Tech Computer Science And Engineering | Sri Sai Ram Engineering College | Chennai",
   description:
     "Join us at the M.Tech CSE Department Symposium — a day of tech innovation and creative exploration. Elevate your skills, connect with peers, and immerse yourself in a blend of technical and non-technical events. Unleash your potential and be part of the future of technology at Sri Sai Ram Engineering College.",
 };
