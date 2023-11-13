@@ -120,7 +120,7 @@ function Team({ minSize, maxSize, setTeamSize, setTeam }) {
               <Input
                 className={inputStyle}
                 id="captainEmail"
-                type="email"
+                type="email"  
                 placeholder="innovator@innovatia.com"
                 onChange={handleInputChange}
               />

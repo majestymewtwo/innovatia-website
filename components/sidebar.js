@@ -62,6 +62,12 @@ function Sidebar({ handleCallback }) {
             <Link href='/events' className='sidebar-anchor'>
               Events
             </Link>
+          </li><li
+            className={`sidebar-item ${active && "active"}`}
+            onClick={toggleMenu}>
+            <Link href='/schedule' className='sidebar-anchor'>
+              Schedule
+            </Link>
           </li>
           <li
             className={`sidebar-item ${active && "active"}`}
