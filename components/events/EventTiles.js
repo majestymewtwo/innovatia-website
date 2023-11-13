@@ -126,7 +126,7 @@ const EventTiles = () => {
               <div class="w-full">
                 <img
                   class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                  src="/designderbies.png"
+                  src="/superhero.png"
                   alt="Design-derbies"
                 />
               </div>
@@ -150,7 +150,7 @@ const EventTiles = () => {
               <div class="w-full">
                 <img
                   class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                  src="/designderbies.png"
+                  src="/poptopia.png"
                   alt="Design-derbies"
                 />
               </div>
