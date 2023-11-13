@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    API_URL: "http://localhost:8080/register",
+    API_URL: "https://courageous-dress-fish.cyclic.app/register",
   },
 };
 
