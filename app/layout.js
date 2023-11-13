@@ -3,8 +3,8 @@ import "./globals.css";
 import Sidebar from "@/components/sidebar";
 import { Toaster } from "@/components/ui/toaster";
 import Footer from "@/components/footer";
-import { NextSeo } from "next-seo";
-import { NEXT_SEO_DEFAULT } from "@/next-seo.config";
+// import { NextSeo } from "next-seo";
+// import { NEXT_SEO_DEFAULT } from "@/next-seo.config";
 
 const inter = Inter({ subsets: ["latin"] });
 const lucky = Luckiest_Guy({ subsets: ["latin"], weight: "400" });
