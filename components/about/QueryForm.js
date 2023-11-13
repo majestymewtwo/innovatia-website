@@ -62,6 +62,13 @@ export default function QueryForm() {
       "Your query has been submitted succesfully, we will resolve it quickly",
       "green-500"
     );
+    
+    setData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
   };
 
   const handleStateChange = (key, value) => {
@@ -81,6 +88,7 @@ export default function QueryForm() {
           name='name'
           type='text'
           placeholder='Your Name'
+          value={data.name}
           onChange={(e) => handleStateChange("name", e.target.value)}
         />
         <input
@@ -88,6 +96,7 @@ export default function QueryForm() {
           name='email'
           type='text'
           placeholder='Your Email'
+          value={data.email}
           onChange={(e) => handleStateChange("email", e.target.value)}
         />
         <input
@@ -95,6 +104,7 @@ export default function QueryForm() {
           name='phone'
           type='text'
           placeholder='Your Phone'
+          value={data.phone}
           onChange={(e) => handleStateChange("phone", e.target.value)}
         />
         <textarea
@@ -102,9 +112,10 @@ export default function QueryForm() {
           name='message'
           type='text'
           placeholder='Your Query'
+          value={data.message}
           onChange={(e) => handleStateChange("message", e.target.value)}
         />
-        <Button type='submit' className={inputStyle}>
+        <Button type='submit'  className={inputStyle}>
           Submit
         </Button>
       </form>
