@@ -5,34 +5,41 @@ import about from "../../public/space-9.json";
 
 const AboutSection = () => {
   return (
-    <div className="grid grid-cols-3 min-h-screen font-lora">
-      <Lottie
-        className="items-start h-full w-full mt-5 ml-12 "
-        animationData={about}
-      />
-      <div className="col-span-2 ">
-        <div className="pt-10">
-        <div className=" absolute pl-[30%] -translate-x-1/2 -translate-y/2 top-32 font-space text-4xl ">
-          ABOUT
+    <div className='flex flex-col md:flex-row items-center min-h-screen font-lora'>
+      <Lottie className=' md:w-[900px]' animationData={about} />
+      <div className='px-3 space-y-5'>
+        <div className='p-5 space-y-5'>
+          <h1 className='font-space text-4xl'>VISION OF THE DEPARTMENT</h1>
+          <p className='text-lg font-light tracking-wider'>
+            To be a pioneer in providing industry and research focused
+            integrated curriculum in computer science and engineering and to
+            transform young minds to sustain technically and compete globally
+            with enriched, ethical and moral values to serve the nation and
+            beyond.
+          </p>
         </div>
-        <div className=" md:p-40 md:font-sourcesan md:text-justify  ">
-          On behalf of IEEE-System Man and Cybernetics society & in association
-          with SAI INFOBLITZ , the department of M.Tech CSE Organized the event
-          TechFest 2022- INNOVATIA 1.0 in Beta hall on 29.12.2022 at 9.15 a.m.
-          with grand success. The chief guest was Mr. Karthiq Ganesan,from Hcl
-          tech,Associate General manager.Dr.M.Nithya gave the welcome address
-          for this event. Mr.Karthiq Ganesan gave his speech on the latest
-          technology in IT industry and clarified the students doubts on job
-          placements.Also he had shared ideas on data science field along with
-          their communication skills to get improved. There were totally 86
-          attendees in this event, out of which 25 students were from various
-          other reputed colleges.Students best performer awards were given to
-          the students after filing nominations .Both technical like Cipher
-          Nation , Startup Smackdown and non-technical events like
-          Captura,Superhero Shippuden,Music Fiesta were conducted and the
-          student winners were provided with certificates and cash prize.With
-          vote of thank ,the event gathering ended at 4 pm.
-        </div>
+        <div className='p-5 space-y-5'>
+          <h1 className='font-space text-4xl'>MISSION OF THE DEPARTMENT</h1>
+          <p className='text-lg font-light tracking-wider md:text-justify'>
+            Department of M.Tech Computer Science and Engineering, Sri Sai Ram
+            Engineering College is committed to
+          </p>
+          <ul className='text-lg font-light tracking-wider list-disc'>
+            <li>
+              Accelerate the learning process by collaborating undergraduate
+              fundamentals & postgraduate focused learning & research.
+            </li>
+            <li>
+              Tie-up with industries to facilitate advanced real time projects &
+              internships to bridge gaps between industry & academics.
+            </li>
+            <li>
+              Impart research mindset to provoke innovative thoughts and be
+              responsible for inventions benefitting society · Inculcate moral
+              and ethical values as a part of curriculum to enable interpersonal
+              skills.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
