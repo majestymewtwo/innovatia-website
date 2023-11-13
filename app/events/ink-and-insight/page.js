@@ -67,7 +67,7 @@ const EventDetailDB = () => {
                 <span className="font-bold">Venue : </span>
                 <ul>
                   <li>
-                    Sri Sairam Engineering College, Chennai. (EDC - Ink and Insight) 
+                    Sri Sairam Engineering College, Chennai. (Entrepreneurship Development Cell Ink and Insight) 
                   </li>
                 </ul>
               </p>
@@ -126,7 +126,7 @@ const EventDetailDB = () => {
                 </li>
               </ul>
               <p>
-                <span className="font-bold">Venue: </span>EDC
+                <span className="font-bold">Venue: </span>Entrepreneurship Development Cell
               </p>
               <p className="font-bold">
                 Last Date for Registration: 19.11.2023(11:00 AM)

@@ -67,7 +67,7 @@ const EventDetailDB = () => {
               <p>
                 <span className="font-bold">Venue : </span>
                 <ul>
-                  <li>Sri Sairam Engineering College, Chennai. (KM Lab)</li>
+                  <li>Sri Sairam Engineering College, Chennai. (Knowledge Management Lab)</li>
                 </ul>
               </p>
               <p>
@@ -143,7 +143,7 @@ const EventDetailDB = () => {
                 </li>
               </ul>
               <p>
-                <span className="font-bold">Venue: </span>KM Lab
+                <span className="font-bold">Venue: </span>Knowledge Management Lab
               </p>
               <p className="font-bold">
                 Last Date for Registration: 18.11.2023(11:00 AM)
