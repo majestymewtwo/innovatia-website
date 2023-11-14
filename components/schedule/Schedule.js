@@ -125,17 +125,19 @@ function Schedule() {
   };
 
   return (
-    <div className='container mx-auto space-y-6 py-12'>
+    <div className="container mx-auto space-y-6 py-12">
       {/* Toggle Button */}
-      <div className='flex flex-col md:flex-row items-center justify-center gap-4'>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
         <button
           onClick={() => toggleSchedule("online")}
-          className={`${showOnline && "bg-white/25"} ${buttonClass}`}>
+          className={`${showOnline && "bg-white/25"} ${buttonClass}`}
+        >
           Show Online Schedule
         </button>
         <button
           onClick={() => toggleSchedule("offline")}
-          className={`${!showOnline && "bg-white/25"} ${buttonClass}`}>
+          className={`${!showOnline && "bg-white/25"} ${buttonClass}`}
+        >
           Show Offline Schedule
         </button>
       </div>
@@ -143,19 +145,19 @@ function Schedule() {
       {/* Online Round - Schedule */}
       {showOnline && (
         <div>
-          <h2 className='mb-4 text-2xl font-semibold'>Online Round</h2>
-          <table className='min-w-full border border-gray-300 backdrop-blur-md bg-white/5 '>
-            <thead className='bg-slate-400/20'>
+          <h2 className="mb-4 text-2xl font-semibold">Online Round</h2>
+          <table className="min-w-full border border-gray-300 backdrop-blur-md bg-white/5 ">
+            <thead className="bg-slate-400/20">
               <tr>
-                <th className='px-4 py-2 border-b'>Event Date and Time</th>
-                <th className='px-4 py-2 border-b'>Event Name</th>
+                <th className="px-4 py-2 border-b">Event Date and Time</th>
+                <th className="px-4 py-2 border-b">Event Name</th>
               </tr>
             </thead>
             <tbody>
               {onlineRound.map((round, index) => (
                 <tr key={round.name}>
-                  <td className='px-4 py-2 border-b'>{round.date}</td>
-                  <td className='px-4 py-2 border-b'>{round.name}</td>
+                  <td className="px-4 py-2 border-b">{round.date}</td>
+                  <td className="px-4 py-2 border-b">{round.name}</td>
                 </tr>
               ))}
             </tbody>
@@ -166,23 +168,23 @@ function Schedule() {
       {/* Offline Rounds - Schedule */}
       {!showOnline && (
         <div>
-          <h2 className='my-8 text-2xl font-semibold'>
+          <h2 className="my-8 text-2xl font-semibold">
             Offline Rounds - Schedule
           </h2>
-          <table className='min-w-full border border-gray-300 backdrop-blur-md bg-white/5'>
-            <thead className='bg-slate-400/20'>
+          <table className="min-w-full border border-gray-300 backdrop-blur-md bg-white/5">
+            <thead className="bg-slate-400/20">
               <tr>
-                <th className='px-4 py-2 border-b'>Event Time</th>
-                <th className='px-4 py-2 border-b'>Event Name</th>
-                <th className='px-4 py-2 border-b'>Venue</th>
+                <th className="px-4 py-2 border-b">Event Time</th>
+                <th className="px-4 py-2 border-b">Event Name</th>
+                <th className="px-4 py-2 border-b">Venue</th>
               </tr>
             </thead>
             <tbody>
               {offlineEvents.map((event) => (
                 <tr key={event.name}>
-                  <td className='px-4 py-2 border-b'>{event.time}</td>
-                  <td className='px-4 py-2 border-b'>{event.name}</td>
-                  <td className='px-4 py-2 border-b'>{event.venue}</td>
+                  <td className="px-4 py-2 border-b">{event.time}</td>
+                  <td className="px-4 py-2 border-b">{event.name}</td>
+                  <td className="px-4 py-2 border-b">{event.venue}</td>
                 </tr>
               ))}
             </tbody>

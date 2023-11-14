@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Schedule from "@/components/schedule/Schedule";
 import { React, useEffect } from "react";
 import { unHideHamButton } from "../utils/utils";
@@ -7,7 +7,7 @@ function page() {
     unHideHamButton();
   }, []);
   return (
-    <div className="flex justify-center items-center text-center min-h-[85vh]">
+    <div className="flex justify-center items-center text-center min-h-[100vh]">
       <Schedule />
     </div>
   );
