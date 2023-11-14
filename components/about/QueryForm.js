@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useToast } from "../ui/use-toast";
 import { Button } from "../ui/button";
 import { sendRequest } from "@/request";
-import contact from "../../public/contact-us.json";
+import contact from "../../public/space-14.json";
 import Lottie from "lottie-react";
 
 export default function QueryForm() {
