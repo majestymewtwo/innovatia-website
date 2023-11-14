@@ -1,6 +1,7 @@
-import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
-
+"use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabscus";
+
+import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 
 const EventTiles = () => {
   return (
