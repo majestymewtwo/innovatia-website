@@ -1,7 +1,7 @@
-import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
-
+"use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabscus";
-import Link from "next/link";
+import "./SocialEvent.css";
+import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 
 const EventTiles = () => {
   return (
@@ -17,77 +17,77 @@ const EventTiles = () => {
           value="Technical"
           className="flex md:flex-row flex-col md:m-3 md:gap-3 justify-center items-center"
         >
-          <div class="grid grid-cols-1 gap-3 md:gap-14 md:grid-cols-3 w-4/5 md:w-11/12">
-            <div class="group border rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div class="w-full">
+          <div className="grid grid-cols-1 gap-3 md:gap-14 md:grid-cols-3 w-4/5 md:w-11/12">
+            <div className="group border rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+              <div className="w-full">
                 <img
-                  class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                   src="/designderbies.png"
                   alt="Design-derbies"
                 />
               </div>
-              <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 className="font-dmserif text-3xl font-bold text-white">
                   Design Derbies
                 </h1>
-                <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   Frontend Development: Front-End, HTML5, CSS3, Responsive
                   Design, Mobile-First Design.
                 </p>
-                <Link href="/events/design-derbies">
-                  <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
+                <a href="/events/design-derbies">
+                  <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
                     See More
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
-            <div class="group relative border rounded-lg cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div class="w-full">
+            <div className="group relative border rounded-lg cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+              <div className="w-full">
                 <img
-                  class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                   src="/inkndinsight.png"
                   alt=""
                 />
               </div>
-              <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 className="font-dmserif text-3xl font-bold text-white">
                   Ink And Insights
                 </h1>
-                <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   Paper Presentation:Research, Abstract, Case Study,
                   Presentation Skills, Literature Review.
                 </p>
-                <Link href="/events/ink-and-insight">
-                  <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
+                <a href="/events/ink-and-insight">
+                  <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
                     See More
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
-            <div class="group relative border rounded-lg cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div class="w-full">
+            <div className="group relative border rounded-lg cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+              <div className="w-full">
                 <img
-                  class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                   src="gameofthreats.png"
                   alt=""
                 />
               </div>
-              <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 className="font-dmserif text-3xl font-bold text-white">
                   Game Of Threats
                 </h1>
-                <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   Cyber Security: Cybersecurity, Threat Analysis, Network
                   Security, Data Privacy, Phishing.
                 </p>
-                <Link href="/events/game-of-threats">
-                  <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
+                <a href="/events/game-of-threats">
+                  <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
                     See More
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -97,77 +97,77 @@ const EventTiles = () => {
           value="NonTechnical"
           className="flex md:flex-row flex-col md:m-3 md:gap-3 justify-center items-center"
         >
-          <div class="grid grid-cols-1 gap-3 md:gap-14 md:grid-cols-3 w-4/5 md:w-11/12 md:-m-3 mb-2 -mt-2">
-            <div class="group border rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div class="w-full">
+          <div className="grid grid-cols-1 gap-3 md:gap-14 md:grid-cols-3 w-4/5 md:w-11/12 md:-m-3 mb-2 -mt-2">
+            <div className="group border rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+              <div className="w-full">
                 <img
-                  class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                   src="/pixelperfect.png"
                   alt="Pixel-Perfect"
                 />
               </div>
-              <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 className="font-dmserif text-3xl font-bold text-white">
                   Pixel Perfect
                 </h1>
-                <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   Photography : ISO, Aperture, Rule of Thirds, Framing Color,
                   Theory, Camera, DSLR, Mirrorless Cameras
                 </p>
-                <Link href="/events/pixel-perfect">
-                  <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
+                <a href="/events/pixel-perfect">
+                  <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
                     See More
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
-            <div class="group border rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div class="w-full">
+            <div className="group border rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+              <div className="w-full">
                 <img
-                  class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                   src="/superhero.png"
                   alt="Design-derbies"
                 />
               </div>
-              <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 className="font-dmserif text-3xl font-bold text-white">
                   Superhero Shippuden
                 </h1>
-                <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   Anime Trivia: Anime, Manga, Otaku, Cosplay, Shōnen, Shōjo,
                   Seinen, Josei, Slice of Life
                 </p>
-                <Link href="/events/superhero-shippuden">
-                  <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
+                <a href="/events/superhero-shippuden">
+                  <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
                     See More
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
-            <div class="group border rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div class="w-full">
+            <div className="group border rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+              <div className="w-full">
                 <img
-                  class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                   src="/poptopia.png"
                   alt="Design-derbies"
                 />
               </div>
-              <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 className="font-dmserif text-3xl font-bold text-white">
                   Pop Topia
                 </h1>
-                <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   Musical Event: Music, Quiz, Trivia, Questionnaire,
                   Connections, Guessing
                 </p>
-                <Link href="/events/pop-topia">
-                  <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
+                <a href="/events/pop-topia">
+                  <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
                     See More
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
