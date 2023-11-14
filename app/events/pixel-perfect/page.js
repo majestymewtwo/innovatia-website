@@ -63,7 +63,7 @@ const EventDetailDB = () => {
               <div>
                 <span className="font-bold">Date and Time: </span>
                 <ul>
-                  <li>20th November 2023 (Online)</li>
+                  <li>17th November 2023 (Online)</li>
                   <li>22nd November 2023 (Offline)</li>
                 </ul>
               </div>
@@ -127,7 +127,7 @@ const EventDetailDB = () => {
                 <span className="font-bold">Venue: </span>Sri Sairam Engineering College
               </div>
               <p className="font-bold">
-                Last Date for Registration: 19.11.2023(11:00 AM)
+                Last Date for Registration: 17.11.2023(11:00 AM)
               </p>
               <div>
                 <span className="font-bold">Whatsapp Group Link : </span>{" "}
