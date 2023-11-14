@@ -84,6 +84,9 @@ export default function Home() {
                   Starts In
                 </h3>
                 <CountdownTimer targetDate='2023-11-22T23:59:59' />
+                <h3 className='text-white text-2xl font-inconsolata'>
+                  <span className="font-bold">Venue : </span> MBA Auditorium
+                </h3>
               </div>
             </div>
             <div className='w-1/4 relative'>
