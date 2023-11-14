@@ -169,7 +169,7 @@ const EventDetailDB = () => {
             <div className='flex flex-col w-full justify-start lg:w-auto lg:absolute lg:bottom-5 lg:left-5'>
               <p className='text-sm font-semibold'>Student Coordinator</p>
               <p className='text-sm'>+91 82482 72707 - VAISHNAVI S</p>
-              <p className='text-sm'>+91 94897 14682 - PRAJITH B</p>
+              <p className='text-sm'>+91 97898 43026 - PAVITHRA</p>
               <p className='text-sm font-semibold'>Staff Coordinator</p>
               <p className='text-sm'> +91 97907 03366 - Mr. LAKSHMINARAYAN</p>
             </div>
