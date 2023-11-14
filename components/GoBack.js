@@ -6,12 +6,12 @@ import { useRouter } from 'next/navigation'
 function GoBack() {
   const router = useRouter()
   return (
-    <div className='m-10 transition ease-in-out delay-150  hover:scale-125   '>
-     
-      <button onClick={()=>router.back()}>
-        <img src="/goback1.png" alt="" width={60} height={60} /></button>
+    <div className='absolute top-0 left-0 p-5 md:p-4'>
+      <button onClick={() => router.back()}>
+        <img src='/go-back.png' alt='' width={50} height={50} />
+      </button>
     </div>
-  )
+  );
 }
 
 export default GoBack
