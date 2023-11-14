@@ -12,7 +12,7 @@ const EventDetailDB = () => {
   const onDownload = () => {
     const link = document.createElement("a");
     link.download = `design-derbies-brochure.png`;
-    link.href = ".";
+    link.href = "/design-derbies-brochure.png ";
     link.click();
   };
 

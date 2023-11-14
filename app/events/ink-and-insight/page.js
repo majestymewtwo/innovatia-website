@@ -11,8 +11,8 @@ import GoBack from "@/components/GoBack";
 const EventDetailDB = () => {
   const onDownload = () => {
     const link = document.createElement("a");
-    link.download = `space-bg-1.jpg`;
-    link.href = ".";
+    link.download = `ink-&-insight-brochure.png`;
+    link.href = "/ink-&-insight-brochure.png";
     link.click();
   };
 
