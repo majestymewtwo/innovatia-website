@@ -29,6 +29,14 @@ export default function Footer() {
           www.sairam.edu.in
         </a>
         <h3 className="hidden md:block">|</h3>
+        <a
+          href="https://mtech-cse-sairam.github.io/pulse-newsletter/"
+          target="_blank"
+          className="hover:scale-110 hover:text-[#FFB100] transition-all ease-in-out duration-200"
+        >
+          Newsletter
+        </a>
+        <h3 className="hidden md:block">|</h3>
         <img src="/chairman.png" alt="sec-white-logo" className="h-16" />
       </div>
     </div>
