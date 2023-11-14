@@ -25,8 +25,8 @@ const EventDetailDB = () => {
 
   return (
     <section className="h-[100vh] w-[100vw] flex justify-center items-center">
-      <div className="flex h-[75%] w-[90%] md:h-[83%] lg:h-[80%] lg:justify-center">
-        <Card className="relative w-[95%] bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full lg:flex-row lg:items-start lg:pt-16 text-white space-y-4 lg:space-y-0 overflow-clip">
+      <div className="flex min-h-auto absolute top-20 w-[90%] md:h-[83%] lg:h-[80%] lg:justify-center">
+        <Card className="relative w-full bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full md:w-[95%] lg:flex-row lg:items-start lg:pt-8 text-white space-y-4 lg:space-y-0 overflow-clip">
           <div className="flex w-full items-center justify-between flex-row-reverse h-fit md:w-1/2 lg:w-1/2 lg:h-4/5 lg:pr-6 lg:justify-center">
             <img
               src="/retro-bg.jpg"
@@ -48,46 +48,47 @@ const EventDetailDB = () => {
                 made with the camera… They are made with the eye, heart, TV, and
                 head.
               </p>
-              <p>
+              <div>
                 <span className="font-bold">Mode: </span>
                 <ul>
                   <li>1st Round: Online </li>
                   <li>2nd Round: Offline </li>
                 </ul>
-              </p>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Date and Time: </span>
                 <ul>
                   <li>20th November 2023 (Online)</li>
                   <li>22nd November 2023 (Offline)</li>
                 </ul>
-              </p>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Venue : </span>
                 <ul>
                   <li>
                   Sri Sairam Engineering College, Chennai. 
                   </li>
                 </ul>
-              </p>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Participation : </span>
                 <ul>
                   <li>Solo Participation</li>
                 </ul>
-              </p>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Reporting Time: </span>
                 <ul>
                   <li>9:15 AM</li>
                 </ul>
-              </p>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Event Time : </span>
                 <ul>
                   <li>11:15 AM</li>
                 </ul>
-              </p>
+              </div>
+              <div>
               <span className="font-bold">Instructions: </span>
               <ul className="list-disc list-inside">
                 <li>
@@ -116,18 +117,19 @@ const EventDetailDB = () => {
                 </li>
               
               </ul>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Venue: </span>Sri Sairam Engineering College
-              </p>
+              </div>
               <p className="font-bold">
                 Last Date for Registration: 19.11.2023(11:00 AM)
               </p>
-              <p>
+              <div>
                 <span className="font-bold">Whatsapp Group Link : </span>{" "}
                 <a href="" target="_blank">
                   Join Pixel Perfect!
                 </a>
-              </p>
+              </div>
             </div>
           </div>
           <div className="flex flex-col w-full justify-start lg:w-auto lg:absolute lg:bottom-5 lg:left-5">

@@ -25,8 +25,8 @@ const EventDetailDB = () => {
 
   return (
     <section className="h-[100vh] w-[100vw] flex justify-center items-center">
-      <div className="flex h-[75%] w-[90%] md:h-[83%] lg:h-[80%] lg:justify-center">
-        <Card className="relative w-[95%] bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full lg:flex-row lg:items-start lg:pt-16 text-white space-y-4 lg:space-y-0 overflow-clip">
+      <div className="flex min-h-auto absolute top-20 w-[90%] md:h-[83%] lg:h-[80%] lg:justify-center">
+        <Card className="relative w-full bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full md:w-[95%] lg:flex-row lg:items-start lg:pt-div text-white space-y-4 lg:space-y-0 overflow-clip">
           <div className="flex w-full items-center justify-between flex-row-reverse h-fit md:w-1/2 lg:w-1/2 lg:h-4/5 lg:pr-6 lg:justify-center">
             <img
               src="/retro-bg.jpg"
@@ -48,21 +48,21 @@ const EventDetailDB = () => {
                 knowledge of diverse superhero and anime fandoms while fostering
                 teamwork and creativity.
               </p>
-              <p>
+              <div>
                 <span className="font-bold">Mode: </span>
                 <ul>
                   <li>1st Round: Online </li>
                   <li>2nd Round: Offline </li>
                 </ul>
-              </p>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Date and Time: </span>
                 <ul>
                   <li>18th November 2023 (Online)</li>
                   <li>22nd November 2023 (Offline)</li>
                 </ul>
-              </p>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Venue : </span>
                 <ul>
                   <li>
@@ -70,105 +70,109 @@ const EventDetailDB = () => {
                     - Superhero shippuden)
                   </li>
                 </ul>
-              </p>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Team : </span>
                 <ul>
                   <li>Group Of 2 or 3</li>
                 </ul>
-              </p>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Reporting Time: </span>
                 <ul>
                   <li>9:15 AM</li>
                 </ul>
-              </p>
-              <p>
+              </div>
+              <div>
                 <span className="font-bold">Event Time : </span>
                 <ul>
                   <li>11:15 AM</li>
                 </ul>
-              </p>
-              <span className="font-bold">Instructions: </span>
-              <ul className="list-disc list-inside">
-                <li>
-                  <span className="font-bold">ONLINE QUIZ</span> <br />
-                  <div className="ml-5">
-                    <span className="font-bold"> Free for All Quiz</span> <br />
-                    1. Mixed Questions: Prepare a mix of questions from comics,
-                    anime, and series. <br />
-                    2. Pass Option: If a team can't answer, the question passes
-                    to the next team.
-                    <br />
-                    <span className="font-bold">
-                      Scene Identification Challenge
-                    </span>{" "}
-                    <br />
-                    1. Number Selection: Teams pick numbers within a specific
-                    range.
-                    <br />
-                    2. Video-Based Questions: Videos play scenes in ¼ screen.
-                    <br />
-                    3. Goal: Teams identify the character and series based on
-                    the scene
-                    <br />
-                    4. Top teams will be shortlisted to the offline rounds to be
-                    held on 22nd
-                  </div>
-                </li>
-                <li>
-                  <span className="font-bold">Round 1:</span> <br />
-                  <div className="ml-5">
-                    <span className="font-bold">Series Name Guessing</span>{" "}
-                    <br />
-                    1. Team member silently gestures series/movie name.
-                    <br />
-                    2. Others guess while listening to loud music on headphones.
-                    <br />
-                    3. Teams will be awarded points based on their guesses
-                  </div>
-                </li>
-                <li>
-                  <span className="font-bold">Round 2:</span> <br />
-                  <div className="ml-5">
-                    <span className="font-bold">Chuunin Exams Event</span>
-                    <br />
-                    1. Test Format: Pen and paper MCQ test.
-                    <br />
-                    2. Topics: Series and anime knowledge assessment.
-                  </div>
-                </li>
-                <li>
-                  <span className="font-bold">Round 3:</span> <br />
-                  <div className="ml-5">
-                    <span className="font-bold">Shipwreck Scenario</span>
-                    <br />
-                    1. Hypothetical Situation: Ship sinking, one life jacket
-                    available. <br />
-                    2. Character Impersonation: Participants embody characters
-                    (anime, Marvel, DC).
-                    <br />
-                    3. Three Rounds: Shortlisting rounds and a final showdown.
-                    <br />
-                  </div>
-                </li>
-                <li>
-                  WINNER : Team with the highest overall score wins the
-                  competition.
-                </li>
-              </ul>
-              <p>
+              </div>
+              <div>
+                <span className="font-bold">Instructions: </span>
+                <ul className="list-disc list-inside">
+                  <li>
+                    <span className="font-bold">ONLINE QUIZ</span> <br />
+                    <div className="ml-5">
+                      <span className="font-bold"> Free for All Quiz</span>{" "}
+                      <br />
+                      1. Mixed Questions: Prepare a mix of questions from
+                      comics, anime, and series. <br />
+                      2. Pass Option: If a team can't answer, the question
+                      passes to the next team.
+                      <br />
+                      <span className="font-bold">
+                        Scene Identification Challenge
+                      </span>{" "}
+                      <br />
+                      1. Number Selection: Teams pick numbers within a specific
+                      range.
+                      <br />
+                      2. Video-Based Questions: Videos play scenes in ¼ screen.
+                      <br />
+                      3. Goal: Teams identify the character and series based on
+                      the scene
+                      <br />
+                      4. Top teams will be shortlisted to the offline rounds to
+                      be held on 22nd
+                    </div>
+                  </li>
+                  <li>
+                    <span className="font-bold">Round 1:</span> <br />
+                    <div className="ml-5">
+                      <span className="font-bold">Series Name Guessing</span>{" "}
+                      <br />
+                      1. Team member silently gestures series/movie name.
+                      <br />
+                      2. Others guess while listening to loud music on
+                      headphones.
+                      <br />
+                      3. Teams will be awarded points based on their guesses
+                    </div>
+                  </li>
+                  <li>
+                    <span className="font-bold">Round 2:</span> <br />
+                    <div className="ml-5">
+                      <span className="font-bold">Chuunin Exams Event</span>
+                      <br />
+                      1. Test Format: Pen and paper MCQ test.
+                      <br />
+                      2. Topics: Series and anime knowledge assessment.
+                    </div>
+                  </li>
+                  <li>
+                    <span className="font-bold">Round 3:</span> <br />
+                    <div className="ml-5">
+                      <span className="font-bold">Shipwreck Scenario</span>
+                      <br />
+                      1. Hypothetical Situation: Ship sinking, one life jacket
+                      available. <br />
+                      2. Character Impersonation: Participants embody characters
+                      (anime, Marvel, DC).
+                      <br />
+                      3. Three Rounds: Shortlisting rounds and a final showdown.
+                      <br />
+                    </div>
+                  </li>
+                  <li>
+                    WINNER : Team with the highest overall score wins the
+                    competition.
+                  </li>
+                </ul>
+              </div>
+              <div>
                 <span className="font-bold">Venue: </span>Gamma Hall
-              </p>
+              </div>
               <p className="font-bold">
                 Last Date for Registration: 18.11.2023(11:00 AM)
               </p>
-              <p>
+              <div>
                 <span className="font-bold">Whatsapp Group Link : </span>{" "}
                 <a href="" target="_blank">
                   Join Superhero Shippuden!
                 </a>
-              </p>
+              </div>
             </div>
           </div>
           <div className="flex flex-col w-full justify-start lg:w-auto lg:absolute lg:bottom-5 lg:left-5">
