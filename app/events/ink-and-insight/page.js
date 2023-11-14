@@ -140,7 +140,7 @@ const EventDetailDB = () => {
               </p>
               <div>
                 <span className="font-bold">Whatsapp Group Link : </span>{" "}
-                <a href="" target="_blank">
+                <a href='https://chat.whatsapp.com/GaEmB0HVSLr2GFtWtazIXe' target='_blank'>
                   Join Ink & Insights!
                 </a>
               </div>
