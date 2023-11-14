@@ -11,7 +11,7 @@ import GoBack from "@/components/GoBack";
 const EventDetailDB = () => {
   const onDownload = () => {
     const link = document.createElement("a");
-    link.download = `space-bg-1.jpg`;
+    link.download = `design-derbies-brochure.png`;
     link.href = ".";
     link.click();
   };
