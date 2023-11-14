@@ -3,12 +3,14 @@ import { useEffect, useState } from "react";
 import Confetti from "@/components/register/Confetti";
 import { unHideHamButton } from "../utils/utils";
 import { Card } from "@/components/ui/card";
+import GoBack from "@/components/GoBack";
 
 const Success = ({ searchParams }) => {
   const [visible, setVisible] = useState(true);
   const data = JSON.parse(searchParams.data);
 
-  const titleClass = "flex items-center space-x-4 text-lg md:text-xl";
+  const titleClass =
+    "flex flex-col md:flex-row items-center space-x-4 md:text-xl text-center";
   const headingClass = "font-bold";
   const detailClass = "font-light";
 
@@ -30,7 +32,7 @@ const Success = ({ searchParams }) => {
 
   return (
     <>
-      <div className='flex flex-col space-y-6 items-center justify-center w-full h-screen pt-6'>
+      <div className='flex flex-col space-y-6 items-center justify-center w-full min-h-screen pt-20 md:pt-5'>
         <h2 className='inline-block md:p-3 md:pt-0 text-3xl md:text-5xl text-transparent font-bold animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text tracking-tight'>
           Registration Successful
         </h2>
@@ -77,6 +79,7 @@ const Success = ({ searchParams }) => {
             data.memberThreeCollegeName
           )}
         </Card>
+        <GoBack path='/events' />
       </div>
 
       {visible && <Confetti />}

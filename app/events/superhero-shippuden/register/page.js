@@ -4,11 +4,11 @@ const page = () => {
   const event = {
     name: "Superhero Shippuden",
     description:
-      "Design Thinking is a process for creative problem solving. You can use it to inform your own teaching practice, or you can teach it to your students as a framework for real-world projects.",
-    date: "2021-10-10",
-    time: "12:00",
+      '"Unleash Your Superpower Fusion" To celebrate and test the knowledge of diverse superhero and anime fandoms while fostering teamwork and creativity.',
+    date: "2022-11-22",
+    time: "11:15",
     maxMembers: 3,
-    minMembers: 3,
+    minMembers: 2,
     venue: "Online",
     image:
       "https://images.unsplash.com/photo-1593642532450-9d8a9a7e9c9d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzaWduJTIwdGhpbmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",

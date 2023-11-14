@@ -44,7 +44,7 @@ function Team({ minSize, maxSize, setTeamSize, setTeam }) {
   const renderSelectItems = () => {
     if (fixedSize)
       return (
-        <SelectItem className={selectItemStyle} value={minSize}>
+        <SelectItem className={selectItemStyle} value={String(minSize)}>
           {minSize}
         </SelectItem>
       );
@@ -57,8 +57,7 @@ function Team({ minSize, maxSize, setTeamSize, setTeam }) {
         <SelectItem
           key={i}
           className={selectItemStyle}
-          value={String(minSize + i)}
-        >
+          value={String(minSize + i)}>
           {minSize + i}
         </SelectItem>
       )
@@ -67,151 +66,147 @@ function Team({ minSize, maxSize, setTeamSize, setTeam }) {
 
   return (
     <Card
-      className={`w-full xs:w-4/5 sm:w-full md:w-4/5 lg:w-2/3 m-4 bg-white/5 backdrop-blur-sm text-white `}
-    >
-      <CardHeader className="text-center">
+      className={`w-full xs:w-4/5 sm:w-full md:w-4/5 lg:w-2/3 m-4 bg-white/5 backdrop-blur-sm text-white `}>
+      <CardHeader className='text-center'>
         <CardTitle>Team Details</CardTitle>
-        <CardDescription className="font-medium text-[#7dd8c9]">
+        <CardDescription className='font-medium text-[#7dd8c9]'>
           Please fill all the details carefully, it will be used for
           verification purposes.{" "}
         </CardDescription>
       </CardHeader>
-      <CardContent className="pb-14">
-        <div className="grid items-center w-full gap-4">
-          <div className="flex flex-col justify-center w-full gap-8 sm:flex-row">
+      <CardContent className='pb-14'>
+        <div className='grid items-center w-full gap-4'>
+          <div className='flex flex-col justify-center w-full gap-8 sm:flex-row'>
             <div className={itemStyle}>
-              <Label htmlFor="teamName">Team Name</Label>
+              <Label htmlFor='teamName'>Team Name</Label>
               <Input
                 className={inputStyle}
-                id="teamName"
-                placeholder="Team Xander"
+                id='teamName'
+                placeholder='Team Xander'
                 onChange={handleInputChange}
               />
             </div>
             <div className={itemStyle}>
-              <Label htmlFor="teamSize">Team Size</Label>
+              <Label htmlFor='teamSize'>Team Size</Label>
               <Select
                 onValueChange={(value) => {
                   setTeamSize(value);
-                }}
-              >
-                <SelectTrigger className={inputStyle} id="teamSize">
-                  <SelectValue placeholder="Select" />
+                }}>
+                <SelectTrigger className={inputStyle} id='teamSize'>
+                  <SelectValue placeholder='Select' />
                 </SelectTrigger>
-                <SelectContent position="popper" className="font-sans">
+                <SelectContent position='popper' className='font-sans'>
                   {renderSelectItems()}
                 </SelectContent>
               </Select>
             </div>
           </div>
-          <h2 className="text-2xl font-medium text-center ">Captain</h2>
-          <div className="grid w-full grid-cols-1 gap-8 sm:grid-cols-2">
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="captainName">Name</Label>
+          <h2 className='text-2xl font-medium text-center '>Captain</h2>
+          <div className='grid w-full grid-cols-1 gap-8 sm:grid-cols-2'>
+            <div className='flex flex-col space-y-1.5'>
+              <Label htmlFor='captainName'>Name</Label>
               <Input
                 className={inputStyle}
-                id="captainName"
-                placeholder="Innovator"
+                id='captainName'
+                placeholder='Innovator'
                 onChange={handleInputChange}
               />
             </div>
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="captainEmail">Email</Label>
+            <div className='flex flex-col space-y-1.5'>
+              <Label htmlFor='captainEmail'>Email</Label>
               <Input
                 className={inputStyle}
-                id="captainEmail"
-                type="email"  
-                placeholder="innovator@innovatia.com"
+                id='captainEmail'
+                type='email'
+                placeholder='innovator@innovatia.com'
                 onChange={handleInputChange}
               />
             </div>
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="captainGender">Gender</Label>
+            <div className='flex flex-col space-y-1.5'>
+              <Label htmlFor='captainGender'>Gender</Label>
               <Select
                 onValueChange={(value) =>
                   handleSelectChange("captainGender", value)
                 }
-                id="captainGender"
-              >
-                <SelectTrigger className={inputStyle} id="captainGender">
-                  <SelectValue placeholder="Select" />
+                id='captainGender'>
+                <SelectTrigger className={inputStyle} id='captainGender'>
+                  <SelectValue placeholder='Select' />
                 </SelectTrigger>
-                <SelectContent position="popper" className="font-sans">
-                  <SelectItem className={selectItemStyle} value="male">
+                <SelectContent position='popper' className='font-sans'>
+                  <SelectItem className={selectItemStyle} value='male'>
                     Male
                   </SelectItem>
-                  <SelectItem className={selectItemStyle} value="female">
+                  <SelectItem className={selectItemStyle} value='female'>
                     Female
                   </SelectItem>
-                  <SelectItem className={selectItemStyle} value="other">
+                  <SelectItem className={selectItemStyle} value='other'>
                     Other
                   </SelectItem>
                 </SelectContent>
               </Select>
             </div>
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="captainPhone">Phone</Label>
+            <div className='flex flex-col space-y-1.5'>
+              <Label htmlFor='captainPhone'>Phone</Label>
               <Input
                 className={inputStyle}
-                id="captainPhone"
-                type="number"
-                display="none"
-                placeholder="9846514561"
+                id='captainPhone'
+                type='number'
+                display='none'
+                placeholder='9846514561'
                 onChange={handleInputChange}
               />
             </div>
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="captainDept">Department</Label>
+            <div className='flex flex-col space-y-1.5'>
+              <Label htmlFor='captainDept'>Department</Label>
               <Input
                 className={inputStyle}
-                id="captainDept"
-                placeholder="Computer Science and Engineering"
+                id='captainDept'
+                placeholder='Computer Science and Engineering'
                 onChange={handleInputChange}
               />
             </div>
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="captainCollege">College</Label>
+            <div className='flex flex-col space-y-1.5'>
+              <Label htmlFor='captainCollege'>College</Label>
               <Input
                 className={inputStyle}
-                id="captainCollege"
-                placeholder="Sri Sairam Engineering College"
+                id='captainCollege'
+                placeholder='Sri Sairam Engineering College'
                 onChange={handleInputChange}
               />
             </div>
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="captainCollegeId">College Id</Label>
+            <div className='flex flex-col space-y-1.5'>
+              <Label htmlFor='captainCollegeId'>College Id</Label>
               <Input
                 className={inputStyle}
-                id="captainCollegeId"
-                placeholder="SEC21CJ001"
+                id='captainCollegeId'
+                placeholder='SEC21CJ001'
                 onChange={handleInputChange}
               />
             </div>
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="captainYear">Year</Label>
+            <div className='flex flex-col space-y-1.5'>
+              <Label htmlFor='captainYear'>Year</Label>
               <Select
                 onValueChange={(value) =>
                   handleSelectChange("captainYear", value)
                 }
-                id="captainYear"
-              >
-                <SelectTrigger className={inputStyle} id="captainYear">
-                  <SelectValue placeholder="Select" />
+                id='captainYear'>
+                <SelectTrigger className={inputStyle} id='captainYear'>
+                  <SelectValue placeholder='Select' />
                 </SelectTrigger>
-                <SelectContent position="popper" className={` font-sans`}>
-                  <SelectItem className={selectItemStyle} value="1">
+                <SelectContent position='popper' className={` font-sans`}>
+                  <SelectItem className={selectItemStyle} value='1'>
                     1
                   </SelectItem>
-                  <SelectItem className={selectItemStyle} value="2">
+                  <SelectItem className={selectItemStyle} value='2'>
                     2
                   </SelectItem>
-                  <SelectItem className={selectItemStyle} value="3">
+                  <SelectItem className={selectItemStyle} value='3'>
                     3
                   </SelectItem>
-                  <SelectItem className={selectItemStyle} value="4">
+                  <SelectItem className={selectItemStyle} value='4'>
                     4
                   </SelectItem>
-                  <SelectItem className={selectItemStyle} value="5">
+                  <SelectItem className={selectItemStyle} value='5'>
                     5
                   </SelectItem>
                 </SelectContent>

@@ -4,12 +4,12 @@ const page = () => {
   const event = {
     name: "Pixel Perfect",
     description:
-      "Design Thinking is a process for creative problem solving. You can use it to inform your own teaching practice, or you can teach it to your students as a framework for real-world projects.",
-    date: "2021-10-10",
-    time: "12:00",
-    maxMembers: 5,
-    minMembers: 2,
-    venue: "Online",
+      "“Where art meets reality!” It is an illusion that photos are made with the camera… They are made with the eye, heart, TV, and head.",
+    date: "2023-11-22",
+    time: "11:15",
+    maxMembers: 1,
+    minMembers: 1,
+    venue: "Offline",
     image:
       "https://images.unsplash.com/photo-1593642532450-9d8a9a7e9c9d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzaWduJTIwdGhpbmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
     link: "https://www.google.com",

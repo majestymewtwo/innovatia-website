@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import "../eventdetail.css";
 import { usePathname, useRouter } from "next/navigation";
 import { unHideHamButton } from "@/app/utils/utils";
+import GoBack from "@/components/GoBack";
 
 const EventDetailDB = () => {
   const onDownload = () => {
@@ -24,6 +25,10 @@ const EventDetailDB = () => {
   }, []);
 
   return (
+    <>
+    <div className='relative'>
+        <GoBack />
+      </div>
     <section className="h-[100vh] w-[100vw] flex justify-center items-center">
       <div className="flex min-h-auto w-[90%] absolute top-20 md:h-[83%] lg:h-[80%] lg:justify-center">
         <Card className="relative w-full bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full md:w-[95%] lg:flex-row lg:items-start lg:pt-8 text-white space-y-4 lg:space-y-0 overflow-clip">
@@ -167,6 +172,7 @@ const EventDetailDB = () => {
         </Card>
       </div>
     </section>
+    </>
   );
 };
 

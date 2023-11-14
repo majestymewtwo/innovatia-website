@@ -4,12 +4,12 @@ const page = () => {
   const event = {
     name: "Ink and Insight",
     description:
-      "Design Thinking is a process for creative problem solving. You can use it to inform your own teaching practice, or you can teach it to your students as a framework for real-world projects.",
-    date: "2021-10-10",
-    time: "12:00",
+      "'Ink Your Ideas, Insight Your Impact!' To cultivate innovative thinking, emphasizing the transformation of ideas into practical, impactful realities, and providing a platform for budding innovators to showcase their creative solutions.",
+    date: "2023-11-22",
+    time: "11:15",
     maxMembers: 3,
     minMembers: 2,
-    venue: "Online",
+    venue: "Offline",
     image:
       "https://images.unsplash.com/photo-1593642532450-9d8a9a7e9c9d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzaWduJTIwdGhpbmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
     link: "https://www.google.com",
