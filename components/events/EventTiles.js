@@ -1,6 +1,6 @@
 "use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabscus";
-
+import "./SocialEvent.css";
 import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 
 const EventTiles = () => {
