@@ -47,37 +47,37 @@ function Schedule() {
             <tr>
         <td class="py-2 px-4 border-b">18.11.2023 7.00PM - 9.00PM</td>
         <td class="py-2 px-4 border-b">Design Derbies</td>
-        <td class="py-2 px-4 border-b">-</td>
+        
       </tr>
       <tr>
         <td class="py-2 px-4 border-b">18.11.2023 7.00PM - 9.00PM</td>
         <td class="py-2 px-4 border-b">Game of Threats</td>
-        <td class="py-2 px-4 border-b">-</td>
+        
       </tr>
       <tr>
         <td class="py-2 px-4 border-b">18.11.2023 7.00PM - 9.00PM</td>
         <td class="py-2 px-4 border-b">Superhero Shippuden</td>
-        <td class="py-2 px-4 border-b">-</td>
+        
       </tr>
       <tr>
         <td class="py-2 px-4 border-b">18.11.2023 7.00PM - 9.00PM</td>
         <td class="py-2 px-4 border-b">Poptopia</td>
-        <td class="py-2 px-4 border-b">-</td>
+ 
       </tr>
       <tr>
         <td class="py-2 px-4 border-b">20.11.2023</td>
         <td class="py-2 px-4 border-b">(Shortlisted teams will be posted in the group)</td>
-        <td class="py-2 px-4 border-b">-</td>
+
       </tr>
       <tr>
         <td class="py-2 px-4 border-b">20.11.2023</td>
         <td class="py-2 px-4 border-b">Ink and Insight</td>
-        <td class="py-2 px-4 border-b">-</td>
+       
       </tr>
       <tr>
         <td class="py-2 px-4 border-b">20.11.2023</td>
         <td class="py-2 px-4 border-b">Pixelperfect</td>
-        <td class="py-2 px-4 border-b">-</td>
+       
       </tr>
             </tbody>
           </table>
@@ -173,6 +173,7 @@ function Schedule() {
                 <td class="py-2 px-4 border-b">2.45PM - 3.00PM</td>
                 <td class="py-2 px-4 border-b">Break</td>
                 <td class="py-2 px-4 border-b">-</td>
+                
               </tr>
               <tr>
                 <td class="py-2 px-4 border-b">3.00PM - 4.00PM</td>
