@@ -29,6 +29,16 @@ function Page() {
       image: "/yuvaraj.jpeg",
     },
     {
+      name: "Ahsan Shariff M",
+      role: "Staff Coordinator",
+      image: "/shariff.jpeg",
+    },
+    {
+      name: "Lakshmi Narayanan",
+      role: "Staff Coordinator",
+      image: "",
+    },
+    {
       name: "Muthu Aanand S U",
       role: "Designer & Developer",
       image: "/muthu.jpg",
