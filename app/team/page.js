@@ -9,6 +9,26 @@ function Page() {
   // Data for team members
   const teamMembers = [
     {
+      name: "Dr M Nithya",
+      role: "Head Of The Department",
+      image: "/nithya.jpeg",
+    },
+    {
+      name: "Nandini Devi S",
+      role: "Staff Coordinator",
+      image: "/nandini.jpeg",
+    },
+    {
+      name: "Shiny S",
+      role: "Staff Coordinator",
+      image: "",
+    },
+    {
+      name: "Yuvaraj G",
+      role: "Staff Coordinator",
+      image: "/yuvaraj.jpeg",
+    },
+    {
       name: "Muthu Aanand S U",
       role: "Designer & Developer",
       image: "/muthu.jpg",

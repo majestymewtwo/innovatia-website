@@ -34,8 +34,8 @@ const EventDetailDB = () => {
           <Card className='relative w-[95%] bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full lg:flex-row lg:items-start lg:pt-16 text-white space-y-4 lg:space-y-0 overflow-clip'>
             <div className='flex w-full items-center justify-between flex-row-reverse h-fit md:w-1/2 lg:w-1/2 lg:h-4/5 lg:pr-6 lg:justify-center'>
               <img
-                src='/retro-bg.jpg'
-                alt='retro-bg'
+                src='/game-of-threats.png'
+                alt='game-of-threats'
                 className='rounded-md w-[150px] h-full md:w-[200px] md:h-[200px] lg:w-auto lg:h-full lg:rounded-md'
               />
               <div className='font-oswald text-4xl items-center text-[#EF8354] md:text-4xl lg:hidden'>
