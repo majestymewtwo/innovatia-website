@@ -29,8 +29,8 @@ const EventDetailDB = () => {
     <div className='relative'>
         <GoBack />
       </div>
-    <section className="h-[100vh] w-[100vw] flex justify-center items-center">
-      <div className="flex min-h-auto w-[90%] absolute top-20 md:h-[83%] lg:h-[80%] lg:justify-center">
+    <section className="md:h-screen w-[100vw] flex justify-center items-center py-24 md:py-0">
+      <div className="flex min-h-auto w-[90%] md:h-[83%] lg:h-[80%] lg:justify-center">
         <Card className="relative w-full bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full md:w-[95%] lg:flex-row lg:items-start lg:pt-8 text-white space-y-4 lg:space-y-0 overflow-clip">
           <div className="flex w-full items-center justify-between flex-row-reverse h-fit md:w-1/2 lg:w-1/2 lg:h-4/5 lg:pr-6 lg:justify-center">
             <img
