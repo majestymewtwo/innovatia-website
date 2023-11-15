@@ -170,7 +170,7 @@ const EventDetailDB = () => {
                 <span className="font-bold">Venue: </span>Gamma Hall
               </div>
               <p className="font-bold">
-                Last Date for Registration: 18.11.2023(11:00 AM)
+                Last Date for Registration: 17.11.2023(12:00 PM)
               </p>
               <div>
                 <span className="font-bold">Whatsapp Group Link : </span>{" "}
