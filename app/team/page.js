@@ -21,7 +21,7 @@ function Page() {
     {
       name: "Shiny S",
       role: "Staff Coordinator",
-      image: "",
+      image: "/shiny.jpg",
     },
     {
       name: "Yuvaraj G",
