@@ -61,7 +61,7 @@ const offlineEvents = [
   {
     time: "11.15AM - 12.35PM",
     name: "Pixelperfect",
-    venue: "Classroom - E3",
+    venue: "Classroom - E3107",
   },
   {
     time: "11.15AM - 12.35PM",
