@@ -164,6 +164,9 @@ const EventDetailDB = () => {
                     WINNER : Team with the highest overall score wins the
                     competition.
                   </li>
+                  <li>
+                  Every Participant is Required to join the whatsapp group from the link provided below!
+                  </li>
                 </ul>
               </div>
               <div>
@@ -182,8 +185,8 @@ const EventDetailDB = () => {
           </div>
           <div className="flex flex-col w-full justify-start lg:w-auto lg:absolute lg:bottom-5 lg:left-5">
             <p className="text-sm font-semibold">Student Coordinator</p>
-            <p className="text-sm">+91 9003268427 - GURU SANJAY R K</p>
             <p className="text-sm">+91 9486308851 - RUTHI SHANKARI S</p>
+            <p className="text-sm">+91 9003268427 - GURU SANJAY R K</p>
             <p className="text-sm font-semibold">Staff Coordinator</p>
             <p className="text-sm">+91 99622 75202 - Mrs.SHINY A</p>
           </div>

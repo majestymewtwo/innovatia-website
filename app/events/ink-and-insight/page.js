@@ -130,6 +130,9 @@ const EventDetailDB = () => {
                 <li>
                   WINNER : Team with the best solution to the problem statement and good presentation wins the competition.
                 </li>
+                <li>
+                Every Participant is Required to join the whatsapp group from the link provided below!
+                </li>
               </ul>
               </div>
               <div>

@@ -170,6 +170,10 @@ const EventDetailDB = () => {
                       Ultimate prize for the winning team's innovation and
                       website quality.
                     </li>
+                    <li>
+                      {" "}
+                      Every Participant is Required to join the whatsapp group from the link provided below!
+                    </li>
                   </ul>
                 </div>
                 <div>

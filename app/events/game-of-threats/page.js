@@ -151,6 +151,9 @@ const EventDetailDB = () => {
                         competition.
                       </div>
                     </li>
+                    <li>
+                    Every Participant is Required to join the whatsapp group from the link provided below!
+                    </li>
                   </ul>
                 </div>
                 <div>

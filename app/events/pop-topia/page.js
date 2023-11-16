@@ -162,6 +162,9 @@ const EventDetailDB = () => {
                   Each round emphasizes different skills and teamwork, offering
                   an engaging and diverse challenge for the participants.
                 </li>
+                <li>
+                Every Participant is Required to join the whatsapp group from the link provided below!
+                </li>
               </ul>
               <div>
                 <span className="font-bold">Venue: </span>MBA Auditorium

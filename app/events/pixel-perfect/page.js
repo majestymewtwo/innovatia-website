@@ -120,7 +120,9 @@ const EventDetailDB = () => {
                     3. Top photographs will be selected and awarded based on relevance to the theme and photography skills.
                   </div>
                 </li>
-              
+                <li>
+                Every Participant is Required to join the whatsapp group from the link provided below!
+                </li>
               </ul>
               </div>
               <div>
