@@ -22,10 +22,13 @@ const donationStall = () => {
         (SDGs), embracing the names that represent our collective aspirations
       </p>
       <div className="grid grid-cols-2 mx-2 gap-y-6 sm:gap-y-10 sm:grid-cols-4 justify-items-center">
-        <img className="rounded" width={125} height={125} src="/sdg1.png" />
-        <img className="rounded" width={125} height={125} src="/sdg2.png" />
-        <img className="rounded" width={125} height={125} src="/sdg3.png" />
-        <img className="rounded" width={125} height={125} src="/sdg4.jpg" />
+        <img className="rounded" width={200} height={200} src="/SDG_1.gif" />
+        <img className="rounded" width={200} height={200} src="/SDG_2.gif" />
+        <img className="rounded" width={200} height={200} src="/SDG_3.gif" />
+        <img className="rounded" width={200} height={200} src="/SDG_4.gif" />
+
+
+      
       </div>
       <p>
         Your presence and contributions will not merely touch lives; they will

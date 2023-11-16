@@ -19,7 +19,7 @@ function Page() {
       image: "/nandini.jpeg",
     },
     {
-      name: "Shiny S",
+      name: "Shiny A",
       role: "Staff Coordinator",
       image: "/Shiny.jpg",
     },
@@ -118,6 +118,15 @@ function Page() {
       instagram: "",
       linkedin: "",
     },
+    {
+      name: "Aadithya",
+      role: "Vice Secretary",
+      image: "/aadithya.jpeg",
+      role: "Jr.Developer",
+      github: "https://github.com/AadithyaSJ",
+      instagram: "https://www.instagram.com/a_adithya_7",
+      linkedin: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
+    }
   ]
   const developers = [
     
