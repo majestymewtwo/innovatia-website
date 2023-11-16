@@ -81,7 +81,7 @@ const EventDetailDB = () => {
                 <div>
                   <span className="font-bold">Team : </span>
                   <ul>
-                    <li>Group Of 2 or 3</li>
+                    <li>Group Of 2</li>
                   </ul>
                 </div>
                 <div>
