@@ -143,13 +143,13 @@ const EventDetailDB = () => {
               </p>
               <div>
                 <span className="font-bold">Whatsapp Group Link : </span>{" "}
-                <a href='https://chat.whatsapp.com/GaEmB0HVSLr2GFtWtazIXe' target='_blank'>
+                <a href='https://chat.whatsapp.com/GaEmB0HVSLr2GFtWtazIXe' className="underline" target='_blank'>
                   Join Ink & Insights!
                 </a>
               </div>
               <div>
                 <span className="font-bold">PPT Submission Link : </span>{" "}
-                <a href='https://docs.google.com/forms/d/1_bPzBicaXrTxJ-CCb6hBlWmuyyKr64KVKdYWHqtQPwc/edit?pli=1' target='_blank'>
+                <a href='https://docs.google.com/forms/d/1g1wvEGiF0NsTYTaM3R4RvH00WJZRUl1Z4lljjhyO8gA/edit' target='_blank' className="underline">
                   Submit your PPT here!
                 </a>
               </div>
