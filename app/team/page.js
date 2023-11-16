@@ -69,7 +69,7 @@ function Page() {
       instagram: "https://www.instagram.com/mysterio.praju/",
       linkedin: "https://www.linkedin.com/in/prajith-b-a7b705258/",
     },{
-      name: "Hasumathi Lakshmi G",
+      name: "Hasumathi",
       role: "Secretary",
       image: "/hasumathi.jpg",
       github: "https://github.com/Hasumathi",
@@ -86,9 +86,9 @@ function Page() {
       name: "Niveditha   S",
       role: "Vice Secretary",
       image: "/nivedha.jpg",
-      github: "",
-      instagram: "",
-      linkedin: "",
+      github: "https://github.com/Nivedithasivakumar",
+      instagram: "https://instagram.com/niveditha.s1304?igshid=MTc0dTF3NmQ1NnZrcg==",
+      linkedin: "https://www.linkedin.com/in/niveditha-sivakumar-7a3465236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Aadithya",
@@ -106,7 +106,7 @@ function Page() {
       instagram: "https://www.instagram.com/mr_deadshot_pro_001/",
       linkedin: "https://www.linkedin.com/in/rishi-vel-499689276/",
     },{
-      name: "Mohammed Rizwan M",
+      name: "Rizwan M",
       role: "Treasurer",
       image: "/rizwan.jpg",
       github: "https://github.com/MrRIZW",
@@ -120,12 +120,12 @@ function Page() {
       instagram: "https://instagram.com/_ch.ari.th_?igshid=anh0dW55NTMwZmxz",
       linkedin: "https://www.linkedin.com/in/sri-charith-a-g-bb2a2622a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },{
-      name: "Selva Vignesgh",
+      name: "Selva Vignesh",
       role: "Treasurer",
       image: "/selva.jpg",
-      github: "",
-      instagram: "",
-      linkedin: "",
+      github: "https://github.com/SelvaVigneshSM29",
+      instagram: "https://instagram.com/vigneshselva005?igshid=OGQ5ZDc2ODk2ZA==",
+      linkedin: "https://www.linkedin.com/in/selva-vignesh-666596299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Aadithya",
