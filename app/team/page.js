@@ -38,10 +38,12 @@ function Page() {
       role: "Staff Coordinator",
       image: "",
     },
+  ];
+  const officeBearers = [
     {
       name: "Shrivani R",
       role: "Chairman , Mtech CSE",
-      image: "",
+      image: "/shrivani.jpeg",
       github: "https://github.com/Shrivani15",
       instagram: "https://instagram.com/shri_._15?igshid=YzAwZjE1ZTI0Zg==",
       linkedin: "http://www.linkedin.com/in/shrivani-r-68b1281b0",
@@ -75,7 +77,7 @@ function Page() {
       linkedin: "https://www.linkedin.com/in/g-hasumathi-lakshmi-489501257",
     },{
       name: "Sri Durga Devi S",
-      role: "Designer & Developer",
+      role: "Vice Secretary",
       image: "/durga.jpg",
       github: "https://github.com/durgasara",
       instagram: "https://instagram.com/durgasaravanan28?igshid=NzZlODBkYWE4Ng==",
@@ -109,39 +111,42 @@ function Page() {
       instagram: "https://instagram.com/_ch.ari.th_?igshid=anh0dW55NTMwZmxz",
       linkedin: "https://www.linkedin.com/in/sri-charith-a-g-bb2a2622a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },{
-      name: "Selva Vignesgh S M",
+      name: "Selva Vignesgh",
       role: "Treasurer",
-      image: "",
+      image: "/selva.jpg",
       github: "",
       instagram: "",
       linkedin: "",
     },
+  ]
+  const developers = [
+    
     {
-      name: "Muthu Aanand S U",
-      role: "Designer & Developer",
+      name: "Muthu Aanand",
+      role: "Developer",
       image: "/muthu.jpg",
       github: "https://github.com/majestymewtwo",
       instagram: "https://www.instagram.com/mew2uwu/",
       linkedin: "https://www.linkedin.com/in/muthu-aanand-su-b36188218/",
     },
     {
-      name: "Ruthi Shankari S",
-      role: "Designer & Developer",
+      name: "Ruthi Shankari",
+      role: "Developer",
       image: "/ru.jpeg",
       github: "https://github.com/Ex-rockstar",
       linkedin: "https://www.linkedin.com/in/ruthi-shankari/",
       instagram: "https://www.instagram.com/thenameisruthi/",
     },
     {
-      name: "Guru Sanjay R K",
-      role: "Designer & Developer",
+      name: "Guru Sanjay",
+      role: "Developer",
       image: "/gs.jpg",
       github: "https://github.com/gurusanjay2322",
       linkedin: "https://www.linkedin.com/in/guru-sanjay-r-k-4b15b3230/",
       instagram: "https://www.instagram.com/__.gs.__22/",
     },
     {
-      name: "Yogesh M ",
+      name: "Yogesh",
       role: "Developer",
       image: "/Yogesh.jpeg",
       github: "https://github.com/Yogesh251103",
@@ -158,7 +163,7 @@ function Page() {
       linkedin: "https://www.linkedin.com/in/keyan5/",
     },
     {
-      name: "Kamalesh Kumar",
+      name: "Kamalesh",
       role: "Developer",
       image: "/kamalesh.jpeg",
       role: "Developer",
@@ -167,7 +172,7 @@ function Page() {
       linkedin: "https://www.linkedin.com/in/kamalesh-kumar-33a6a5222/",
     },
     {
-      name: "Aadithya S",
+      name: "Aadithya",
       role: "Jr.Developer",
       image: "/aadithya.jpeg",
       role: "Jr.Developer",
@@ -185,7 +190,7 @@ function Page() {
       linkedin: "https://www.linkedin.com/in/koushik-babu-8aa71a280/",
     },
     {
-      name: "Kushi Mili Mishra",
+      name: "Kushi Mishra",
       role: "Jr.Developer",
       image: "/kushi.jpeg",
       role: "Jr.Developer",
@@ -211,7 +216,7 @@ function Page() {
       instagram: "https://www.instagram.com/saicharanuvi01/",
       linkedin: "https://www.linkedin.com/in/sai-charan-uvaraj-a7a561257/",
     },
-  ];
+  ]
 
   useEffect(() => {
     unHideHamButton();
@@ -220,11 +225,47 @@ function Page() {
   return (
     <>
       <div className="text-center font-sans py-12 space-y-16">
-        <h3 className="inline-block p-3 pt-0 text-4xl md:text-5xl text-transparent font-bold animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text tracking-tight">
-          Our Team
+        <h3 className="inline-block pt-16 md:p-3 md:pt-0 text-4xl md:text-5xl text-transparent font-bold animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text tracking-tight">
+          Faculty Coordinators
         </h3>
         <div className="flex flex-wrap gap-10 justify-center space-y-20 md:space-y-0 pb-16">
           {teamMembers.map((member, index) => (
+            <MemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              image={member.image}
+              github={member.github}
+              instagram={member.instagram}
+              linkedin={member.linkedin}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="text-center font-sans py-12 space-y-16">
+        <h3 className="inline-block p-0 m-0 md:p-3 md:pt-0 text-4xl md:text-5xl text-transparent font-bold animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text tracking-tight">
+          Development Team
+        </h3>
+        <div className="flex flex-wrap gap-10 justify-center space-y-20 md:space-y-0 pb-16">
+          {developers.map((member, index) => (
+            <MemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              image={member.image}
+              github={member.github}
+              instagram={member.instagram}
+              linkedin={member.linkedin}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="text-center font-sans py-12 space-y-16">
+        <h3 className="inline-block p-3 pt-0 text-4xl md:text-5xl text-transparent font-bold animate-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text tracking-tight">
+          Office Bearers
+        </h3>
+        <div className="flex flex-wrap gap-10 justify-center space-y-20 md:space-y-0 pb-16">
+          {officeBearers.map((member, index) => (
             <MemberCard
               key={index}
               name={member.name}
