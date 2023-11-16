@@ -2,21 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 @font-face {
   font-family: "Blanka Regular";
@@ -44,6 +29,7 @@ body {
   background-size: cover;
   background-position: center;
   transition: all 0.7s ease;
+  color: white;
   /* cursor: none; */
 }
 main {
@@ -202,7 +188,7 @@ main {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #ef8354;
+  background-color: #FFB100;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;

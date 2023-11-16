@@ -86,6 +86,10 @@ export default function Home() {
                   Starts In
                 </h3>
                 <CountdownTimer targetDate="2023-11-22T23:59:59" />
+                <h3 className='text-2xl text-white font-inconsolata'>
+                  <span className="font-bold">Venue : </span> MBA Auditorium 
+                  (D Block,III Floor)
+                </h3>
               </div>
             </div>
             <div className="relative w-1/4">
@@ -136,8 +140,8 @@ export default function Home() {
                 <h3 className="text-2xl text-white font-inconsolata">
                   Starts In
                 </h3>
-                <CountdownTimer targetDate="2023-11-22T23:59:59" />
-                <div className="w-1/2">
+                <CountdownTimer targetDate='2023-11-22T23:59:59' />
+                <div className='w-1/2'>
                   <Lottie animationData={space1} />
                 </div>
                 <SpaceButton />

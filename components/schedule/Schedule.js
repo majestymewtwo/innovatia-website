@@ -61,7 +61,7 @@ const offlineEvents = [
   {
     time: "11.15AM - 12.35PM",
     name: "Pixelperfect",
-    venue: "Classroom - E3",
+    venue: "Classroom - E3107",
   },
   {
     time: "11.15AM - 12.35PM",
@@ -117,28 +117,26 @@ const offlineEvents = [
 
 function Schedule() {
   const [showOnline, setShowOnline] = useState(true);
+  const buttonClass =
+    "text-white py-2 px-4 border backdrop-blur-md rounded-lg w-fit";
 
   const toggleSchedule = (type) => {
     setShowOnline(type === "online");
   };
 
   return (
-    <div className="container mx-auto mt-8">
+    <div className="container mx-auto space-y-6 py-12">
       {/* Toggle Button */}
-      <div className="mb-4">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
         <button
           onClick={() => toggleSchedule("online")}
-          className={`bg-${
-            showOnline ? "blue" : "gray"
-          }-500 text-white py-2 px-4 mr-2 border backdrop-blur-md bg-white/5`}
+          className={`${showOnline && "bg-white/25"} ${buttonClass}`}
         >
           Show Online Schedule
         </button>
         <button
           onClick={() => toggleSchedule("offline")}
-          className={`bg-${
-            showOnline ? "gray" : "green"
-          }-500 text-white py-2 px-4 border backdrop-blur-md bg-white/5`}
+          className={`${!showOnline && "bg-white/25"} ${buttonClass}`}
         >
           Show Offline Schedule
         </button>
@@ -175,7 +173,7 @@ function Schedule() {
           </h2>
           <table className="min-w-full border border-gray-300 backdrop-blur-md bg-white/5">
             <thead className="bg-slate-400/20">
-              <tr>  
+              <tr>
                 <th className="px-4 py-2 border-b">Event Time</th>
                 <th className="px-4 py-2 border-b">Event Name</th>
                 <th className="px-4 py-2 border-b">Venue</th>

@@ -1,6 +1,7 @@
 "use client";
 import EventTiles from "@/components/events/EventTiles";
 import { useEffect } from "react";
+import "../events/events.css";
 import { unHideHamButton } from "../utils/utils";
 export default function Events() {
   useEffect(() => {

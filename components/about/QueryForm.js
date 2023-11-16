@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useToast } from "../ui/use-toast";
 import { Button } from "../ui/button";
 import { sendRequest } from "@/request";
+import contact from "../../public/space-14.json";
+import Lottie from "lottie-react";
 
 export default function QueryForm() {
   const inputStyle =
@@ -62,7 +64,7 @@ export default function QueryForm() {
       "Your query has been submitted succesfully, we will resolve it quickly",
       "green-500"
     );
-    
+
     setData({
       name: "",
       email: "",
@@ -76,49 +78,52 @@ export default function QueryForm() {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center space-y-8 p-4'>
-      <h1 className='font-bold text-5xl bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent p-2 animate-text'>
-        Have Queries?
-      </h1>
-      <form
-        className='flex flex-col space-y-4 w-full md:w-[60%] items-center justify-center'
-        onSubmit={submitForm}>
-        <input
-          className={inputStyle}
-          name='name'
-          type='text'
-          placeholder='Your Name'
-          value={data.name}
-          onChange={(e) => handleStateChange("name", e.target.value)}
-        />
-        <input
-          className={inputStyle}
-          name='email'
-          type='text'
-          placeholder='Your Email'
-          value={data.email}
-          onChange={(e) => handleStateChange("email", e.target.value)}
-        />
-        <input
-          className={inputStyle}
-          name='phone'
-          type='text'
-          placeholder='Your Phone'
-          value={data.phone}
-          onChange={(e) => handleStateChange("phone", e.target.value)}
-        />
-        <textarea
-          className={inputStyle + " resize-none h-[100px]"}
-          name='message'
-          type='text'
-          placeholder='Your Query'
-          value={data.message}
-          onChange={(e) => handleStateChange("message", e.target.value)}
-        />
-        <Button type='submit'  className={inputStyle}>
-          Submit
-        </Button>
-      </form>
-    </div>
+    <section className='flex flex-col-reverse md:flex-row'>
+      <div className='flex flex-col items-center justify-center space-y-8 p-4 md:w-1/2'>
+        <h1 className='font-bold text-5xl bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent p-2 animate-text'>
+          Have Queries?
+        </h1>
+        <form
+          className='flex flex-col space-y-4 w-full items-center justify-center'
+          onSubmit={submitForm}>
+          <input
+            className={inputStyle}
+            name='name'
+            type='text'
+            placeholder='Your Name'
+            value={data.name}
+            onChange={(e) => handleStateChange("name", e.target.value)}
+          />
+          <input
+            className={inputStyle}
+            name='email'
+            type='text'
+            placeholder='Your Email'
+            value={data.email}
+            onChange={(e) => handleStateChange("email", e.target.value)}
+          />
+          <input
+            className={inputStyle}
+            name='phone'
+            type='text'
+            placeholder='Your Phone'
+            value={data.phone}
+            onChange={(e) => handleStateChange("phone", e.target.value)}
+          />
+          <textarea
+            className={inputStyle + " resize-none h-[100px]"}
+            name='message'
+            type='text'
+            placeholder='Your Query'
+            value={data.message}
+            onChange={(e) => handleStateChange("message", e.target.value)}
+          />
+          <Button type='submit' className={inputStyle}>
+            Submit
+          </Button>
+        </form>
+      </div>
+      <Lottie animationData={contact} className='md:w-[600px]' />
+    </section>
   );
 }

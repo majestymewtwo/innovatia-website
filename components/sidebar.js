@@ -38,16 +38,16 @@ function Sidebar({ handleCallback }) {
       <div className={`sidebar ${active && "active bg-white bg-opacity-5"}`}>
         <ul className='space-y-14 sidebar-list font-space text-xl'>
           <li className={`sidebar-item ${active && "active"}`}>
-            <Link href='/' className='sidebar-anchor' onClick={toggleMenu}>
+            <a href='/' className='sidebar-anchor' onClick={toggleMenu}>
               Home
-            </Link>
+            </a>
           </li>
           <li
             className={`sidebar-item ${active && "active"}`}
             onClick={toggleMenu}>
-            <Link href='/about' className='sidebar-anchor'>
+            <a href='/about' className='sidebar-anchor'>
               About
-            </Link>
+            </a>
           </li>
           <li
             className={`sidebar-item ${active && "active"}`}
@@ -59,22 +59,15 @@ function Sidebar({ handleCallback }) {
           <li
             className={`sidebar-item ${active && "active"}`}
             onClick={toggleMenu}>
-            <Link href='/events' className='sidebar-anchor'>
+            <a href='/events' className='sidebar-anchor'>
               Events
-            </Link>
+            </a>
           </li><li
             className={`sidebar-item ${active && "active"}`}
             onClick={toggleMenu}>
-            <Link href='/schedule' className='sidebar-anchor'>
+            <a href='/schedule' className='sidebar-anchor'>
               Schedule
-            </Link>
-          </li>
-          <li
-            className={`sidebar-item ${active && "active"}`}
-            onClick={toggleMenu}>
-            <Link href='/contact' className='sidebar-anchor'>
-              Contact Us
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
