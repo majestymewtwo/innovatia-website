@@ -133,12 +133,12 @@ const EventDetailDB = () => {
               </p>
               <div>
                 <span className="font-bold">Whatsapp Group Link : </span>{" "}
-                <a href='https://chat.whatsapp.com/BphawUpKQAILFXa5nrl9Zw' target='_blank'>
+                <a href='https://chat.whatsapp.com/BphawUpKQAILFXa5nrl9Zw' className="underline" target='_blank'>
                   Join Pixel Perfect!
                 </a>
               </div><div>
                 <span className="font-bold">Whatsapp Group Link : </span>{" "}
-                <a href='https://docs.google.com/forms/d/e/1FAIpQLSda6t7f6t6nTdFtYCBpCIc8HugNG_-7UbM-9nR12bC35qFV9w/viewform?usp=sf_link' target='_blank'>
+                <a href='https://docs.google.com/forms/d/e/1FAIpQLSda6t7f6t6nTdFtYCBpCIc8HugNG_-7UbM-9nR12bC35qFV9w/viewform?usp=sf_link' className="underline" target='_blank'>
                   Sumbit your photographs here!
                 </a>
               </div>

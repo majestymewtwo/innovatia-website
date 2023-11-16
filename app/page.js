@@ -84,12 +84,15 @@ export default function Home() {
                   Sai InfoBlitz
                 </h3>
                 <h3 className="text-xl text-white font-inconsolata">
+                <h3 className="text-xl text-white font-inconsolata">
                   Proudly Presents
                 </h3>
+                <h3 className="text-4xl md:text-9xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-[#0231DD] via-[#6681db] to-[#08A8A7] bg-clip-text font-space py-4">
                 <h3 className="text-4xl md:text-9xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-[#0231DD] via-[#6681db] to-[#08A8A7] bg-clip-text font-space py-4">
                   INNOVATIA
                 </h3>
                 <SpaceButton />
+                <h3 className="text-2xl text-white font-inconsolata">
                 <h3 className="text-2xl text-white font-inconsolata">
                   Starts In
                 </h3>
@@ -133,21 +136,28 @@ export default function Home() {
                     </h3>
                   </span>
                   <h3 className="text-lg text-white font-inconsolata">
+                  <h3 className="text-lg text-white font-inconsolata">
                     in association with
                   </h3>
+                  <h3 className="text-2xl font-black tracking-widest text-white font-blanka">
                   <h3 className="text-2xl font-black tracking-widest text-white font-blanka">
                     Sai InfoBlitz
                   </h3>
                 </span>
                 <h3 className="text-lg text-white font-inconsolata">
+                <h3 className="text-lg text-white font-inconsolata">
                   Proudly Presents
                 </h3>
+                <h3 className="text-6xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-[#0231DD] via-[#6681db] to-[#08A8A7] bg-clip-text font-space py-4">
                 <h3 className="text-6xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-[#0231DD] via-[#6681db] to-[#08A8A7] bg-clip-text font-space py-4">
                   INNOVATIA
                 </h3>
                 <h3 className="text-2xl text-white font-inconsolata">
+                <h3 className="text-2xl text-white font-inconsolata">
                   Starts In
                 </h3>
+                <CountdownTimer targetDate="2023-11-22T23:59:59" />
+                <div className="w-1/2">
                 <CountdownTimer targetDate="2023-11-22T23:59:59" />
                 <div className="w-1/2">
                   <Lottie animationData={space1} />
@@ -160,6 +170,7 @@ export default function Home() {
       </div>
       <HeartHandshake
         className="absolute w-10 h-10 cursor-pointer bottom-4 right-4 md:h-16 md:w-16 text-emerald-500 md:bottom-10 md:right-10 animate-bounce"
+        className="absolute w-10 h-10 cursor-pointer bottom-4 right-4 md:h-16 md:w-16 text-emerald-500 md:bottom-10 md:right-10 animate-bounce"
         onClick={handleDonateClick}
       />
       <Guest
@@ -167,8 +178,13 @@ export default function Home() {
         name="Muthu Lakshmi"
         quote="Lakshmi, Entrepreneur-in-Residence at TCS, leverages 20 years of leadership experience, notably as Head of Industry Solutions Practice in Google Business Unit. Passionate about automation and AI, she incubates innovative ideas into new business opportunities. Lakshmi holds a Bachelor of Engineering degree and has completed the Senior Management Program at the Indian Institute of Management, Ahmedabad."
         role="Entrepreneur in Residence, Product Leader, TCS"
+        image="/muthulakshmi.jpg"
+        name="Muthu Lakshmi"
+        quote="Lakshmi, Entrepreneur-in-Residence at TCS, leverages 20 years of leadership experience, notably as Head of Industry Solutions Practice in Google Business Unit. Passionate about automation and AI, she incubates innovative ideas into new business opportunities. Lakshmi holds a Bachelor of Engineering degree and has completed the Senior Management Program at the Indian Institute of Management, Ahmedabad."
+        role="Entrepreneur in Residence, Product Leader, TCS"
       />
       <div
+        id="donation"
         id="donation"
         ref={donationRef}
         className="flex flex-col-reverse items-center justify-around md:flex-row"
