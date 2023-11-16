@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="shortcut icon"
-          href="./rocket-cursor.png"
+          href="/rocket-cursor.png"
           type="image/x-icon"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
