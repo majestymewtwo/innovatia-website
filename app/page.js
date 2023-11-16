@@ -9,6 +9,7 @@ import CountdownTimer from "@/components/countdown";
 import SpaceButton from "@/components/SpaceButton";
 import donation2LottieJson from "../public/donation2.json";
 import DonationStall from "@/components/donationStall";
+import Guest from "@/components/Guest";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -150,6 +151,9 @@ export default function Home() {
           </div>
         </main>
       </div>
+      {/* <div className="flex flex-col-reverse items-center justify-around md:flex-row">
+        <Guest/>
+      </div> */}
       <div className="flex flex-col-reverse items-center justify-around md:flex-row">
         <Lottie animationData={donation2LottieJson} className="w-1/2 md:w-1/3"/>
         <DonationStall />
