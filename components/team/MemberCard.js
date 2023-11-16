@@ -17,15 +17,15 @@ function MemberCard(props) {
           <h3 className="text-bold ">{name}</h3>
           <p className="text-xs">{role}</p>
           <div className="social-links flex flex-row gap-2 justify-center">
-          <a href={github} target="_blank">
+          {github && <a href={github} target="_blank">
             <Github color="#FFD099"/>
-          </a>
+          </a>}
           <a href={linkedin}  target="_blank">            
             <Linkedin color="#FFD099" />
           </a>
-          <a href={instagram}  target="_blank">
+          {instagram && <a href={instagram}  target="_blank">
             <Instagram color="#FFD099" />
-          </a>
+          </a>}
           </div>
         </div>
       </div>
