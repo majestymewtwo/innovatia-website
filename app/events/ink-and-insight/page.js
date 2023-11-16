@@ -31,21 +31,21 @@ const EventDetailDB = () => {
       </div>
     <section className="md:h-screen w-[100vw] flex justify-center items-center py-24 md:py-0">
       <div className="flex min-h-auto w-[90%] md:h-[83%] lg:h-[80%] lg:justify-center">
-        <Card className="relative w-full bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full md:w-[95%] lg:flex-row lg:items-start lg:pt-8 text-white space-y-4 lg:space-y-0 overflow-clip">
-          <div className="flex w-full items-center justify-between flex-row-reverse h-fit md:w-1/2 lg:w-1/2 lg:h-4/5 lg:pr-6 lg:justify-center">
+        <Card className="relative w-full bg-white/5 flex flex-col backdrop-blur-sm items-center h-full p-4 md:h-full lg:w-[89%] lg:flex-row lg:items-start lg:pt-8 text-white space-y-4 lg:space-y-0 overflow-clip">
+          <div className="flex w-full items-center justify-between flex-row-reverse h-fit lg:w-2/5 lg:h-4/5 lg:pr-6 lg:justify-center">
             <img
               src="/ink-&-insight.png"
               alt="ink-&-insight"
-              className="rounded-md w-[150px] h-full md:w-[200px] md:h-[200px] lg:w-auto lg:h-full lg:rounded-md"
+              className="rounded-md w-[150px] h-full md:w-[200px] md:h-[200px] lg:w-auto lg:h-full lg:rounded-md lg:mr-auto"
             />
             <div className="font-oswald text-4xl items-center text-[#EF8354] md:text-4xl lg:hidden">
               <p>Ink</p>
               <p>& Insight</p>
             </div>
           </div>
-          <div className="flex flex-col space-y-3 h-3/5 lg:w-1/2 lg:h-4/5  lg:items-left overflow-y-clip">
+          <div className="flex flex-col space-y-3 h-3/5 lg:w-3/5 lg:h-4/5  lg:items-left overflow-y-clip">
             <div className="hidden font-oswald text-2xl text-left text-[#EF8354] lg:text-4xl lg:block">
-              <p>INK AND INSIGHT</p>
+              <p>Ink & Insight</p>
             </div>
             <div className="pr-2 space-y-2 overflow-y-scroll scrollbar lg:text-sm">
               <p className="font-semibold">
