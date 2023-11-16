@@ -127,15 +127,6 @@ function Page() {
       instagram: "https://instagram.com/vigneshselva005?igshid=OGQ5ZDc2ODk2ZA==",
       linkedin: "https://www.linkedin.com/in/selva-vignesh-666596299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
-    {
-      name: "Aadithya",
-      role: "Vice Secretary",
-      image: "/aadithya.jpeg",
-      role: "Jr.Developer",
-      github: "https://github.com/AadithyaSJ",
-      instagram: "https://www.instagram.com/a_adithya_7",
-      linkedin: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
-    }
   ]
   const developers = [
     
