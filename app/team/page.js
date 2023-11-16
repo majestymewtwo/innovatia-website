@@ -19,7 +19,7 @@ function Page() {
       image: "/nandini.jpeg",
     },
     {
-      name: "Shiny S",
+      name: "Shiny A",
       role: "Staff Coordinator",
       image: "/Shiny.jpg",
     },
@@ -33,11 +33,11 @@ function Page() {
       role: "Staff Coordinator",
       image: "/shariff.jpeg",
     },
-    {
-      name: "Lakshmi Narayanan",
-      role: "Staff Coordinator",
-      image: "",
-    },
+    // {
+    //   name: "Lakshmi Narayanan",
+    //   role: "Staff Coordinator",
+    //   image: "",
+    // },
   ];
   const officeBearers = [
     {
@@ -89,7 +89,16 @@ function Page() {
       github: "",
       instagram: "",
       linkedin: "",
-    },{
+    },
+    {
+      name: "Aadithya",
+      role: "Vice Secretary",
+      image: "/aadithya.jpeg",
+      github: "https://github.com/AadithyaSJ",
+      instagram: "https://www.instagram.com/a_adithya_7",
+      linkedin: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
+    },
+    {
       name: "Rishi Vel A",
       role: "Secretary",
       image: "/rishi.jpg",
