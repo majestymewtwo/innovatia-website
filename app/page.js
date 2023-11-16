@@ -1,7 +1,7 @@
 "use client";
 import Lottie from "lottie-react";
 import space1 from "../public/space-8.json";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Loading from "./loading";
 import { motion } from "framer-motion";
 import { unHideHamButton } from "./utils/utils";
@@ -9,11 +9,18 @@ import CountdownTimer from "@/components/countdown";
 import SpaceButton from "@/components/SpaceButton";
 import donation2LottieJson from "../public/donation2.json";
 import DonationStall from "@/components/donationStall";
-import Guest from "@/components/Guest";
+import { Button } from "@/components/ui/button";
+import { HeartHandshake } from "lucide-react";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState("default");
+
+  const donationRef = useRef(null);
+
+  const handleDonateClick = () => {
+    donationRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -87,9 +94,9 @@ export default function Home() {
                   Starts In
                 </h3>
                 <CountdownTimer targetDate="2023-11-22T23:59:59" />
-                <h3 className='text-2xl text-white font-inconsolata'>
-                  <span className="font-bold">Venue : </span> MBA Auditorium 
-                  (D Block,III Floor)
+                <h3 className="text-2xl text-white font-inconsolata">
+                  <span className="font-bold">Venue : </span> MBA Auditorium (D
+                  Block,III Floor)
                 </h3>
               </div>
             </div>
@@ -141,8 +148,8 @@ export default function Home() {
                 <h3 className="text-2xl text-white font-inconsolata">
                   Starts In
                 </h3>
-                <CountdownTimer targetDate='2023-11-22T23:59:59' />
-                <div className='w-1/2'>
+                <CountdownTimer targetDate="2023-11-22T23:59:59" />
+                <div className="w-1/2">
                   <Lottie animationData={space1} />
                 </div>
                 <SpaceButton />
@@ -151,11 +158,18 @@ export default function Home() {
           </div>
         </main>
       </div>
-      {/* <div className="flex flex-col-reverse items-center justify-around md:flex-row">
-        <Guest/>
-      </div> */}
-      <div className="flex flex-col-reverse items-center justify-around md:flex-row">
-        <Lottie animationData={donation2LottieJson} className="w-1/2 md:w-1/3"/>
+      <HeartHandshake
+        className="absolute cursor-pointer text-emerald-500 w-14 h-14 bottom-10 right-10 animate-bounce"
+        onClick={handleDonateClick}
+      />
+      <div
+        ref={donationRef}
+        className="flex flex-col-reverse items-center justify-around md:flex-row"
+      >
+        <Lottie
+          animationData={donation2LottieJson}
+          className="w-1/2 md:w-1/3"
+        />
         <DonationStall />
       </div>
     </>
