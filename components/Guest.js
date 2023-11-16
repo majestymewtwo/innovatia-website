@@ -1,19 +1,29 @@
-import React from 'react'
+import React from "react";
 
-function Guest() {
+function Guest({ image, name, quote, role }) {
   return (
-    <section className='flex flex-col-reverse md:flex-row'>
-    <div className='flex flex-col items-start justify-center space-y-8 p-4 md:w-1/2'>
-      <h1 className='font-bold text-5xl bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent p-2 animate-text'>
-        Chief Guest
+    <div className="mb-20 space-y-4 text-center">
+      <h1 className="inline-block text-3xl font-black tracking-tight text-transparent md:p-3 md:pt-0 md:text-4xl animate-text bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-300 via-fuchsia-600 to-orange-600 bg-clip-text">
+        OUR CHIEF GUEST
       </h1>
-      <div className='p-6 m-2 space-y-4 text-justify rounded md:w-[100%] md:mr-10 bg-white/5 backdrop-blur-md font-poppins'>
-        Name
-      </div>
+      <figure className='md:flex rounded-xl p-8 md:p-0 bg-slate-800/40 w-[90%] md:w-[80%] mx-auto overflow-hidden font-poppins hover:scale-105 transition-all ease-in-out duration-300'>
+        <img
+          className='object-cover w-24 h-24 mx-auto rounded-full md:w-64 md:h-auto md:rounded-none'
+          src={image}
+          alt='chief-guest'
+        />
+        <div className='pt-6 space-y-4 text-center md:p-8 md:text-left'>
+          <blockquote>
+            <p className='text-lg font-medium md:text-justify'>{quote}</p>
+          </blockquote>
+          <figcaption className="font-medium">
+            <div className="text-xl text-purple-600">{name}</div>
+            <div className="font-light text-slate-400">{role}</div>
+          </figcaption>
+        </div>
+      </figure>
     </div>
-    <img src="/muthulakshmi.jpg" alt="" />
-    </section>
-  )
+  );
 }
 
-export default Guest
+export default Guest;

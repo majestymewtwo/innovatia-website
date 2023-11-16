@@ -3,41 +3,36 @@ import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 export default function Footer() {
   return (
     <div
-      id="footer"
-      className="flex flex-col md:flex-row justify-between items-center bottom-0 w-full text-white px-10 py-2 space-y-5 md:space-y-0"
-    >
-      <div className="flex flex-col md:flex-row items-center gap-6">
-        <img src="/sec-logo-white.png" alt="sec-white-logo" className="h-16" />
-        <h3 className="hidden md:block">|</h3>
+      id='footer'
+      className='flex flex-col md:flex-row justify-between items-center bottom-0 w-full text-white px-10 py-2 space-y-5 md:space-y-0'>
+      <div className='flex flex-col md:flex-row items-center gap-6'>
+        <img src='/sec-logo-white.png' alt='sec-white-logo' className='h-16' />
+        <h3 className='hidden md:block'>|</h3>
         <Socials />
       </div>
-      <h3 className="hidden md:block">|</h3>
-      <h3 className="font-light md:tracking-wide mr-4 md:mr-0">
-        © 2023-2024 Department Of M.Tech CSE
-      </h3>
-      <h3 className="hidden md:block">|</h3>
-      <h3 className="font-light md:tracking-wide">
+      <h3 className='hidden md:block'>|</h3>
+      <h3 className='font-light md:tracking-wide mr-4 md:mr-0'>© 2023-2024</h3>
+      <h3 className='hidden md:block'>|</h3>
+      <h3 className='font-light md:tracking-wide'>
         Sai Leo Nagar, West Tambaram, Chennai - 44
       </h3>
-      <h3 className="hidden md:block">|</h3>
-      <div className="hidden md:flex items-center gap-4">
+      <h3 className='hidden md:block'>|</h3>
+      <div className='hidden md:flex items-center gap-4'>
         <a
-          href="https://www.sairam.edu.in"
-          target="_blank"
-          className="hover:scale-110 hover:text-[#FFB100] transition-all ease-in-out duration-200"
-        >
+          href='https://www.sairam.edu.in'
+          target='_blank'
+          className='hover:scale-110 hover:text-[#FFB100] transition-all ease-in-out duration-200'>
           www.sairam.edu.in
         </a>
-        <h3 className="hidden md:block">|</h3>
+        <h3 className='hidden md:block'>|</h3>
         <a
-          href="https://mtech-cse-sairam.github.io/pulse-newsletter/"
-          target="_blank"
-          className="hover:scale-110 hover:text-[#FFB100] transition-all ease-in-out duration-200"
-        >
+          href='https://mtech-cse-sairam.github.io/pulse-newsletter/'
+          target='_blank'
+          className='hover:scale-110 hover:text-[#FFB100] transition-all ease-in-out duration-200'>
           Newsletter
         </a>
-        <h3 className="hidden md:block">|</h3>
-        <img src="/chairman.png" alt="sec-white-logo" className="h-16" />
+        <h3 className='hidden md:block'>|</h3>
+        <img src='/chairman.png' alt='sec-white-logo' className='h-16' />
       </div>
     </div>
   );

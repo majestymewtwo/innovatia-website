@@ -9,8 +9,8 @@ import CountdownTimer from "@/components/countdown";
 import SpaceButton from "@/components/SpaceButton";
 import donation2LottieJson from "../public/donation2.json";
 import DonationStall from "@/components/donationStall";
-import { Button } from "@/components/ui/button";
 import { HeartHandshake } from "lucide-react";
+import Guest from "@/components/Guest";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -60,12 +60,12 @@ export default function Home() {
   if (suspense) return <Loading />;
 
   return (
-    <>
+    <div className="space-y-8">
       {/* Desktop VIEW */}
       <div className="hidden md:block" id="desktop-home">
         <main
           id="app"
-          className="relative flex flex-col items-center justify-between h-screen py-12 overflow-x-hidden"
+          className="relative flex flex-col items-center justify-between min-h-screen py-12 overflow-x-hidden"
         >
           <div className="flex flex-col md:flex-row w-[80%]">
             <div className="flex flex-col items-center justify-center w-3/4 ">
@@ -159,19 +159,26 @@ export default function Home() {
         </main>
       </div>
       <HeartHandshake
-        className="absolute cursor-pointer text-emerald-500 w-14 h-14 bottom-10 right-10 animate-bounce"
+        className="absolute w-10 h-10 cursor-pointer bottom-4 right-4 md:h-16 md:w-16 text-emerald-500 md:bottom-10 md:right-10 animate-bounce"
         onClick={handleDonateClick}
       />
+      <Guest
+        image="/muthulakshmi.jpg"
+        name="Muthu Lakshmi"
+        quote="Lakshmi, Entrepreneur-in-Residence at TCS, leverages 20 years of leadership experience, notably as Head of Industry Solutions Practice in Google Business Unit. Passionate about automation and AI, she incubates innovative ideas into new business opportunities. Lakshmi holds a Bachelor of Engineering degree and has completed the Senior Management Program at the Indian Institute of Management, Ahmedabad."
+        role="Entrepreneur in Residence, Product Leader, TCS"
+      />
       <div
+        id="donation"
         ref={donationRef}
         className="flex flex-col-reverse items-center justify-around md:flex-row"
       >
         <Lottie
           animationData={donation2LottieJson}
-          className="w-1/2 md:w-1/3"
+          className="md:w-1/3 w-1/2"
         />
         <DonationStall />
       </div>
-    </>
+    </div>
   );
 }

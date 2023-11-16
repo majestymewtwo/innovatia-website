@@ -31,8 +31,8 @@ const EventDetailDB = () => {
       </div>
       <section className="md:h-screen w-[100vw] flex justify-center items-center py-24 md:py-0">
         <div className="flex w-[90%] md:min-h-[83%] lg:h-[80%] lg:justify-center">
-          <Card className="relative w-full bg-white/5 flex flex-col backdrop-blur-sm items-center min-h-full p-4 md:h-full md:w-[95%] lg:flex-row lg:items-start lg:pt-8 text-white space-y-4 lg:space-y-0 overflow-clip">
-            <div className="flex w-full items-center justify-between flex-row-reverse h-fit md:w-1/2 lg:w-1/2 lg:h-4/5 lg:pr-6 lg:justify-center">
+          <Card className="relative w-full bg-white/5 flex flex-col backdrop-blur-sm items-center min-h-full p-4 md:h-full lg:w-[89%] lg:flex-row lg:items-start lg:pt-8 text-white space-y-4 lg:space-y-0 overflow-clip">
+            <div className="flex w-full items-center justify-between flex-row-reverse h-fit lg:w-2/5 lg:h-4/5 lg:pr-6 lg:justify-center">
               <img
                 src="/design-derbies.png"
                 alt="design-derbies"
@@ -43,7 +43,7 @@ const EventDetailDB = () => {
                 <p>Derbies</p>
               </div>
             </div>
-            <div className="flex flex-col space-y-3 h-auto lg:w-1/2 lg:h-4/5 lg:items-left md:h-1/3 md:overflow-y-clip">
+            <div className="flex flex-col space-y-3 h-auto lg:w-3/5 lg:h-4/5 lg:items-left md:h-1/3 md:overflow-y-clip">
               <div className="hidden font-oswald text-2xl text-left text-[#EF8354] lg:text-4xl lg:block">
                 <p>Design Derbies</p>
               </div>
@@ -184,7 +184,7 @@ const EventDetailDB = () => {
                 </p>
                 <div>
                   <span className="font-bold">Whatsapp Group Link : </span>{" "}
-                  <a href='https://chat.whatsapp.com/D6yDaspRpZGEhfQFPEgGiW' target='_blank'>
+                  <a href='https://chat.whatsapp.com/D6yDaspRpZGEhfQFPEgGiW' className="underline" target='_blank'>
                     Join Design Derbies!
                   </a>
                 </div>

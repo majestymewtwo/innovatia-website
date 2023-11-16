@@ -154,13 +154,13 @@ const RegisterComponent = ({ event }) => {
           <div className='flex w-full mt-4 justify-evenly'>
             <Button
               type='button'
-              className='text-black bg-white hover:text-black hover:bg-white'
+              className='text-gray-300 font-light tracking-wider bg-gradient-to-r from-red-500 to-yellow-500 hover:text-white hover:border hover:border-white transition-all ease-in-out'
               onClick={() => router.back()}>
               Go Back
             </Button>
             <Button
               type='submit'
-              className='text-black bg-white hover:text-black hover:bg-white'>
+              className='text-gray-300 font-light tracking-wider bg-gradient-to-r from-red-500 to-yellow-500 hover:text-white hover:border hover:border-white transition-all ease-in-out'>
               Register
             </Button>
           </div>
