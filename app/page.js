@@ -9,7 +9,6 @@ import CountdownTimer from "@/components/countdown";
 import SpaceButton from "@/components/SpaceButton";
 import donation2LottieJson from "../public/donation2.json";
 import DonationStall from "@/components/donationStall";
-import { Button } from "@/components/ui/button";
 import { HeartHandshake } from "lucide-react";
 
 export default function Home() {
@@ -159,10 +158,11 @@ export default function Home() {
         </main>
       </div>
       <HeartHandshake
-        className="absolute cursor-pointer text-emerald-500 w-14 h-14 bottom-10 right-10 animate-bounce"
+        className="absolute w-10 h-10 cursor-pointer bottom-4 right-4 md:h-16 md:w-16 text-emerald-500 md:bottom-10 md:right-10 animate-bounce"
         onClick={handleDonateClick}
       />
       <div
+        id="donation"
         ref={donationRef}
         className="flex flex-col-reverse items-center justify-around md:flex-row"
       >
