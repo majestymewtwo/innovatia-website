@@ -14,7 +14,7 @@ function Page() {
       image: "/nithya.jpeg",
     },
     {
-      name: "Nandini Devi S",
+      name: "Nandhini Devi S",
       role: "Staff Coordinator",
       image: "/nandini.jpeg",
     },
