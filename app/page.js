@@ -168,11 +168,8 @@ export default function Home() {
       <div
         id='donation'
         ref={donationRef}
-        className='flex flex-col-reverse items-center justify-around md:flex-row'>
-        <Lottie
-          animationData={donation2LottieJson}
-          className='w-1/2 md:w-1/3'
-        />
+        className='flex flex-col items-center justify-around md:flex-row'>
+        <Lottie animationData={donation2LottieJson} className='md:w-1/3' />
         <DonationStall />
       </div>
     </div>
