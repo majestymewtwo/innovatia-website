@@ -1,14 +1,14 @@
 "use client";
 import Lottie from "lottie-react";
 import space1 from "../public/space-8.json";
-import space2 from "../public/space-2.json";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
 import { motion } from "framer-motion";
 import { unHideHamButton } from "./utils/utils";
 import CountdownTimer from "@/components/countdown";
 import SpaceButton from "@/components/SpaceButton";
-import GoBack from "@/components/GoBack";
+import donation2LottieJson from "../public/donation2.json";
+import DonationStall from "@/components/donationStall";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -54,93 +54,93 @@ export default function Home() {
   return (
     <>
       {/* Desktop VIEW */}
-      <div className='md:block hidden' id='desktop-home'>
+      <div className="hidden md:block" id="desktop-home">
         <main
-          id='app'
-          className='flex py-12 h-screen flex-col items-center justify-between relative overflow-x-hidden'>
-          <div className='flex flex-col md:flex-row w-[80%]'>
-            <div className='w-3/4 flex flex-col items-center justify-center '>
+          id="app"
+          className="relative flex flex-col items-center justify-between h-screen py-12 overflow-x-hidden"
+        >
+          <div className="flex flex-col md:flex-row w-[80%]">
+            <div className="flex flex-col items-center justify-center w-3/4 ">
               <div
-                className='flex flex-col items-center space-y-4'
+                className="flex flex-col items-center space-y-4"
                 onMouseEnter={textEnter}
-                onMouseLeave={textLeave}>
-                <h3 className='text-white text-xl font-blanka font-black tracking-widest'>
+                onMouseLeave={textLeave}
+              >
+                <h3 className="text-xl font-black tracking-widest text-white font-blanka">
                   Department Of M.Tech Computer Science & Engineering
                 </h3>
-                <h3 className='text-white text-xl font-inconsolata'>
+                <h3 className="text-xl text-white font-inconsolata">
                   in association with
                 </h3>
-                <h3 className='text-white text-2xl font-blanka font-black tracking-widest'>
+                <h3 className="text-2xl font-black tracking-widest text-white font-blanka">
                   Sai InfoBlitz
                 </h3>
-                <h3 className='text-white text-xl font-inconsolata'>
+                <h3 className="text-xl text-white font-inconsolata">
                   Proudly Presents
                 </h3>
-                <h3 className='text-4xl md:text-9xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-[#0231DD] via-[#6681db] to-[#08A8A7] bg-clip-text font-space py-4'>
+                <h3 className="text-4xl md:text-9xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-[#0231DD] via-[#6681db] to-[#08A8A7] bg-clip-text font-space py-4">
                   INNOVATIA
                 </h3>
                 <SpaceButton />
-                <h3 className='text-white text-2xl font-inconsolata'>
+                <h3 className="text-2xl text-white font-inconsolata">
                   Starts In
                 </h3>
-                <CountdownTimer targetDate='2023-11-22T23:59:59' />
-                <h3 className='text-white text-2xl font-inconsolata'>
+                <CountdownTimer targetDate="2023-11-22T23:59:59" />
+                <h3 className='text-2xl text-white font-inconsolata'>
                   <span className="font-bold">Venue : </span> MBA Auditorium 
                   (D Block,III Floor)
                 </h3>
               </div>
             </div>
-            <div className='w-1/4 relative'>
+            <div className="relative w-1/4">
               <Lottie
                 animationData={space1}
-                className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[500px]'
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[500px]"
               />
             </div>
           </div>
           <motion.div
-            className='custom-cursor'
+            className="custom-cursor"
             variants={variants}
             animate={cursorVariant}
           />
         </main>
       </div>
       {/* MOBILE VIEW */}
-      <div className='block md:hidden'>
+      <div className="block md:hidden">
         <main
-          id='app'
-          className='flex min-h-screen flex-col items-center justify-between relative overflow-x-hidden pt-20'>
-          <div className='flex'>
-            <div className='flex items-center justify-center'>
-              <div className='flex flex-col items-center justify-center space-y-2'>
-                <span className='flex flex-col justify-center items-center space-y-3'>
-                  <span className='text-center'>
-                    <h3 className='text-white text-xl font-blanka font-black tracking-wider'>
+          id="app"
+          className="relative flex flex-col items-center justify-between min-h-screen pt-20 overflow-x-hidden"
+        >
+          <div className="flex">
+            <div className="flex items-center justify-center">
+              <div className="flex flex-col items-center justify-center space-y-2">
+                <span className="flex flex-col items-center justify-center space-y-3">
+                  <span className="text-center">
+                    <h3 className="text-xl font-black tracking-wider text-white font-blanka">
                       Department Of M.Tech
                     </h3>
-                    <h3 className='text-white text-xl font-blanka font-black tracking-wider'>
+                    <h3 className="text-xl font-black tracking-wider text-white font-blanka">
                       Computer Science & Engineering
                     </h3>
                   </span>
-                  <h3 className='text-white text-lg font-inconsolata'>
+                  <h3 className="text-lg text-white font-inconsolata">
                     in association with
                   </h3>
-                  <h3 className='text-white text-2xl font-blanka font-black tracking-widest'>
+                  <h3 className="text-2xl font-black tracking-widest text-white font-blanka">
                     Sai InfoBlitz
                   </h3>
                 </span>
-                <h3 className='text-white text-lg font-inconsolata'>
+                <h3 className="text-lg text-white font-inconsolata">
                   Proudly Presents
                 </h3>
-                <h3 className='text-6xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-[#0231DD] via-[#6681db] to-[#08A8A7] bg-clip-text font-space py-4'>
+                <h3 className="text-6xl tracking-wider text-transparent font-bold animate-text bg-gradient-to-r from-[#0231DD] via-[#6681db] to-[#08A8A7] bg-clip-text font-space py-4">
                   INNOVATIA
                 </h3>
-                <h3 className='text-white text-2xl font-inconsolata'>
+                <h3 className="text-2xl text-white font-inconsolata">
                   Starts In
                 </h3>
                 <CountdownTimer targetDate='2023-11-22T23:59:59' />
-                <h3 className='text-white text-2xl font-inconsolata'>
-                  <span className="font-bold">Venue : </span> MBA Auditorium (D Block,III Floor)
-                </h3>
                 <div className='w-1/2'>
                   <Lottie animationData={space1} />
                 </div>
@@ -149,6 +149,10 @@ export default function Home() {
             </div>
           </div>
         </main>
+      </div>
+      <div className="flex flex-col-reverse items-center justify-around md:flex-row">
+        <Lottie animationData={donation2LottieJson} className="w-1/2 md:w-1/3"/>
+        <DonationStall />
       </div>
     </>
   );
