@@ -156,17 +156,17 @@ export default function Home() {
         </main>
       </div>
       <HeartHandshake
-        className="absolute w-10 h-10 cursor-pointer bottom-4 right-4 md:h-16 md:w-16 text-emerald-500 md:bottom-10 md:right-10 animate-bounce"
+        className='absolute w-10 h-10 cursor-pointer bottom-4 right-4 md:h-16 md:w-16 text-emerald-500 md:bottom-10 md:right-10 animate-bounce'
         onClick={handleDonateClick}
       />
       <Guest
         image='/muthulakshmi.jpg'
         name='Muthu Lakshmi'
-        quote='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente distinctio dolorem consequatur earum aperiam culpa. Eveniet reiciendis libero eius adipisci?'
+        quote='Lakshmi, Entrepreneur-in-Residence at TCS, leverages 20 years of leadership experience, notably as Head of Industry Solutions Practice in Google Business Unit. Passionate about automation and AI, she incubates innovative ideas into new business opportunities. Lakshmi holds a Bachelor of Engineering degree and has completed the Senior Management Program at the Indian Institute of Management, Ahmedabad.'
         role='Entrepreneur in Residence, Product Leader, TCS'
       />
       <div
-        id="donation"
+        id='donation'
         ref={donationRef}
         className='flex flex-col-reverse items-center justify-around md:flex-row'>
         <Lottie

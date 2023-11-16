@@ -16,7 +16,7 @@ function Guest({ image, name, quote, role }) {
         />
         <div class='pt-6 md:p-8 text-center md:text-left space-y-4'>
           <blockquote>
-            <p class='text-lg font-medium'>“{quote}”</p>
+            <p class='text-lg font-medium'>{quote}</p>
           </blockquote>
           <figcaption class='font-medium'>
             <div class='text-blue-500  text-xl'>{name}</div>
