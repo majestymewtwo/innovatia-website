@@ -2,7 +2,7 @@ import React from "react";
 
 function Guest({ image, name, quote, role }) {
   return (
-    <div className='mb-20 space-y-4 text-center'>
+    <div className='space-y-4 text-center'>
       <h1 className='inline-block text-3xl font-black tracking-tight text-transparent md:p-3 md:pt-0 md:text-4xl animate-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text'>
         OUR CHIEF GUEST
       </h1>
