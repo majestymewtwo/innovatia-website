@@ -122,31 +122,31 @@ function Page() {
   const developers = [
     
     {
-      name: "Muthu Aanand S U",
-      role: "Designer & Developer",
+      name: "Muthu Aanand",
+      role: "Developer",
       image: "/muthu.jpg",
       github: "https://github.com/majestymewtwo",
       instagram: "https://www.instagram.com/mew2uwu/",
       linkedin: "https://www.linkedin.com/in/muthu-aanand-su-b36188218/",
     },
     {
-      name: "Ruthi Shankari S",
-      role: "Designer & Developer",
+      name: "Ruthi Shankari",
+      role: "Developer",
       image: "/ru.jpeg",
       github: "https://github.com/Ex-rockstar",
       linkedin: "https://www.linkedin.com/in/ruthi-shankari/",
       instagram: "https://www.instagram.com/thenameisruthi/",
     },
     {
-      name: "Guru Sanjay R K",
-      role: "Designer & Developer",
+      name: "Guru Sanjay",
+      role: "Developer",
       image: "/gs.jpg",
       github: "https://github.com/gurusanjay2322",
       linkedin: "https://www.linkedin.com/in/guru-sanjay-r-k-4b15b3230/",
       instagram: "https://www.instagram.com/__.gs.__22/",
     },
     {
-      name: "Yogesh M ",
+      name: "Yogesh",
       role: "Developer",
       image: "/Yogesh.jpeg",
       github: "https://github.com/Yogesh251103",
@@ -163,7 +163,7 @@ function Page() {
       linkedin: "https://www.linkedin.com/in/keyan5/",
     },
     {
-      name: "Kamalesh Kumar",
+      name: "Kamalesh",
       role: "Developer",
       image: "/kamalesh.jpeg",
       role: "Developer",
@@ -172,7 +172,7 @@ function Page() {
       linkedin: "https://www.linkedin.com/in/kamalesh-kumar-33a6a5222/",
     },
     {
-      name: "Aadithya S",
+      name: "Aadithya",
       role: "Jr.Developer",
       image: "/aadithya.jpeg",
       role: "Jr.Developer",
@@ -190,7 +190,7 @@ function Page() {
       linkedin: "https://www.linkedin.com/in/koushik-babu-8aa71a280/",
     },
     {
-      name: "Kushi Mili Mishra",
+      name: "Kushi Mishra",
       role: "Jr.Developer",
       image: "/kushi.jpeg",
       role: "Jr.Developer",
