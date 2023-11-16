@@ -31,10 +31,12 @@ module.exports = {
     },
     fontFamily: {
       oswald: ["Oswald", "sans-serif"],
-      sourcesan: ["Source Serif 4", "serif"],
+      sourcesan: ["Source Serif 4", "sans-serif"],
       inconsolata: ["Inconsolata", "monospace"],
       blanka: ["Blanka Regular", "sans-serif"],
       space: ["Ruthi Rockstar", "sans-serif"],
+      sans: ["Inter", "sans-serif"],
+      poppins: ['Poppins', "sans-serif"],
     },
     extend: {
       keyframes: {

@@ -13,7 +13,7 @@ import {
 import Member from "./Member";
 import Team from "./Team";
 import { XOctagon } from "lucide-react";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { unHideHamButton } from "@/app/utils/utils";
 import { sendRequest } from "@/request";
 import LoadingFallback from "../loading-fallback";
