@@ -85,7 +85,8 @@ export default function Home() {
                 </h3>
                 <CountdownTimer targetDate='2023-11-22T23:59:59' />
                 <h3 className='text-white text-2xl font-inconsolata'>
-                  <span className="font-bold">Venue : </span> MBA Auditorium
+                  <span className="font-bold">Venue : </span> MBA Auditorium 
+                  (D Block,III Floor)
                 </h3>
               </div>
             </div>
@@ -138,7 +139,7 @@ export default function Home() {
                 </h3>
                 <CountdownTimer targetDate='2023-11-22T23:59:59' />
                 <h3 className='text-white text-2xl font-inconsolata'>
-                  <span className="font-bold">Venue : </span> MBA Auditorium
+                  <span className="font-bold">Venue : </span> MBA Auditorium (D Block,III Floor)
                 </h3>
                 <div className='w-1/2'>
                   <Lottie animationData={space1} />
