@@ -137,7 +137,7 @@ const EventDetailDB = () => {
                   Join Pixel Perfect!
                 </a>
               </div><div>
-                <span className="font-bold">Whatsapp Group Link : </span>{" "}
+                <span className="font-bold">Submission Link : </span>{" "}
                 <a href='https://docs.google.com/forms/d/e/1FAIpQLSda6t7f6t6nTdFtYCBpCIc8HugNG_-7UbM-9nR12bC35qFV9w/viewform?usp=sf_link' className="underline" target='_blank'>
                   Sumbit your photographs here!
                 </a>
