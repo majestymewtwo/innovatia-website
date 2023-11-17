@@ -48,9 +48,7 @@ const EventDetailDB = () => {
             </div>
             <div className="pr-2 space-y-2 overflow-y-scroll scrollbar lg:text-sm">
               <p className="font-semibold">
-                "Where Beats Unite, and Melodies Ignite!" Uniting music
-                enthusiasts, showcasing diverse genres, and providing a platform
-                for emerging talents.
+                REGISTRATIONS CLOSED!
               </p>
               <div>
                 <span className="font-bold">Mode: </span>
@@ -190,10 +188,10 @@ const EventDetailDB = () => {
           <div className="flex flex-row justify-center w-full space-x-5 lg:w-auto lg:absolute lg:bottom-10 lg:left-1/2">
             <Button
               variant="contained"
-              className="border w-1/2 border-gray-300 hover:bg-[#E97451] text-sm "
-              onClick={() => router.push(`${pathName}/register`)}
+              className="border w-1/2 border-gray-300 hover:bg-[#E97451] text-sm disabled:opacity-50"
+              // onClick={() => router.push(`${pathName}/register`)}
             >
-              Register Now
+              Registerations Full!
             </Button>
             <Button
               variant="contained"

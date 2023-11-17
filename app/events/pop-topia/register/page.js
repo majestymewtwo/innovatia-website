@@ -4,7 +4,7 @@ const page = () => {
   const event = {
     name: "Pop Topia",
     description:
-      '"Where Beats Unite, and Melodies Ignite!" Uniting music enthusiasts, showcasing diverse genres, and providing a platform for emerging talents.',
+      '"REGISTRATIONS CLOSED!!',
     date: "2023-11-22",
     time: "11:15",
     maxMembers: 3,
