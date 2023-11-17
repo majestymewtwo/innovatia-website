@@ -162,9 +162,9 @@ const EventTiles = () => {
                 <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 REGISTRATIONS CLOSED!
                 </p>
-                <a href="/events/pop-topia">
+                <a href="">
                   <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900 disabled:opacity-25">
-                    Registeration Full!
+                  REGISTRATIONS CLOSED!
                   </button>
                 </a>
               </div>
