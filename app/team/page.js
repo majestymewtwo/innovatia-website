@@ -33,11 +33,11 @@ function Page() {
       role: "Staff Coordinator",
       image: "/shariff.jpeg",
     },
-    // {
-    //   name: "Lakshmi Narayanan",
-    //   role: "Staff Coordinator",
-    //   image: "",
-    // },
+    {
+      name: "Lakshmi Narayanan",
+      role: "Staff Coordinator",
+      image: "/lakshmi.jpeg",
+    },
   ];
   const officeBearers = [
     {
