@@ -104,8 +104,6 @@ const EventDetailDB = () => {
                       <br />
                       1. Mixed Questions: Prepare a mix of questions from
                       comics, anime.<br />
-                      2. Pass Option: If a team can't answer, the question
-                      passes to the next team.
                       <br />
                       <span className="font-bold">
                         Scene Identification Challenge

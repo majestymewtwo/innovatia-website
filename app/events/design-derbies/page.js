@@ -97,7 +97,6 @@ const EventDetailDB = () => {
                 <div>
                   <span className="font-bold">Instructions: </span>
                   <ul className="list-disc list-inside">
-                    <li>Allowed tools: Figma, Adobe XD.</li>
                     <li>
                       Online 1st Round, Offline 2nd Round at Sri Sairam
                       Engineering College, Chennai. .
