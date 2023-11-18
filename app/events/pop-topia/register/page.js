@@ -1,10 +1,10 @@
+import RegistrationClosed from "@/components/register-closed";
 import RegisterComponent from "@/components/register/register";
 
 const page = () => {
   const event = {
     name: "Pop Topia",
-    description:
-      '"REGISTRATIONS CLOSED!!',
+    description: '"REGISTRATIONS CLOSED!!',
     date: "2023-11-22",
     time: "11:15",
     maxMembers: 3,
@@ -18,7 +18,8 @@ const page = () => {
 
   return (
     <div className='flex items-center justify-center h-auto'>
-      <RegisterComponent event={event} />
+      {/* <RegisterComponent event={event} /> */}
+      <RegistrationClosed />
     </div>
   );
 };
