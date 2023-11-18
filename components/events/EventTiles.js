@@ -136,12 +136,11 @@ const EventTiles = () => {
                   Superhero Shippuden
                 </h1>
                 <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  Anime Trivia: Anime, Manga, Otaku, Cosplay, Shōnen, Shōjo,
-                  Seinen, Josei, Slice of Life
+                  REGISTRATIONS CLOSED!
                 </p>
-                <a href="/events/superhero-shippuden">
-                  <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-white hover:text-neutral-900">
-                    Register Now!
+                <a href="">
+                  <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 ">
+                  REGISTRATIONS CLOSED!
                   </button>
                 </a>
               </div>
