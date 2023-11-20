@@ -1,3 +1,4 @@
+import RegistrationClosed from "@/components/register-closed";
 import RegisterComponent from "@/components/register/register";
 
 const page = () => {
@@ -18,7 +19,8 @@ const page = () => {
 
   return (
     <div className='flex items-center justify-center h-auto'>
-      <RegisterComponent event={event} />
+      {/* <RegisterComponent event={event} /> */}
+      <RegistrationClosed />
     </div>
   );
 };
