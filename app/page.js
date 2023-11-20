@@ -12,6 +12,7 @@ import DonationStall from "@/components/donationStall";
 import { HeartHandshake } from "lucide-react";
 import Guest from "@/components/Guest";
 import VideoComponent from "@/components/video";
+import Sponsors from "@/components/sponsor";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -160,6 +161,7 @@ export default function Home() {
         className='absolute w-10 h-10 cursor-pointer bottom-4 right-4 md:h-16 md:w-16 text-emerald-500 md:bottom-10 md:right-10 animate-bounce'
         onClick={handleDonateClick}
       />
+      <Sponsors />
       <VideoComponent />
       <Guest
         image='/muthulakshmi.jpg'
