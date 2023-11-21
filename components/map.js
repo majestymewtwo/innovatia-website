@@ -9,7 +9,7 @@ export default function MapComponent() {
         students can avail them.
       </p>
       <a
-        href='https://sairam.edu.in/wp-content/uploads/2015/06/BUS-ROUTE-DETAILS_FINAL-2.pdf'
+        href='https://sairam.edu.in/transport' 
         target='_blank'
         className='font-inconsolata underline text-yellow-300'>
         Check Bus Routes here
