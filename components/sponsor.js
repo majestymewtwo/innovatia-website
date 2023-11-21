@@ -21,6 +21,16 @@ export default function Sponsors() {
           alt='Reliance Trends'
         />
       </div>
+      <div className='space-y-3'>
+        <img
+          className='h-[140px] lg:h-[200px] rounded-md mx-auto hover:scale-105 transition-all ease-in-out duration-200'
+          src='/rays-bakes.png'
+          alt='Vasanth & Co'
+        />
+        <h1 className='text-white text-xl lg:text-2xl font-poppins font-extralight'>
+          "Rays Bakes - The Brownie Specialist"
+        </h1>
+      </div>
     </div>
   );
 }
