@@ -5,15 +5,9 @@ export default function MapComponent() {
         How to reach us?
       </h1>
       <p className='text-white'>
-        Our college buses will be available for transport. Other college
-        students can avail them.
+        Our college buses will be available for transport at Tambaram.
+        Other college students can avail them.
       </p>
-      <a
-        href='https://sairam.edu.in/transport' 
-        target='_blank'
-        className='font-inconsolata underline text-yellow-300'>
-        Check Bus Routes here
-      </a>
       <iframe
         src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3888.1818975171714!2d80.05476192507626!3d12.960209587354123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f596c7fb72c9%3A0x8e7a30529f9ef227!2sSri%20Sairam%20Engineering%20College!5e0!3m2!1sen!2sin!4v1700556169454!5m2!1sen!2sin'
         className='w-full h-[450px] md:h-72'
