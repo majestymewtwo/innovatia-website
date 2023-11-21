@@ -3,6 +3,7 @@ import AboutSection from "@/components/about/AboutSection";
 import React, { useEffect } from "react";
 import { unHideHamButton } from "../utils/utils";
 import QueryForm from "@/components/about/QueryForm";
+import MapComponent from "@/components/map";
 
 const page = () => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const page = () => {
     <div>
       <AboutSection />
       <QueryForm />
+      <MapComponent />
     </div>
   );
 };
