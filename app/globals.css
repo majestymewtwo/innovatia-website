@@ -25,7 +25,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  background-image: url("https://learn.liveu.tv/pluginfile.php/1/local_mb2slides/attachment/6/Space-Animation%20Draft.gif");
+  background-image: url("/space-bg-2.gif");
   background-size: cover;
   background-position: center;
   transition: all 0.7s ease;
